@@ -1,0 +1,3487 @@
+{
+    "organism_types": [
+        {
+            "value": "faviourites",
+            "name": "Faviourites"
+        },
+        {
+            "value": "vertabrates",
+            "name": "Vertabrates"
+        },
+        {
+            "value": "plants",
+            "name": "Plants"
+        },
+        {
+            "value": "insects",
+            "name": "Insects"
+        },
+        {
+            "value": "others",
+            "name": "Others"
+        }
+    ],
+    "organisms": [
+        {
+            "value": "faviourites",
+            "name": "Faviourites",
+            "orgranismtype": [
+                {
+                    "value": "human",
+                    "name": "Homo sapiens",
+                    "versions": [
+                        {
+                            "value": "Homo sapiens (GRCh38/hg38) - Human",
+                            "name": "Homo sapiens (GRCh38/hg38) - Human"
+                        }
+                    ]
+                },
+                {
+                    "value": "mouse",
+                    "name": "Mouse",
+                    "versions": [
+                        {
+                            "value": "Mus musculus (GRCm39) - Mouse",
+                            "name": "Mus musculus (GRCm39) - Mouse"
+                        }
+                    ]
+                },
+                {
+                    "value": "zebrafish",
+                    "name": "Zebrafish",
+                    "versions": [
+                        {
+                            "value": "Danio rerio (GRCz11) - Zebrafish",
+                            "name": "Danio rerio (GRCz11) - Zebrafish"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "value": "vertebrates",
+            "name": "Vertebrates",
+            "orgranismtype": [
+                {
+                    "value": "human",
+                    "name": "Human",
+                    "versions": [
+                        {
+                            "value": "Homo sapiens (GRCh38/hg38) - Human",
+                            "name": "Homo sapiens (GRCh38/hg38) - Human"
+                        },
+                        {
+                            "value": "Homo sapiens (hg19) - Human",
+                            "name": "Homo sapiens (hg19) - Human"
+                        },
+                        {
+                            "value": "Human Mitochondria genome (NC_012920.1)",
+                            "name": "Human Mitochondria genome (NC_012920.1)"
+                        },
+                        {
+                            "value": "Homo sapiens (CHM13 T2T v2.0) - Human",
+                            "name": "Homo sapiens (CHM13 T2T v2.0) - Human"
+                        }
+                    ]
+                },
+                {
+                    "value": "mouse",
+                    "name": "Mouse",
+                    "versions": [
+                        {
+                            "value": "Mus musculus (GRCm39) - Mouse",
+                            "name": "Mus musculus (GRCm39) - Mouse"
+                        },
+                        {
+                            "value": "Mus musculus (mm10) - Mouse",
+                            "name": "Mus musculus (mm10) - Mouse"
+                        },
+                        {
+                            "value": "Peromyscus maniculatus (Pman_2.1) - North American deer mouse",
+                            "name": "Peromyscus maniculatus (Pman_2.1) - North American deer mouse"
+                        },
+                        {
+                            "value": "Mus musculus (mm9) - Mouse",
+                            "name": "Mus musculus (mm9) - Mouse"
+                        },
+                        {
+                            "value": "BalbC/J mouse Mitochondria genome (AJ512208.1)",
+                            "name": "BalbC/J mouse Mitochondria genome (AJ512208.1)"
+                        },
+                        {
+                            "value": "Mus spretus (SPRET_EiJ_v1) Algerian mouse",
+                            "name": "Mus spretus (SPRET_EiJ_v1) Algerian mouse"
+                        },
+                        {
+                            "value": "Mus musculus (129S1_SvImJ_v1) Mouse 129S1_SvImJ_v1",
+                            "name": "Mus musculus (129S1_SvImJ_v1) Mouse 129S1_SvImJ_v1"
+                        },
+                        {
+                            "value": "Mus musculus (GRCm39) - Mouse",
+                            "name": "Mus musculus (GRCm39) - Mouse"
+                        },
+                        {
+                            "value": "Mus musculus (A_J_v1) Mouse A_J_v1",
+                            "name": "Mus musculus (A_J_v1) Mouse A_J_v1"
+                        },
+                        {
+                            "value": "Mus musculus (AKR_J_v1) Mouse AKR_J_v1",
+                            "name": "Mus musculus (AKR_J_v1) Mouse AKR_J_v1"
+                        },
+                        {
+                            "value": "Mus musculus (BALB_cJ_v1) Mouse BALB_cJ_v1",
+                            "name": "Mus musculus (BALB_cJ_v1) Mouse BALB_cJ_v1"
+                        },
+                        {
+                            "value": "Mus musculus (C3H_HeJ_v1) Mouse C3H_HeJ_v1",
+                            "name": "Mus musculus (C3H_HeJ_v1) Mouse C3H_HeJ_v1"
+                        },
+                        {
+                            "value": "Mus musculus (C57BL_6NJ_v1) Mouse  C57BL_6NJ_v1",
+                            "name": "Mus musculus (C57BL_6NJ_v1) Mouse  C57BL_6NJ_v1"
+                        },
+                        {
+                            "value": "Mus musculus (CAST_EiJ_v1) Mouse CAST/EiJ",
+                            "name": "Mus musculus (CAST_EiJ_v1) Mouse CAST/EiJ"
+                        },
+                        {
+                            "value": "Mus musculus (CBA_J_v1) Mouse CBA/J",
+                            "name": "Mus musculus (CBA_J_v1) Mouse CBA/J"
+                        },
+                        {
+                            "value": "Mus musculus (DBA_2J_v1) Mouse DBA/2J",
+                            "name": "Mus musculus (DBA_2J_v1) Mouse DBA/2J"
+                        },
+                        {
+                            "value": "Mus musculus (FVB_NJ_v1) Mouse FVB/NJ",
+                            "name": "Mus musculus (FVB_NJ_v1) Mouse FVB/NJ"
+                        },
+                        {
+                            "value": "Mus musculus (LP_J_v1) Mouse  LP/J",
+                            "name": "Mus musculus (LP_J_v1) Mouse  LP/J"
+                        },
+                        {
+                            "value": "Mus musculus (Mmur_3.0) Mouse Lemur",
+                            "name": "Mus musculus (Mmur_3.0) Mouse Lemur"
+                        },
+                        {
+                            "value": "Mus musculus (NOD_ShiLtJ_v1) Mouse NOD/ShiLtJ",
+                            "name": "Mus musculus (NOD_ShiLtJ_v1) Mouse NOD/ShiLtJ"
+                        },
+                        {
+                            "value": "Mus musculus (NZO_HlLtJ_v1) Mouse NZO/HlLtJ",
+                            "name": "Mus musculus (NZO_HlLtJ_v1) Mouse NZO/HlLtJ"
+                        },
+                        {
+                            "value": "Mus musculus (PWK_PhJ_v1) Mouse PWK/PhJ",
+                            "name": "Mus musculus (PWK_PhJ_v1) Mouse PWK/PhJ"
+                        },
+                        {
+                            "value": "Mus musculus (WSB_EiJ_v1) Mouse WSB/EiJ",
+                            "name": "Mus musculus (WSB_EiJ_v1) Mouse WSB/EiJ"
+                        },
+                        {
+                            "value": "Mus musculus (CAROLI_EIJ_v1.1) Ryukyu mouse",
+                            "name": "Mus musculus (CAROLI_EIJ_v1.1) Ryukyu mouse"
+                        },
+                        {
+                            "value": "Mus musculus (PAHARI_EIJ_v1.1) Shrew mouse",
+                            "name": "Mus musculus (PAHARI_EIJ_v1.1) Shrew mouse"
+                        },
+                        {
+                            "value": "Peromyscus maniculatus (Pman_2.1) - North American deer mouse",
+                            "name": "Peromyscus maniculatus (Pman_2.1) - North American deer mouse"
+                        },
+                        {
+                            "value": "Mus musculus (MUSP714) Steppe mouse",
+                            "name": "Mus musculus (MUSP714) Steppe mouse"
+                        }
+                    ]
+                },
+                {
+                    "value": "rat",
+                    "name": "Rat",
+                    "versions": [
+                        {
+                            "value": "Rattus norvegicus (rn5) - Rat",
+                            "name": "Rattus norvegicus (rn5) - Rat"
+                        },
+                        {
+                            "value": "Rattus norvegicus (Rnor 6.0) - Rat",
+                            "name": "Rattus norvegicus (Rnor 6.0) - Rat"
+                        },
+                        {
+                            "value": "Rattus norvegicus (mRatBN7.2) - Rat",
+                            "name": "Rattus norvegicus (mRatBN7.2) - Rat"
+                        },
+                        {
+                            "value": "Rattus norvegicus (UTH_Rnor_SHR_Utx) - Rat",
+                            "name": "Rattus norvegicus (UTH_Rnor_SHR_Utx) - Rat"
+                        },
+                        {
+                            "value": "Rattus norvegicus (UTH_Rnor_SHRSP_BbbUtx_1.0) - Rat",
+                            "name": "Rattus norvegicus (UTH_Rnor_SHRSP_BbbUtx_1.0) - Rat"
+                        },
+                        {
+                            "value": "Rattus norvegicus (UTH_Rnor_WKY_Bbb_1.0) - Rat",
+                            "name": "Rattus norvegicus (UTH_Rnor_WKY_Bbb_1.0) - Rat"
+                        }
+                    ]
+                },
+                {
+                    "value": "cow",
+                    "name": "Cow",
+                    "versions": [
+                        {
+                            "value": "Bos taurus (bosTau7) - Cow",
+                            "name": "Bos taurus (bosTau7) - Cow"
+                        },
+                        {
+                            "value": "Bos taurus (bosTau8) - Cow",
+                            "name": "Bos taurus (bosTau8) - Cow"
+                        },
+                        {
+                            "value": "Bos taurus (ARS-UCD1.3) - Cow",
+                            "name": "Bos taurus (ARS-UCD1.3) - Cow"
+                        },
+                        {
+                            "value": "Bos taurus (ARS-UCD1.2) - Cow",
+                            "name": "Bos taurus (ARS-UCD1.2) - Cow"
+                        }
+                    ]
+                },
+                {
+                    "value": "dog",
+                    "name": "Dog",
+                    "versions": [
+                        {
+                            "value": "Canis familiaris (canFam3) - Dog",
+                            "name": "Canis familiaris (canFam3) - Dog"
+                        },
+                        {
+                            "value": "Canis lupus familiaris (ROS_Cfam_1.0) - Dog",
+                            "name": "Canis lupus familiaris (ROS_Cfam_1.0) - Dog"
+                        },
+                        {
+                            "value": "Canis lupus familiaris ( Basenji_breed-1.1) - Dog",
+                            "name": "Canis lupus familiaris ( Basenji_breed-1.1) - Dog"
+                        },
+                        {
+                            "value": "Canis lupus familiaris ( Dog10K_Boxer_Tasha) - Dog",
+                            "name": "Canis lupus familiaris ( Dog10K_Boxer_Tasha) - Dog"
+                        },
+                        {
+                            "value": "Canis lupus familiaris ( UU_Cfam_GSD_1.0) - Dog",
+                            "name": "Canis lupus familiaris ( UU_Cfam_GSD_1.0) - Dog"
+                        },
+                        {
+                            "value": "Canis lupus familiaris ( UMICH_Zoey_3.1) - Dog",
+                            "name": "Canis lupus familiaris ( UMICH_Zoey_3.1) - Dog"
+                        }
+                    ]
+                },
+                {
+                    "value": "pig",
+                    "name": "Pig",
+                    "versions": [
+                        {
+                            "value": "Sus scrofa (susScr11) - Pig",
+                            "name": "Sus scrofa (susScr11) - Pig"
+                        },
+                        {
+                            "value": "Cavia porcellus (Cavpor3.0) -guinea pig",
+                            "name": "Cavia porcellus (Cavpor3.0) -guinea pig"
+                        },
+                        {
+                            "value": "Sus scrofa (Large white v1 from ensembl) - pig",
+                            "name": "Sus scrofa (Large white v1 from ensembl) - pig"
+                        },
+                        {
+                            "value": "Cavia aperea( CavAp1.0) - Brazilian guinea pig",
+                            "name": "Cavia aperea( CavAp1.0) - Brazilian guinea pig"
+                        },
+                        {
+                            "value": "Sus scrofa (Sscrofa11.1 ) - Pig",
+                            "name": "Sus scrofa (Sscrofa11.1 ) - Pig"
+                        },
+                        {
+                            "value": "Sus scrofa (Bamei_pig_v1) - Bamei Pig",
+                            "name": "Sus scrofa (Bamei_pig_v1) - Bamei Pig"
+                        },
+                        {
+                            "value": "Sus scrofa (Berkshire_pig_v1) - Pig - Berkshire",
+                            "name": "Sus scrofa (Berkshire_pig_v1) - Pig - Berkshire"
+                        },
+                        {
+                            "value": "Sus scrofa (Hampshire_pig_v1) - Pig - Hampshire",
+                            "name": "Sus scrofa (Hampshire_pig_v1) - Pig - Hampshire"
+                        },
+                        {
+                            "value": "Sus scrofa (Jinhua_pig_v1) - Pig - Jinhua",
+                            "name": "Sus scrofa (Jinhua_pig_v1) - Pig - Jinhua"
+                        },
+                        {
+                            "value": "Sus scrofa (Landrace_pig_v1) - Pig - Landrace",
+                            "name": "Sus scrofa (Landrace_pig_v1) - Pig - Landrace"
+                        },
+                        {
+                            "value": "Sus scrofa (Meishan_pig_v1) - Pig - Meishan",
+                            "name": "Sus scrofa (Meishan_pig_v1) - Pig - Meishan"
+                        },
+                        {
+                            "value": "Sus scrofa (Pietrain_pig_v1) - Pig - Pietrain",
+                            "name": "Sus scrofa (Pietrain_pig_v1) - Pig - Pietrain"
+                        },
+                        {
+                            "value": "Sus scrofa (Rongchang_pig_v1) - Pig - Rongchang",
+                            "name": "Sus scrofa (Rongchang_pig_v1) - Pig - Rongchang"
+                        },
+                        {
+                            "value": "Sus scrofa (Tibetan_Pig_v2) - Pig - Tibetan",
+                            "name": "Sus scrofa (Tibetan_Pig_v2) - Pig - Tibetan"
+                        },
+                        {
+                            "value": "Sus scrofa (minipig_v1.0) - Pig - Wuzhishan",
+                            "name": "Sus scrofa (minipig_v1.0) - Pig - Wuzhishan"
+                        },
+                        {
+                            "value": "Sus scrofa (USMARCv1.0) - Pig - USMARC",
+                            "name": "Sus scrofa (USMARCv1.0) - Pig - USMARC"
+                        }
+                    ]
+                },
+                {
+                    "value": "zebrafish",
+                    "name": "Zebrafish",
+                    "versions": [
+                        {
+                            "value": "Danio rerio (danRer7) - Zebrafish",
+                            "name": "Danio rerio (danRer7) - Zebrafish"
+                        },
+                        {
+                            "value": "Danio rerio (GRCz11) - Zebrafish",
+                            "name": "Danio rerio (GRCz11) - Zebrafish"
+                        },
+                        {
+                            "value": "Danio rerio (GRCz10) - Zebrafish",
+                            "name": "Danio rerio (GRCz10) - Zebrafish"
+                        }
+                    ]
+                },
+                {
+                    "value": "monkey",
+                    "name": "Monkey",
+                    "versions": [
+                        {
+                            "value": "Macaca mulatta(rheMac3) - Monkey",
+                            "name": "Macaca mulatta(rheMac3) - Monkey"
+                        },
+                        {
+                            "value": "Macaca mulatta (Mmul_10)",
+                            "name": "Macaca mulatta (Mmul_10)"
+                        },
+                        {
+                            "value": "Chlorocebus_sabeus (ChlSab1.1) - green monkey",
+                            "name": "Chlorocebus_sabeus (ChlSab1.1) - green monkey"
+                        },
+                        {
+                            "value": "Macaca mulatta (Mmul_10) - Monkey",
+                            "name": "Macaca mulatta (Mmul_10) - Monkey"
+                        },
+                        {
+                            "value": "Rhinopithecus bieti (ASM169854v1) - Black snub-nosed monkey",
+                            "name": "Rhinopithecus bieti (ASM169854v1) - Black snub-nosed monkey"
+                        },
+                        {
+                            "value": "Saimiri boliviensis boliviensis (SaiBol1.0) - Bolivian squirrel monkey",
+                            "name": "Saimiri boliviensis boliviensis (SaiBol1.0) - Bolivian squirrel monkey"
+                        },
+                        {
+                            "value": "Rhinopithecus roxellana (Rrox_v1) - Golden snub-nosed monkey",
+                            "name": "Rhinopithecus roxellana (Rrox_v1) - Golden snub-nosed monkey"
+                        },
+                        {
+                            "value": "Aotus nancymaae (Anan_2.0) - Ma's night monkey", "name": "Aotus nancymaae (Anan_2.0) - Ma's night monkey"
+                        }
+                    ]
+                },
+                {
+                    "value": "frog",
+                    "name": "Frog",
+                    "versions": [
+                        {
+                            "value": "Xenopus tropicalis (JGI 4.2/xenTro3) - Western clawed frog",
+                            "name": "Xenopus tropicalis (JGI 4.2/xenTro3) - Western clawed frog"
+                        },
+                        {
+                            "value": "Xenopus tropicalis (JGI 7.1) - Western clawed frog",
+                            "name": "Xenopus tropicalis (JGI 7.1) - Western clawed frog"
+                        },
+                        {
+                            "value": "Xenopus_laevis_v2 - African clawed frog",
+                            "name": "Xenopus_laevis_v2 - African clawed frog"
+                        },
+                        {
+                            "value": "Xenopus_tropicalis_v9.1/xenTro9 - Western clawed frog",
+                            "name": "Xenopus_tropicalis_v9.1/xenTro9 - Western clawed frog"
+                        },
+                        {
+                            "value": "Xenopus tropicalis (xenTro10) - Western clawed frog",
+                            "name": "Xenopus tropicalis (xenTro10) - Western clawed frog"
+                        },
+                        {
+                            "value": "Xenopus laevis_v10.1 - African clawed frog",
+                            "name": "Xenopus laevis_v10.1 - African clawed frog"
+                        }
+                    ]
+                },
+                {
+                    "value": "macaque",
+                    "name": "Crab-eating macaque",
+                    "versions": [
+                        {
+                            "value": "Macaca fascicularis (5.0) - Crab-eating macaque",
+                            "name": "Macaca fascicularis (5.0) - Crab-eating macaque"
+                        },
+                        {
+                            "value": "Macaca nemestrina (Mnem_1.0)",
+                            "name": "Macaca nemestrina (Mnem_1.0)"
+                        },
+                        {
+                            "value": "Macaca fascicularis (6.0) - Crab-eating macaque",
+                            "name": "Macaca fascicularis (6.0) - Crab-eating macaque"
+                        }
+                    ]
+                },
+                {
+                    "value": "horse",
+                    "name": "Horse",
+                    "versions": [
+                        {
+                            "value": "Equus caballus (EquCab2) - Horse",
+                            "name": "Equus caballus (EquCab2) - Horse"
+                        },
+                        {
+                            "value": "Equus caballus (EquCab3.0) - horse",
+                            "name": "Equus caballus (EquCab3.0) - horse"
+                        }
+                    ]
+                },
+                {
+                    "value": "rabit",
+                    "name": "Rabbit",
+                    "versions": [
+                        {
+                            "value": "Oryctolagus cuniculus (OryCun2) - Rabbit",
+                            "name": "Oryctolagus cuniculus (OryCun2) - Rabbit"
+                        }
+                    ]
+                },
+                {
+                    "value": "hamster",
+                    "name": "Hamster",
+                    "versions": [
+                        {
+                            "value": "Cricetulus griseus (v1.0) - Chinese Hamster",
+                            "name": "Cricetulus griseus (v1.0) - Chinese Hamster"
+                        },
+                        {
+                            "value": "Mesocricetus auratus (MesAur1.0) - Golden hamster",
+                            "name": "Mesocricetus auratus (MesAur1.0) - Golden hamster"
+                        },
+                        {
+                            "value": "Cricetulus griseus (CriGri_1.0) - Chinese hamster",
+                            "name": "Cricetulus griseus (CriGri_1.0) - Chinese hamster"
+                        }
+                    ]
+                },
+                {
+                    "value": "cat",
+                    "name": "Cat",
+                    "versions": [
+                        {
+                            "value": "Felis catus - Cat",
+                            "name": "Felis catus - Cat"
+                        }
+                    ]
+                },
+                {
+                    "value": "prvole",
+                    "name": "Prairie vole",
+                    "versions": [
+                        {
+                            "value": "Microtus ochrogaster - Prairie vole",
+                            "name": "Microtus ochrogaster - Prairie vole"
+                        }
+                    ]
+                },
+                {
+                    "value": "marmoset",
+                    "name": "Marmoset",
+                    "versions": [
+                        {
+                            "value": "Callithrix jacchus (mCalJac1.pat.X) -marmoset",
+                            "name": "Callithrix jacchus (mCalJac1.pat.X) -marmoset"
+                        }
+                    ]
+                },
+                {
+                    "value": "minnow",
+                    "name": "Fathead minnow",
+                    "versions": [
+                        {
+                            "value": "Pimephales promelas (SOAPdenovo v. 2) - fathead minnow",
+                            "name": "Pimephales promelas (SOAPdenovo v. 2) - fathead minnow"
+                        }
+                    ]
+                },
+                {
+                    "value": "sheep",
+                    "name": "Sheep",
+                    "versions": [
+                        {
+                            "value": "ovis_aries (Oar_v3.1) - sheep",
+                            "name": "ovis_aries (Oar_v3.1) - sheep"
+                        },
+                        {
+                            "value": "Ovis aries (ARS-UI_Ramb_v2.0) - Sheep",
+                            "name": "Ovis aries (ARS-UI_Ramb_v2.0) - Sheep"
+                        }
+                    ]
+                },
+                {
+                    "value": "chicken",
+                    "name": "Chicken",
+                    "versions": [
+                        {
+                            "value": "Gallus gallus (Galgal4) - Chicken",
+                            "name": "Gallus gallus (Galgal4) - Chicken"
+                        },
+                        {
+                            "value": "Gallus gallus (bGalGal1.mat.broiler.GRCg7b) - Chicken",
+                            "name": "Gallus gallus (bGalGal1.mat.broiler.GRCg7b) - Chicken"
+                        },
+                        {
+                            "value": "Gallus gallus (GRCg6a) - chicken",
+                            "name": "Gallus gallus (GRCg6a) - chicken"
+                        }
+                    ]
+                },
+                {
+                    "value": "niloticus",
+                    "name": "Oreochromis niloticus",
+                    "versions": [
+                        {
+                            "value": "Oreochromis niloticus",
+                            "name": "Oreochromis niloticus"
+                        }
+                    ]
+                },
+                {
+                    "value": "goat",
+                    "name": "Goat",
+                    "versions": [
+                        {
+                            "value": "Capra hircus (ARS1) - goat",
+                            "name": "Capra hircus (ARS1) - goat"
+                        }
+                    ]
+                },
+                {
+                    "value": "duck",
+                    "name": "Duck",
+                    "versions": [
+                        {
+                            "value": "Anas platyrhynchos (CAU_duck_1.0) - duck",
+                            "name": "Anas platyrhynchos (CAU_duck_1.0) - duck"
+                        }
+                    ]
+                },
+                {
+                    "value": "salmon",
+                    "name": "Salmon",
+                    "versions": [
+                        {
+                            "value": "Salmo salar (Ssal_v3.1) -Atlantic salmon",
+                            "name": "Salmo salar (Ssal_v3.1) -Atlantic salmon"
+                        },
+                        {
+                            "value": "Salmo salar (USDA_NASsal_1.1) - Atlantic salmon",
+                            "name": "Salmo salar (USDA_NASsal_1.1) - Atlantic salmon"
+                        },
+                        {
+                            "value": "Oncorhynchus tshawytscha (Otsh_v2.0) - Chinook salmon",
+                            "name": "Oncorhynchus tshawytscha (Otsh_v2.0) - Chinook salmon"
+                        },
+                        {
+                            "value": "Oncorhynchus tshawytscha (Otsh_v1.0) - Chinook salmon",
+                            "name": "Oncorhynchus tshawytscha (Otsh_v1.0) - Chinook salmon"
+                        }
+                    ]
+                },
+                {
+                    "value": "carpio",
+                    "name": "Cyprinus carpio",
+                    "versions": [
+                        {
+                            "value": "Cyprinus carpio (Cypcar_WagV4.0)",
+                            "name": "Cyprinus carpio (Cypcar_WagV4.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "olivaceus",
+                    "name": "Paralichthys olivaceus",
+                    "versions": [
+                        {
+                            "value": "Paralichthys olivaceus (Flounder_ref_guided_V1.0)",
+                            "name": "Paralichthys olivaceus (Flounder_ref_guided_V1.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "lucifugus",
+                    "name": "Myotis lucifugus",
+                    "versions": [
+                        {
+                            "value": "Myotis lucifugus (Myoluc2.0)",
+                            "name": "Myotis lucifugus (Myoluc2.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "aegyptiacus",
+                    "name": "Rousettus aegyptiacus",
+                    "versions": [
+                        {
+                            "value": "Rousettus aegyptiacus (RouAeg_v1_BIUU)",
+                            "name": "Rousettus aegyptiacus (RouAeg_v1_BIUU)"
+                        },
+                        {
+                            "value": "Rousettus aegyptiacus (mRouAeg1.p)",
+                            "name": "Rousettus aegyptiacus (mRouAeg1.p)"
+                        }
+                    ]
+                },
+                {
+                    "value": "shrew",
+                    "name": "Tree shrew",
+                    "versions": [
+                        {
+                            "value": "Tree shrew (TS_20 long-read)",
+                            "name": "Tree shrew (TS_20 long-read)"
+                        }
+                    ]
+                },
+                {
+                    "value": "axolotl",
+                    "name": "Ambystoma mexicanum",
+                    "versions": [
+                        {
+                            "value": "Ambystoma mexicanum (AmbMex60DD) -axolotl",
+                            "name": "Ambystoma mexicanum (AmbMex60DD) -axolotl"
+                        }
+                    ]
+                },
+                {
+                    "value": "punctatus",
+                    "name": "Ictalurus punctatus",
+                    "versions": [
+                        {
+                            "value": "Ictalurus punctatus (IpCoco_1.2)",
+                            "name": "Ictalurus punctatus (IpCoco_1.2)"
+                        },
+                        {
+                            "value": "Ictalurus punctatus (ASM400665v3)",
+                            "name": "Ictalurus punctatus (ASM400665v3)"
+                        }
+                    ]
+                },
+                {
+                    "value": "ferret",
+                    "name": "Ferret",
+                    "versions": [
+                        {
+                            "value": "Mustela putorius furo (MusPutFur1.0) - Ferret",
+                            "name": "Mustela putorius furo (MusPutFur1.0) - Ferret"
+                        }
+                    ]
+                },
+                {
+                    "value": "europaeus",
+                    "name": "Erinaceus europaeus",
+                    "versions": [
+                        {
+                            "value": "Erinaceus europaeus (eriEur1)",
+                            "name": "Erinaceus europaeus (eriEur1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "pagrus",
+                    "name": "Pagrus major",
+                    "versions": [
+                        {
+                            "value": "Pagrus major (Pma_NU_1.0)",
+                            "name": "Pagrus major (Pma_NU_1.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "marinus",
+                    "name": "Petromyzon marinus",
+                    "versions": [
+                        {
+                            "value": "Petromyzon marinus",
+                            "name": "Petromyzon marinus"
+                        }
+                    ]
+                },
+                {
+                    "value": "lanceolatus",
+                    "name": "Epinephelus lanceolatus",
+                    "versions": [
+                        {
+                            "value": "Epinephelus lanceolatus (giant grouper)",
+                            "name": "Epinephelus lanceolatus (giant grouper)"
+                        }
+                    ]
+                },
+                {
+                    "value": "perch",
+                    "name": "Climbing perch",
+                    "versions": [
+                        {
+                            "value": "Anabas testudineus (fAnaTes1.2) - Climbing perch",
+                            "name": "Anabas testudineus (fAnaTes1.2) - Climbing perch"
+                        },
+                        {
+                            "value": "Anabas testudineus (fAnaTes1.3) - Climbing perch",
+                            "name": "Anabas testudineus (fAnaTes1.3) - Climbing perch"
+                        }
+                    ]
+                },
+                {
+                    "value": "fox",
+                    "name": "Fox",
+                    "versions": [
+                        {
+                            "value": "Vulpes lagopus (VulLag_v1_BIUU) - Arctic fox",
+                            "name": "Vulpes lagopus (VulLag_v1_BIUU) - Arctic fox"
+                        },
+                        {
+                            "value": "Pteropus alecto (ASM32557v1) - Black flying fox",
+                            "name": "Pteropus alecto (ASM32557v1) - Black flying fox"
+                        }
+                    ]
+                },
+                {
+                    "value": "rubripes",
+                    "name": "Takifugu rubripes",
+                    "versions": [
+                        {
+                            "value": "Takifugu rubripes (fTakRub1.3 from ENA)",
+                            "name": "Takifugu rubripes (fTakRub1.3 from ENA)"
+                        }
+                    ]
+                },
+                {
+                    "value": "bat",
+                    "name": "Bat",
+                    "versions": [
+                        {
+                            "value": "Eptesicus fuscus (DD_ASM_mEF_20220401) - Big brown bat",
+                            "name": "Eptesicus fuscus (DD_ASM_mEF_20220401) - Big brown bat"
+                        }
+                    ]
+                },
+                {
+                    "value": "trout",
+                    "name": "Trout",
+                    "versions": [
+                        {
+                            "value": "Oncorhynchus mykiss (USDA_OmykA_1.1) - rainbow trout",
+                            "name": "Oncorhynchus mykiss (USDA_OmykA_1.1) - rainbow trout"
+                        }
+                    ]
+                },
+                {
+                    "value": "seabass",
+                    "name": "Seabass",
+                    "versions": [
+                        {
+                            "value": "Dicentrarchus labrax - (European seabass)",
+                            "name": "Dicentrarchus labrax - (European seabass)"
+                        }
+                    ]
+                },
+                {
+                    "value": "donkey",
+                    "name": "Donkey",
+                    "versions": [
+                        {
+                            "value": "Equus asinus (ASM1607732v2) - Ass",
+                            "name": "Equus asinus (ASM1607732v2) - Ass"
+                        }
+                    ]
+                },
+                {
+                    "value": "ostrich",
+                    "name": "Ostrich",
+                    "versions": [
+                        {
+                            "value": "Struthio camelus australis (ASM69896v1) - African ostrich",
+                            "name": "Struthio camelus australis (ASM69896v1) - African ostrich"
+                        }
+                    ]
+                },
+                {
+                    "value": "alpaca",
+                    "name": "Alpaca",
+                    "versions": [
+                        {
+                            "value": "Vicugna pacos (vicPac1) Alpaca",
+                            "name": "Vicugna pacos (vicPac1) Alpaca"
+                        }
+                    ]
+                },
+                {
+                    "value": "alpinemarmot",
+                    "name": "Alpine marmot",
+                    "versions": [
+                        {
+                            "value": "Marmota marmota marmota (marMar2.1) Alpine marmot",
+                            "name": "Marmota marmota marmota (marMar2.1) Alpine marmot"
+                        }
+                    ]
+                },
+                {
+                    "value": "amazonmolly",
+                    "name": "Amazon molly",
+                    "versions": [
+                        {
+                            "value": "Poecilia formosa (Poecilia_formosa-5.1.2) Amazon molly",
+                            "name": "Poecilia formosa (Poecilia_formosa-5.1.2) Amazon molly"
+                        }
+                    ]
+                },
+                {
+                    "value": "beaver",
+                    "name": "American beaver",
+                    "versions": [
+                        {
+                            "value": "Castor canadensis (C.can_genome_v1.0) American beaver",
+                            "name": "Castor canadensis (C.can_genome_v1.0) American beaver"
+                        }
+                    ]
+                },
+                {
+                    "value": "bison",
+                    "name": "American bison",
+                    "versions": [
+                        {
+                            "value": "Bison bison bison (Bison_UMD1.0) American bison",
+                            "name": "Bison bison bison (Bison_UMD1.0) American bison"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "value": "plants",
+            "name": "Plants",
+            "orgranismtype": [
+                {
+                    "value": "pepper",
+                    "name": "Pepper",
+                    "versions": [
+                        {
+                            "value": "CM334",
+                            "name": "CM334"
+                        },
+                        {
+                            "value": "Capsicum annuum (UCD10Xv1.1)",
+                            "name": "Capsicum annuum (UCD10Xv1.1)"
+                        },
+                        {
+                            "value": "Dempsey",
+                            "name": "Dempsey"
+                        }
+                    ]
+                },
+                {
+                    "value": "thale",
+                    "name": "Thale cress",
+                    "versions": [
+                        {
+                            "value": "Arabidopsis thaliana (TAIR10.1)-Thale cress",
+                            "name": "Arabidopsis thaliana (TAIR10.1)-Thale cress"
+                        }
+                    ]
+                },
+                {
+                    "value": "umbellata",
+                    "name": "Vigna umbellata",
+                    "versions": [
+                        {
+                            "value": "Vigna umbellata (ASM1883591v1) rice bean",
+                            "name": "Vigna umbellata (ASM1883591v1) rice bean"
+                        }
+                    ]
+                },
+                {
+                    "value": "tomato",
+                    "name": "Tomato",
+                    "versions": [
+                        {
+                            "value": "Solanum lycopersicum (SL3.1) - Tomato",
+                            "name": "Solanum lycopersicum (SL3.1) - Tomato"
+                        },
+                        {
+                            "value": "Pseudomonas syringae pv. tomato str. DC3000 (ASM780v1)",
+                            "name": "Pseudomonas syringae pv. tomato str. DC3000 (ASM780v1)"
+                        },
+                        {
+                            "value": "Solanum pimpinellifolium (SDAU_Spim_LA1589_1.0) - currant tomato",
+                            "name": "Solanum pimpinellifolium (SDAU_Spim_LA1589_1.0) - currant tomato"
+                        }
+                    ]
+                },
+                {
+                    "value": "maize",
+                    "name": "Maize",
+                    "versions": [
+                        {
+                            "value": "Zea mays (Zm-B73-REFERENCE-NAM-5.0)-maize",
+                            "name": "Zea mays (Zm-B73-REFERENCE-NAM-5.0)-maize"
+                        }
+                    ]
+                },
+                {
+                    "value": "chlamydomonas",
+                    "name": "Chlamydomonas reinhardtii",
+                    "versions": [
+                        {
+                            "value": "Chlamydomonas_reinhardtii_v5.5",
+                            "name": "Chlamydomonas_reinhardtii_v5.5"
+                        }
+                    ]
+                },
+                {
+                    "value": "potato",
+                    "name": "Potato",
+                    "versions": [
+                        {
+                            "value": "Solanum tuberosum (SolTub_3.0) - Potato",
+                            "name": "Solanum tuberosum (SolTub_3.0) - Potato"
+                        },
+                        {
+                            "value": "Solanum chacoense (chc0917) Chaco potato",
+                            "name": "Solanum chacoense (chc0917) Chaco potato"
+                        },
+                        {
+                            "value": "Solanum commersonii (CGN18024_1v5_2 ) Commerson's wild potato", "name": "Solanum commersonii (CGN18024_1v5_2 ) Commerson's wild potato"
+                        }
+                    ]
+                },
+                {
+                    "value": "soybean",
+                    "name": "Soybean",
+                    "versions": [
+                        {
+                            "value": "Glycine max(v4.0) - Soybean",
+                            "name": "Glycine max(v4.0) - Soybean"
+                        }
+                    ]
+                },
+                {
+                    "value": "wine",
+                    "name": "Wine grape",
+                    "versions": [
+                        {
+                            "value": "Vitis vinifera (ASM3070453v1) - wine grape",
+                            "name": "Vitis vinifera (ASM3070453v1) - wine grape"
+                        }
+                    ]
+                },
+                {
+                    "value": "cassava",
+                    "name": "Cassava",
+                    "versions": [
+                        {
+                            "value": "Manihot esculenta (M.esculenta_v8)-cassava",
+                            "name": "Manihot esculenta (M.esculenta_v8)-cassava"
+                        },
+                        {
+                            "value": "Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia",
+                            "name": "Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia"
+                        }
+                    ]
+                },
+                {
+                    "value": "apple",
+                    "name": "Apple",
+                    "versions": [
+                        {
+                            "value": "Malus domestica (ASM211411v1)-apple",
+                            "name": "Malus domestica (ASM211411v1)-apple"
+                        }
+                    ]
+                },
+                {
+                    "value": "barley",
+                    "name": "Barley",
+                    "versions": [
+                        {
+                            "value": "Hordeum vulgare subsp. vulgare (MorexV3_pseudomolecules)-domesticated barley",
+                            "name": "Hordeum vulgare subsp. vulgare (MorexV3_pseudomolecules)-domesticated barley"
+                        }
+                    ]
+                },
+                {
+                    "value": "nicotiana",
+                    "name": "Nicotiana benthamiana",
+                    "versions": [
+                        {
+                            "value": "Nicotiana benthamiana(ASM3437652v1)",
+                            "name": "Nicotiana benthamiana(ASM3437652v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "strawberry",
+                    "name": "Wild strawberry",
+                    "versions": [
+                        {
+                            "value": "Fragaria vesca (FraVesHawaii_1.0)-Wild strawberry",
+                            "name": "Fragaria vesca (FraVesHawaii_1.0)-Wild strawberry"
+                        }
+                    ]
+                },
+                {
+                    "value": "orange",
+                    "name": "Orange",
+                    "versions": [
+                        {
+                            "value": "Citrus sinensis (DVS_A1.0) - Sweet orange",
+                            "name": "Citrus sinensis (DVS_A1.0) - Sweet orange"
+                        },
+                        {
+                            "value": "Citrus trifoliata (ASM1835013v1) hardy orange",
+                            "name": "Citrus trifoliata (ASM1835013v1) hardy orange"
+                        }
+                    ]
+                },
+                {
+                    "value": "cacao",
+                    "name": "Cacao",
+                    "versions": [
+                        {
+                            "value": "Theobroma cacao (Criollo_cocoa_genome_V2) - Cacao",
+                            "name": "Theobroma cacao (Criollo_cocoa_genome_V2) - Cacao"
+                        }
+                    ]
+                },
+                {
+                    "value": "banana",
+                    "name": "Banana",
+                    "versions": [
+                        {
+                            "value": "Musa acuminata AAA Group (Cavendish_Baxijiao_AAA) - Dessert banana",
+                            "name": "Musa acuminata AAA Group (Cavendish_Baxijiao_AAA) - Dessert banana"
+                        }
+                    ]
+                },
+                {
+                    "value": "peanut",
+                    "name": "Peanut",
+                    "versions": [
+                        {
+                            "value": "Arachis ipaensis (Araip1.1) - Wild peanut",
+                            "name": "Arachis ipaensis (Araip1.1) - Wild peanut"
+                        },
+                        {
+                            "value": "Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut",
+                            "name": "Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut"
+                        },
+                        {
+                            "value": "Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut",
+                            "name": "Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut"
+                        },
+                        {
+                            "value": "Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut",
+                            "name": "Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut"
+                        }
+                    ]
+                },
+                {
+                    "value": "kiwifruit",
+                    "name": "Kiwifruit",
+                    "versions": [
+                        {
+                            "value": "Actinidia chinensis (ASM966300v1) - Golden kiwifruit",
+                            "name": "Actinidia chinensis (ASM966300v1) - Golden kiwifruit"
+                        }
+                    ]
+                },
+                {
+                    "value": "rape",
+                    "name": "Rape",
+                    "versions": [
+                        {
+                            "value": "Brassica napus (Da-Ae)-Rape",
+                            "name": "Brassica napus (Da-Ae)-Rape"
+                        }
+                    ]
+                },
+                {
+                    "value": "sorghum",
+                    "name": "Sorghum",
+                    "versions": [
+                        {
+                            "value": "Sorghum bicolor (Sorghum_bicolor_NCBIv3) - Sorghum",
+                            "name": "Sorghum bicolor (Sorghum_bicolor_NCBIv3) - Sorghum"
+                        }
+                    ]
+                },
+                {
+                    "value": "switchgrass",
+                    "name": "Switchgrass",
+                    "versions": [
+                        {
+                            "value": "Panicum virgatum (P.virgatum_v5) - Switchgrass",
+                            "name": "Panicum virgatum (P.virgatum_v5) - Switchgrass"
+                        }
+                    ]
+                },
+                {
+                    "value": "cannabis",
+                    "name": "Cannabis sativa",
+                    "versions": [
+                        {
+                            "value": "Cannabis sativa (Cannabis sativa)",
+                            "name": "Cannabis sativa (Cannabis sativa)"
+                        },
+                        {
+                            "value": "Cannabis sativa female",
+                            "name": "Cannabis sativa female"
+                        }
+                    ]
+                },
+                {
+                    "value": "barrel",
+                    "name": "Barrel medic",
+                    "versions": [
+                        {
+                            "value": "Medicago truncatula (MtrunA17r5.0-ANR)-Barrel medic",
+                            "name": "Medicago truncatula (MtrunA17r5.0-ANR)-Barrel medic"
+                        }
+                    ]
+                },
+                {
+                    "value": "turcica",
+                    "name": "Exserohilum turcica",
+                    "versions": [
+                        {
+                            "value": "Exserohilum turcica Et28A (v1.0)",
+                            "name": "Exserohilum turcica Et28A (v1.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "carrot",
+                    "name": "Carrot",
+                    "versions": [
+                        {
+                            "value": "Daucus carota subsp. sativus (DH1 v3.0)- Carrot",
+                            "name": "Daucus carota subsp. sativus (DH1 v3.0)- Carrot"
+                        }
+                    ]
+                },
+                {
+                    "value": "etunia",
+                    "name": "Etunia axillaris",
+                    "versions": [
+                        {
+                            "value": "etunia axillaris",
+                            "name": "etunia axillaris"
+                        }
+                    ]
+                },
+                {
+                    "value": "vulgaris",
+                    "name": "Phaseolus vulgaris",
+                    "versions": [
+                        {
+                            "value": "Phaseolus vulgaris (PhaVulg1_0)",
+                            "name": "Phaseolus vulgaris (PhaVulg1_0)"
+                        },
+                        {
+                            "value": "Phaseolus vulgaris (P. vulgaris v2.0 ) - string bean",
+                            "name": "Phaseolus vulgaris (P. vulgaris v2.0 ) - string bean"
+                        }
+                    ]
+                },
+                {
+                    "value": "tef",
+                    "name": "Eragrostis tef",
+                    "versions": [
+                        {
+                            "value": "Eragrostis tef (tef)",
+                            "name": "Eragrostis tef (tef)"
+                        }
+                    ]
+                },
+                {
+                    "value": "haematobium",
+                    "name": "Schistosoma haematobium",
+                    "versions": [
+                        {
+                            "value": "Schistosoma haematobium (UoM_Shae.V3)",
+                            "name": "Schistosoma haematobium (UoM_Shae.V3)"
+                        }
+                    ]
+                },
+                {
+                    "value": "grandis",
+                    "name": "Eucalyptus",
+                    "versions": [
+                        {
+                            "value": "Eucalyptus camaldulensis (ASM1991518v1) Murray red gum",
+                            "name": "Eucalyptus camaldulensis (ASM1991518v1) Murray red gum"
+                        },
+                        {
+                            "value": "Eucalyptus grandis (rose gum)",
+                            "name": "Eucalyptus grandis (rose gum)"
+                        }
+                    ]
+                },
+                {
+                    "value": "cajan",
+                    "name": "Cajanus cajan",
+                    "versions": [
+                        {
+                            "value": "Cajanus cajan (C.cajan_V1.1) - pigeon pea",
+                            "name": "Cajanus cajan (C.cajan_V1.1) - pigeon pea"
+                        }
+                    ]
+                },
+                {
+                    "value": "cylindrus",
+                    "name": "Fragilariopsis cylindrus CCMP1102",
+                    "versions": [
+                        {
+                            "value": "Fragilariopsis cylindrus CCMP1102 (Fc_falcon_quiver_polished)",
+                            "name": "Fragilariopsis cylindrus CCMP1102 (Fc_falcon_quiver_polished)"
+                        }
+                    ]
+                },
+                {
+                    "value": "mustard",
+                    "name": "Field mustard",
+                    "versions": [
+                        {
+                            "value": "Brassica rapa (CAAS_Brap_v3.01) - field mustard",
+                            "name": "Brassica rapa (CAAS_Brap_v3.01) - field mustard"
+                        }
+                    ]
+                },
+                {
+                    "value": "cotton",
+                    "name": "Cotton",
+                    "versions": [
+                        {
+                            "value": "Gossypium hirsutum (Gossypium_hirsutum_v2.1) - cotton",
+                            "name": "Gossypium hirsutum (Gossypium_hirsutum_v2.1) - cotton"
+                        },
+                        {
+                            "value": "Populus alba x Populus glandulosa (84K_subgenomeG)",
+                            "name": "Populus alba x Populus glandulosa (84K_subgenomeG)"
+                        },
+                        {
+                            "value": "Populus trichocarpa (P.trichocarpa_v4.1) - black cottonwood",
+                            "name": "Populus trichocarpa (P.trichocarpa_v4.1) - black cottonwood"
+                        }
+                    ]
+                },
+                {
+                    "value": "oleracea",
+                    "name": "Brassica oleracea",
+                    "versions": [
+                        {
+                            "value": "Brassica oleracea var. oleracea (BOL)",
+                            "name": "Brassica oleracea var. oleracea (BOL)"
+                        }
+                    ]
+                },
+                {
+                    "value": "tabacum",
+                    "name": "tobacco",
+                    "versions": [
+                        {
+                            "value": "Nicotiana tabacum (Ntab-TN90) - common tobacco",
+                            "name": "Nicotiana tabacum (Ntab-TN90) - common tobacco"
+                        },
+                        {
+                            "value": "Nicotiana glauca (ASM2677062v1) - tree tobacco",
+                            "name": "Nicotiana glauca (ASM2677062v1) - tree tobacco"
+                        },
+                        {
+                            "value": "Nicotiana attenuata (NIATTr2)",
+                            "name": "Nicotiana attenuata (NIATTr2)"
+                        },
+                        {
+                            "value": "Nicotiana benthamiana(ASM3437652v1)",
+                            "name": "Nicotiana benthamiana(ASM3437652v1)"
+                        },
+                        {
+                            "value": "Nicotiana obtusifolia (NIOBT.version3)",
+                            "name": "Nicotiana obtusifolia (NIOBT.version3)"
+                        }
+                    ]
+                },
+                {
+                    "value": "canephora",
+                    "name": "Coffea canephora",
+                    "versions": [
+                        {
+                            "value": "Coffea canephora (robusta coffee)",
+                            "name": "Coffea canephora (robusta coffee)"
+                        }
+                    ]
+                },
+                {
+                    "value": "citrus",
+                    "name": "Citrus",
+                    "versions": [
+                        {
+                            "value": "Citrus trifoliata (ASM1835013v1) hardy orange",
+                            "name": "Citrus trifoliata (ASM1835013v1) hardy orange"
+                        },
+                        {
+                            "value": "Citrus sinensis (DVS_A1.0) - Sweet orange",
+                            "name": "Citrus sinensis (DVS_A1.0) - Sweet orange"
+                        },
+                        {
+                            "value": "Citrus x clementina (Citrus_clementina_v1.0) - clementine",
+                            "name": "Citrus x clementina (Citrus_clementina_v1.0) - clementine"
+                        }
+                    ]
+                },
+                {
+                    "value": "sbeet",
+                    "name": "Sugar beet",
+                    "versions": [
+                        {
+                            "value": "Beta vulgaris subsp. vulgaris (EL10.2) - sugar beet",
+                            "name": "Beta vulgaris subsp. vulgaris (EL10.2) - sugar beet"
+                        }
+                    ]
+                },
+                {
+                    "value": "airplant",
+                    "name": "Kalanchoe fedtschenkoi",
+                    "versions": [
+                        {
+                            "value": "Kalanchoe fedtschenkoi (K_fedtschenkoi_M2_v1) - South American air plant",
+                            "name": "Kalanchoe fedtschenkoi (K_fedtschenkoi_M2_v1) - South American air plant"
+                        }
+                    ]
+                },
+                {
+                    "value": "sesame",
+                    "name": "Sesamum indicum",
+                    "versions": [
+                        {
+                            "value": "Sesamum indicum (S_indicum_v1.0)-sesame",
+                            "name": "Sesamum indicum (S_indicum_v1.0)-sesame"
+                        }
+                    ]
+                },
+                {
+                    "value": "cucumber",
+                    "name": "Cucumis sativus",
+                    "versions": [
+                        {
+                            "value": "Cucumis sativus (Cucumber_9930_V3) - cucumber",
+                            "name": "Cucumis sativus (Cucumber_9930_V3) - cucumber"
+                        }
+                    ]
+                },
+                {
+                    "value": "watermelon",
+                    "name": "Citrullus lanatus",
+                    "versions": [
+                        {
+                            "value": "Citrullus lanatus (watermelon)",
+                            "name": "Citrullus lanatus (watermelon)"
+                        }
+                    ]
+                },
+                {
+                    "value": "muskmelon",
+                    "name": "Cucumis melo",
+                    "versions": [
+                        {
+                            "value": "Cucumis melo (USDA_Cmelo_AY_1.0) - muskmelon",
+                            "name": "Cucumis melo (USDA_Cmelo_AY_1.0) - muskmelon"
+                        }
+                    ]
+                },
+                {
+                    "value": "easpen",
+                    "name": "Populus tremula",
+                    "versions": [
+                        {
+                            "value": "Populus tremula (ddPopTrem1.hap1.1) - European aspen",
+                            "name": "Populus tremula (ddPopTrem1.hap1.1) - European aspen"
+                        }
+                    ]
+                },
+                {
+                    "value": "patens",
+                    "name": "Physcomitrium patens",
+                    "versions": [
+                        {
+                            "value": "Physcomitrium patens (Phypa V3)",
+                            "name": "Physcomitrium patens (Phypa V3)"
+                        }
+                    ]
+                },
+                {
+                    "value": "distachyon",
+                    "name": "Brachypodium distachyon",
+                    "versions": [
+                        {
+                            "value": "Brachypodium distachyon (v3.0) - stiff brome",
+                            "name": "Brachypodium distachyon (v3.0) - stiff brome"
+                        }
+                    ]
+                },
+                {
+                    "value": "aestivum",
+                    "name": "Triticum aestivum - bread wheat",
+                    "versions": [
+                        {
+                            "value": "Triticum aestivum (IWGSC CS RefSeq v2.1)-bread wheat",
+                            "name": "Triticum aestivum (IWGSC CS RefSeq v2.1)-bread wheat"
+                        }
+                    ]
+                },
+                {
+                    "value": "sativa",
+                    "name": "Camelina sativa",
+                    "versions": [
+                        {
+                            "value": "Camelina sativa (Cs)-false flax",
+                            "name": "Camelina sativa (Cs)-false flax"
+                        }
+                    ]
+                },
+                {
+                    "value": "lettuce",
+                    "name": "Lactuca sativa - garden lettuce",
+                    "versions": [
+                        {
+                            "value": "Lactuca sativa (Lsat_Salinas_v11) - garden lettuce",
+                            "name": "Lactuca sativa (Lsat_Salinas_v11) - garden lettuce"
+                        }
+                    ]
+                },
+                {
+                    "value": "helianthusannuus",
+                    "name": "Helianthus annuus - common sunflower",
+                    "versions": [
+                        {
+                            "value": "Helianthus annuus (HanXRQr2.0-SUNRISE) - common sunflower",
+                            "name": "Helianthus annuus (HanXRQr2.0-SUNRISE) - common sunflower"
+                        }
+                    ]
+                },
+                {
+                    "value": "oilpalm",
+                    "name": "Elaeis guineensis - African oil palm",
+                    "versions": [
+                        {
+                            "value": "Elaeis guineensis (EG5) - African oil palm",
+                            "name": "Elaeis guineensis (EG5) - African oil palm"
+                        }
+                    ]
+                },
+                {
+                    "value": "duckweed",
+                    "name": "Spirodela polyrhiza - great duckweed",
+                    "versions": [
+                        {
+                            "value": "Spirodela polyrhiza (Salk_sp9512.v2) - great duckweed",
+                            "name": "Spirodela polyrhiza (Salk_sp9512.v2) - great duckweed"
+                        }
+                    ]
+                },
+                {
+                    "value": "viridis",
+                    "name": "Setaria viridis",
+                    "versions": [
+                        {
+                            "value": "Setaria viridis (Setaria_viridis_v2.0)",
+                            "name": "Setaria viridis (Setaria_viridis_v2.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "japonicus",
+                    "name": "Lotus japonicus",
+                    "versions": [
+                        {
+                            "value": "Lotus japonicus (LjGifu_v1.2)",
+                            "name": "Lotus japonicus (LjGifu_v1.2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "virginianum",
+                    "name": "Solanum virginianum",
+                    "versions": [
+                        {
+                            "value": "Solanum virginianum (SME_r2.5.1) - eggplant",
+                            "name": "Solanum virginianum (SME_r2.5.1) - eggplant"
+                        }
+                    ]
+                },
+                {
+                    "value": "communis",
+                    "name": "Ricinus communis",
+                    "versions": [
+                        {
+                            "value": "Ricinus communis (castor bean)",
+                            "name": "Ricinus communis (castor bean)"
+                        }
+                    ]
+                },
+                {
+                    "value": "deltoides",
+                    "name": "Populus deltoides",
+                    "versions": [
+                        {
+                            "value": "Populus deltoides ",
+                            "name": "Populus deltoides "
+                        }
+                    ]
+                },
+                {
+                    "value": "marchantiopsida",
+                    "name": "Marchantiopsida",
+                    "versions": [
+                        {
+                            "value": "Marchantia paleacea (ASM1418076v2)",
+                            "name": "Marchantia paleacea (ASM1418076v2)"
+                        },
+                        {
+                            "value": "Marchantia polymorpha subsp. ruderalis (MpTak2_v7.1)",
+                            "name": "Marchantia polymorpha subsp. ruderalis (MpTak2_v7.1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "arietinum",
+                    "name": "Cicer arietinum ",
+                    "versions": [
+                        {
+                            "value": "Cicer arietinum (ASM33114v1) - chickpea",
+                            "name": "Cicer arietinum (ASM33114v1) - chickpea"
+                        }
+                    ]
+                },
+                {
+                    "value": "lupulus",
+                    "name": "Humulus lupulus",
+                    "versions": [
+                        {
+                            "value": "Humulus lupulus (drHumLupu1.1)-European hop",
+                            "name": "Humulus lupulus (drHumLupu1.1)-European hop"
+                        }
+                    ]
+                },
+                {
+                    "value": "jinsao",
+                    "name": "Panax ginseng - jinsão",
+                    "versions": [
+                        {
+                            "value": "Panax ginseng (ASM2020560v1) - jinsão",
+                            "name": "Panax ginseng (ASM2020560v1) - jinsão"
+                        }
+                    ]
+                },
+                {
+                    "value": "guttata",
+                    "name": "Erythranthe guttata",
+                    "versions": [
+                        {
+                            "value": "Erythranthe guttata (Mimgu1_0) - spotted monkey flower",
+                            "name": "Erythranthe guttata (Mimgu1_0) - spotted monkey flower"
+                        }
+                    ]
+                },
+                {
+                    "value": "horsemint",
+                    "name": "Mentha longifolia - horsemint",
+                    "versions": [
+                        {
+                            "value": "Mentha longifolia (Mlong_CMEN585_v3) - horsemint",
+                            "name": "Mentha longifolia (Mlong_CMEN585_v3) - horsemint"
+                        }
+                    ]
+                },
+                {
+                    "value": "arvense",
+                    "name": "Thlaspi arvense",
+                    "versions": [
+                        {
+                            "value": "Thlaspi arvense (T_arvense_v2)",
+                            "name": "Thlaspi arvense (T_arvense_v2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "radiata",
+                    "name": "Bean",
+                    "versions": [
+                        {
+                            "value": "Vigna radiata var. radiata (Vradiata_ver6) - mung bean",
+                            "name": "Vigna radiata var. radiata (Vradiata_ver6) - mung bean"
+                        },
+                        {
+                            "value": "Vigna unguiculata (ASM411807v2 ) - cowpea",
+                            "name": "Vigna unguiculata (ASM411807v2 ) - cowpea"
+                        },
+                        {
+                            "value": "Vicia faba (Hedin2 genome v1) fava bean",
+                            "name": "Vicia faba (Hedin2 genome v1) fava bean"
+                        },
+                        {
+                            "value": "Vigna umbellata (ASM1883591v1) rice bean",
+                            "name": "Vigna umbellata (ASM1883591v1) rice bean"
+                        }
+                    ]
+                },
+                {
+                    "value": "equestris",
+                    "name": "Phalaenopsis equestris",
+                    "versions": [
+                        {
+                            "value": "Phalaenopsis equestris (ASM126359v1)",
+                            "name": "Phalaenopsis equestris (ASM126359v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "catenatum",
+                    "name": "Dendrobium catenatum",
+                    "versions": [
+                        {
+                            "value": "Dendrobium catenatum (ASM160598v2)",
+                            "name": "Dendrobium catenatum (ASM160598v2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "avium",
+                    "name": "Prunus avium",
+                    "versions": [
+                        {
+                            "value": "Prunus avium (PAV_r1.0)-sweet cherry",
+                            "name": "Prunus avium (PAV_r1.0)-sweet cherry"
+                        }
+                    ]
+                },
+                {
+                    "value": "spontaneum",
+                    "name": "Saccharum spontaneum - fodder cane",
+                    "versions": [
+                        {
+                            "value": "Saccharum spontaneum (ASM2245720v1)-fodder cane",
+                            "name": "Saccharum spontaneum (ASM2245720v1)-fodder cane"
+                        }
+                    ]
+                },
+                {
+                    "value": "persica",
+                    "name": "Prunus persica  - peach",
+                    "versions": [
+                        {
+                            "value": "Prunus persica (Prunus_persica_NCBIv2) - peach",
+                            "name": "Prunus persica (Prunus_persica_NCBIv2) - peach"
+                        }
+                    ]
+                },
+                {
+                    "value": "juncea",
+                    "name": "Brassica juncea -brown mustard",
+                    "versions": [
+                        {
+                            "value": "Brassica juncea (ASM1870372v1)-brown mustard",
+                            "name": "Brassica juncea (ASM1870372v1)-brown mustard"
+                        }
+                    ]
+                },
+                {
+                    "value": "cucurbita",
+                    "name": "Cucurbita maxima - winter squash",
+                    "versions": [
+                        {
+                            "value": "Cucurbita maxima (Cmax_1.0) - winter squash",
+                            "name": "Cucurbita maxima (Cmax_1.0) - winter squash"
+                        }
+                    ]
+                },
+                {
+                    "value": "moschata",
+                    "name": "Cucurbita moschata - crookneck pumpkin",
+                    "versions": [
+                        {
+                            "value": "Cucurbita moschata (Cmos_1.0) - crookneck pumpkin",
+                            "name": "Cucurbita moschata (Cmos_1.0) - crookneck pumpkin"
+                        }
+                    ]
+                },
+                {
+                    "value": "pepo",
+                    "name": "Cucurbita pepo - vegetable marrow",
+                    "versions": [
+                        {
+                            "value": "Cucurbita pepo subsp. pepo (ASM280686v2) - vegetable marrow",
+                            "name": "Cucurbita pepo subsp. pepo (ASM280686v2) - vegetable marrow"
+                        }
+                    ]
+                },
+                {
+                    "value": "artannua",
+                    "name": "Artemisia annua -sweet wormwood",
+                    "versions": [
+                        {
+                            "value": "Artemisia annua (Aran) -sweet wormwood",
+                            "name": "Artemisia annua (Aran) -sweet wormwood"
+                        }
+                    ]
+                },
+                {
+                    "value": "saccharumcultivar",
+                    "name": "Saccharum hybrid cultivar R570",
+                    "versions": [
+                        {
+                            "value": "Saccharum hybrid cultivar R570 (Saccharum officinarum X spontaneum var R570 v2.1)",
+                            "name": "Saccharum hybrid cultivar R570 (Saccharum officinarum X spontaneum var R570 v2.1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "chrysanthemum",
+                    "name": "Chrysanthemum",
+                    "versions": [
+                        {
+                            "value": "Chrysanthemum makinoi",
+                            "name": "Chrysanthemum makinoi"
+                        },
+                        {
+                            "value": "Chrysanthemum lavandulifolium (ASM2254549v1)",
+                            "name": "Chrysanthemum lavandulifolium (ASM2254549v1)"
+                        },
+                        {
+                            "value": "Chrysanthemum seticuspe(CsGojo-0_v1)",
+                            "name": "Chrysanthemum seticuspe(CsGojo-0_v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "somniferum",
+                    "name": "Papaver somniferum",
+                    "versions": [
+                        {
+                            "value": "Papaver somniferum (ASM357369v1) -opium poppy",
+                            "name": "Papaver somniferum (ASM357369v1) -opium poppy"
+                        }
+                    ]
+                },
+                {
+                    "value": "mollissima",
+                    "name": "Castanea mollissima",
+                    "versions": [
+                        {
+                            "value": "Castanea mollissima (ASM1418300v1) - Chinese chestnut",
+                            "name": "Castanea mollissima (ASM1418300v1) - Chinese chestnut"
+                        }
+                    ]
+                },
+                {
+                    "value": "quinoa",
+                    "name": "Chenopodium quinoa",
+                    "versions": [
+                        {
+                            "value": "Chenopodium quinoa (ASM168347v1) - quinoa",
+                            "name": "Chenopodium quinoa (ASM168347v1) - quinoa"
+                        }
+                    ]
+                },
+                {
+                    "value": "hispida",
+                    "name": "Benincasa hispida",
+                    "versions": [
+                        {
+                            "value": "Benincasa hispida (ASM972705v1) -wax gourd",
+                            "name": "Benincasa hispida (ASM972705v1) -wax gourd"
+                        }
+                    ]
+                },
+                {
+                    "value": "ipomoea",
+                    "name": "Ipomoea nil",
+                    "versions": [
+                        {
+                            "value": "Ipomoea nil (Asagao_1.1) - Japanese morning glory",
+                            "name": "Ipomoea nil (Asagao_1.1) - Japanese morning glory"
+                        }
+                    ]
+                },
+                {
+                    "value": "chinensis",
+                    "name": "Rosa chinensis",
+                    "versions": [
+                        {
+                            "value": "Rosa chinensis (RchiOBHm-V2) - China rose",
+                            "name": "Rosa chinensis (RchiOBHm-V2) - China rose"
+                        }
+                    ]
+                },
+                {
+                    "value": "roseus",
+                    "name": "Catharanthus roseus",
+                    "versions": [
+                        {
+                            "value": "Catharanthus roseus (ASM2865129v1) - Madagascar periwinkle",
+                            "name": "Catharanthus roseus (ASM2865129v1) - Madagascar periwinkle"
+                        }
+                    ]
+                },
+                {
+                    "value": "oryzasativa",
+                    "name": "Oryza sativa",
+                    "versions": [
+                        {
+                            "value": "Oryza sativa Japonica Group (Japanese rice)",
+                            "name": "Oryza sativa Japonica Group (Japanese rice)"
+                        }
+                    ]
+                },
+                {
+                    "value": "exilis",
+                    "name": "Digitaria exilis",
+                    "versions": [
+                        {
+                            "value": "Digitaria exilis (DiExil)",
+                            "name": "Digitaria exilis (DiExil)"
+                        }
+                    ]
+                },
+                {
+                    "value": "rsativus",
+                    "name": "Raphanus sativus",
+                    "versions": [
+                        {
+                            "value": "Raphanus sativus (ASM80110v3) - radish",
+                            "name": "Raphanus sativus (ASM80110v3) - radish"
+                        }
+                    ]
+                },
+                {
+                    "value": "loniceraja",
+                    "name": "Lonicera japonica",
+                    "versions": [
+                        {
+                            "value": "Lonicera japonica (ASM2146441v1) Japanese honeysuckle",
+                            "name": "Lonicera japonica (ASM2146441v1) Japanese honeysuckle"
+                        }
+                    ]
+                },
+                {
+                    "value": "ostreococcusta",
+                    "name": "Ostreococcus tauri",
+                    "versions": [
+                        {
+                            "value": "Ostreococcus tauri (version 140606)",
+                            "name": "Ostreococcus tauri (version 140606)"
+                        }
+                    ]
+                },
+                {
+                    "value": "sinensis",
+                    "name": "Camellia sinensis",
+                    "versions": [
+                        {
+                            "value": "Camellia sinensis (AHAU_CSS_1) black tea",
+                            "name": "Camellia sinensis (AHAU_CSS_1) black tea"
+                        },
+                        {
+                            "value": "Camellia sinensis var. sinensis (AHAU_CSS_2)",
+                            "name": "Camellia sinensis var. sinensis (AHAU_CSS_2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "walnut",
+                    "name": "Walnut",
+                    "versions": [
+                        {
+                            "value": "Juglans regia (Walnut 2.0) English walnut",
+                            "name": "Juglans regia (Walnut 2.0) English walnut"
+                        },
+                        {
+                            "value": "Juglans microcarpa (ASM312384v1)",
+                            "name": "Juglans microcarpa (ASM312384v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "pineapple",
+                    "name": "Ananas comosus",
+                    "versions": [
+                        {
+                            "value": "Ananas comosus (ASM154086v1) pineapple",
+                            "name": "Ananas comosus (ASM154086v1) pineapple"
+                        }
+                    ]
+                },
+                {
+                    "value": "bretschneideri",
+                    "name": "Pyrus x bretschneideri",
+                    "versions": [
+                        {
+                            "value": "Pyrus x bretschneideri (Pyrus_bretschneideri_v1) Chinese white pear",
+                            "name": "Pyrus x bretschneideri (Pyrus_bretschneideri_v1) Chinese white pear"
+                        }
+                    ]
+                },
+                {
+                    "value": "psativum",
+                    "name": "Pisum sativum ",
+                    "versions": [
+                        {
+                            "value": "Pisum sativum (CAAS_Psat_ZW6_1.0) garden pea",
+                            "name": "Pisum sativum (CAAS_Psat_ZW6_1.0) garden pea"
+                        }
+                    ]
+                },
+                {
+                    "value": "caryophyllus",
+                    "name": "Dianthus caryophyllus",
+                    "versions": [
+                        {
+                            "value": "Dianthus caryophyllus (ASM2309106v1) clove pink",
+                            "name": "Dianthus caryophyllus (ASM2309106v1) clove pink"
+                        }
+                    ]
+                },
+                {
+                    "value": "capsella",
+                    "name": "Capsella",
+                    "versions": [
+                        {
+                            "value": "Capsella rubella (Caprub1_0)",
+                            "name": "Capsella rubella (Caprub1_0)"
+                        },
+                        {
+                            "value": "Capsella grandiflora (UAZ_Capgrnd_2)",
+                            "name": "Capsella grandiflora (UAZ_Capgrnd_2)"
+                        },
+                        {
+                            "value": "Capsella bursa-pastoris (ASM3645264v1) shepherd's purse", "name": "Capsella bursa-pastoris (ASM3645264v1) shepherd's purse"
+                        }
+                    ]
+                },
+                {
+                    "value": "corymbosum",
+                    "name": "Vaccinium corymbosum",
+                    "versions": [
+                        {
+                            "value": "Vaccinium corymbosum (ASM1450483v1) American blueberry",
+                            "name": "Vaccinium corymbosum (ASM1450483v1) American blueberry"
+                        }
+                    ]
+                },
+                {
+                    "value": "abies",
+                    "name": "Picea abies",
+                    "versions": [
+                        {
+                            "value": "Picea abies (Pabies01) Norway spruce",
+                            "name": "Picea abies (Pabies01) Norway spruce"
+                        }
+                    ]
+                },
+                {
+                    "value": "rebaudiana",
+                    "name": "Stevia rebaudiana",
+                    "versions": [
+                        {
+                            "value": "Stevia rebaudiana (ASM993640v2)",
+                            "name": "Stevia rebaudiana (ASM993640v2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "peanut",
+                    "name": "Peanut",
+                    "versions": [
+                        {
+                            "value": "Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut",
+                            "name": "Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut"
+                        },
+                        {
+                            "value": "Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut",
+                            "name": "Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut"
+                        },
+                        {
+                            "value": "Arachis ipaensis (Araip1.1) - Wild peanut",
+                            "name": "Arachis ipaensis (Araip1.1) - Wild peanut"
+                        },
+                        {
+                            "value": "Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut",
+                            "name": "Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut"
+                        }
+                    ]
+                },
+                {
+                    "value": "papaya",
+                    "name": "Carica papaya",
+                    "versions": [
+                        {
+                            "value": "Carica papaya (Papaya1.0) papaya",
+                            "name": "Carica papaya (Papaya1.0) papaya"
+                        }
+                    ]
+                },
+                {
+                    "value": "equisetifolia",
+                    "name": "Casuarina equisetifolia",
+                    "versions": [
+                        {
+                            "value": "Casuarina equisetifolia (ASM2855147v1)",
+                            "name": "Casuarina equisetifolia (ASM2855147v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "granatum",
+                    "name": "Punica granatum",
+                    "versions": [
+                        {
+                            "value": "Punica granatum (ASM765513v2) pomegranate",
+                            "name": "Punica granatum (ASM765513v2) pomegranate"
+                        }
+                    ]
+                },
+                {
+                    "value": "albus",
+                    "name": "Lupinus albus",
+                    "versions": [
+                        {
+                            "value": "Lupinus albus (CNRS_Lalb_1.0) white lupine",
+                            "name": "Lupinus albus (CNRS_Lalb_1.0) white lupine"
+                        }
+                    ]
+                },
+                {
+                    "value": "cepa",
+                    "name": "Allium cepa",
+                    "versions": [
+                        {
+                            "value": "Allium cepa (ASM3076508v1) onion",
+                            "name": "Allium cepa (ASM3076508v1) onion"
+                        }
+                    ]
+                },
+                {
+                    "value": "Morus notabilis",
+                    "name": "Morus notabilis",
+                    "versions": [
+                        {
+                            "value": "Morus notabilis (ASM41409v2)",
+                            "name": "Morus notabilis (ASM41409v2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "pulcherrima",
+                    "name": "Euphorbia pulcherrima",
+                    "versions": [
+                        {
+                            "value": "Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia",
+                            "name": "Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia"
+                        }
+                    ]
+                },
+                {
+                    "value": "macrophylla",
+                    "name": "Hydrangea macrophylla",
+                    "versions": [
+                        {
+                            "value": "Hydrangea macrophylla( Hmc_EndlessSummer_p1.0)",
+                            "name": "Hydrangea macrophylla( Hmc_EndlessSummer_p1.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "olive",
+                    "name": "Olea europaea",
+                    "versions": [
+                        {
+                            "value": "Olea europaea var. sylvestris (O_europaea_v1) wild olive",
+                            "name": "Olea europaea var. sylvestris (O_europaea_v1) wild olive"
+                        }
+                    ]
+                },
+                {
+                    "value": "coracana",
+                    "name": "Millet",
+                    "versions": [
+                        {
+                            "value": "Cenchrus americanus (pearl_millet_23DB_ONT_assembly ) bulrush millet",
+                            "name": "Cenchrus americanus (pearl_millet_23DB_ONT_assembly ) bulrush millet"
+                        },
+                        {
+                            "value": "Eleusine coracana subsp. coracana (Eleusine_coracana_v1.0 ) Indian finger millet",
+                            "name": "Eleusine coracana subsp. coracana (Eleusine_coracana_v1.0 ) Indian finger millet"
+                        }
+                    ]
+                },
+                {
+                    "value": "planifolia",
+                    "name": "Vanilla planifolia",
+                    "versions": [
+                        {
+                            "value": "Vanilla planifolia (ASM2384627v1 ) ASM2384627v1",
+                            "name": "Vanilla planifolia (ASM2384627v1 ) ASM2384627v1"
+                        }
+                    ]
+                },
+                {
+                    "value": "richardii",
+                    "name": "Ceratopteris richardii",
+                    "versions": [
+                        {
+                            "value": "Ceratopteris richardii (C.richardii_v2)",
+                            "name": "Ceratopteris richardii (C.richardii_v2)"
+                        }
+                    ]
+                },
+                {
+                    "value": "argenteum",
+                    "name": "Bryum argenteum",
+                    "versions": [
+                        {
+                            "value": "Bryum argenteum (EGI_Barg_1.0)",
+                            "name": "Bryum argenteum (EGI_Barg_1.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "catechu",
+                    "name": "Areca catechu ",
+                    "versions": [
+                        {
+                            "value": "Areca catechu (ASM2139784v1 ) areca-nut",
+                            "name": "Areca catechu (ASM2139784v1 ) areca-nut"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "value": "insects",
+            "name": "Insects",
+            "orgranismtype": [
+                {
+                    "value": "melanogaster",
+                    "name": "Drosophila",
+                    "versions": [
+                        {
+                            "value": "Drosophila melanogaster ( BDGP6.46) Fruit fly",
+                            "name": "Drosophila melanogaster ( BDGP6.46) Fruit fly"
+                        },
+                        {
+                            "value": "Drosophila melanogaster ( BDGP6.32) Fruit fly",
+                            "name": "Drosophila melanogaster ( BDGP6.32) Fruit fly"
+                        },
+                        {
+                            "value": "Drosophila melanogaster (Release 6 plus ISO1 MT) fruit fly",
+                            "name": "Drosophila melanogaster (Release 6 plus ISO1 MT) fruit fly"
+                        },
+                        {
+                            "value": "Drosophila suzukii (Dsuz_RU_1.0)",
+                            "name": "Drosophila suzukii (Dsuz_RU_1.0)"
+                        },
+                        {
+                            "value": "Drosophila simulans (Prin_Dsim_3.1)",
+                            "name": "Drosophila simulans (Prin_Dsim_3.1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "honeybee",
+                    "name": "Apis mellifera",
+                    "versions": [
+                        {
+                            "value": "Apis mellifera (Amel_HAv3.1) honey bee",
+                            "name": "Apis mellifera (Amel_HAv3.1) honey bee"
+                        }
+                    ]
+                },
+                {
+                    "value": "housefly",
+                    "name": "Musca domestica",
+                    "versions": [
+                        {
+                            "value": "Musca domestica (Musca_domestica.polishedcontigs.V.1.1) house fly",
+                            "name": "Musca domestica (Musca_domestica.polishedcontigs.V.1.1) house fly"
+                        }
+                    ]
+                },
+                {
+                    "value": "castaneum",
+                    "name": "Tribolium castaneum",
+                    "versions": [
+                        {
+                            "value": "Tribolium castaneum (icTriCast1.1) red flour beetle",
+                            "name": "Tribolium castaneum (icTriCast1.1) red flour beetle"
+                        }
+                    ]
+                },
+                {
+                    "value": "mosquito",
+                    "name": "Mosquito",
+                    "versions": [
+                        {
+                            "value": "Aedes albopictus (AalbF5) Asian tiger mosquito",
+                            "name": "Aedes albopictus (AalbF5) Asian tiger mosquito"
+                        },
+                        {
+                            "value": "Anopheles gambiae (idAnoGambNW_F1_1) African malaria mosquito",
+                            "name": "Anopheles gambiae (idAnoGambNW_F1_1) African malaria mosquito"
+                        },
+                        {
+                            "value": "Aedes aegypti (AaegL5.0) yellow fever mosquito",
+                            "name": "Aedes aegypti (AaegL5.0) yellow fever mosquito"
+                        },
+                        {
+                            "value": "Anopheles stephensi (UCI_ANSTEP_V1.0) Asian malaria mosquito",
+                            "name": "Anopheles stephensi (UCI_ANSTEP_V1.0) Asian malaria mosquito"
+                        },
+                        {
+                            "value": "Culex quinquefasciatus (VPISU_Cqui_1.0_pri_paternal) southern house mosquito",
+                            "name": "Culex quinquefasciatus (VPISU_Cqui_1.0_pri_paternal) southern house mosquito"
+                        },
+                        {
+                            "value": "Anopheles sinensis (AS2)",
+                            "name": "Anopheles sinensis (AS2)"
+                        },
+                        {
+                            "value": "Anopheles arabiensis (AaraD3)",
+                            "name": "Anopheles arabiensis (AaraD3)"
+                        }
+                    ]
+                },
+                {
+                    "value": "diamondback",
+                    "name": "Plutella xylostella",
+                    "versions": [
+                        {
+                            "value": "Plutella xylostella (ilPluXylo3.1) diamondback moth",
+                            "name": "Plutella xylostella (ilPluXylo3.1) diamondback moth"
+                        }
+                    ]
+                },
+                {
+                    "value": "bumblebee",
+                    "name": "Bombus terrestris",
+                    "versions": [
+                        {
+                            "value": "Bombus terrestris (iyBomTerr1.2) buff-tailed bumblebee",
+                            "name": "Bombus terrestris (iyBomTerr1.2) buff-tailed bumblebee"
+                        }
+                    ]
+                },
+                {
+                    "value": "worm",
+                    "name": "Worm",
+                    "versions": [
+                        {
+                            "value": "Helicoverpa armigera (ASM3070526v1) cotton bollworm",
+                            "name": "Helicoverpa armigera (ASM3070526v1) cotton bollworm"
+                        },
+                        {
+                            "value": "Bombyx mori (ASM3026992v2) domestic silkworm",
+                            "name": "Bombyx mori (ASM3026992v2) domestic silkworm"
+                        },
+                        {
+                            "value": "Diabrotica virgifera virgifera (PGI_DIABVI_V3a) western corn rootworm",
+                            "name": "Diabrotica virgifera virgifera (PGI_DIABVI_V3a) western corn rootworm"
+                        },
+                        {
+                            "value": "Spodoptera frugiperda (AGI-APGP_CSIRO_Sfru_2.0) fall armyworm",
+                            "name": "Spodoptera frugiperda (AGI-APGP_CSIRO_Sfru_2.0) fall armyworm"
+                        }
+                    ]
+                },
+                {
+                    "value": "psyllid",
+                    "name": "Diaphorina citri Asian citrus psyllid",
+                    "versions": [
+                        {
+                            "value": "Diaphorina citri (Diaci psyllid genome assembly version 1.1) Asian citrus psyllid",
+                            "name": "Diaphorina citri (Diaci psyllid genome assembly version 1.1) Asian citrus psyllid"
+                        }
+                    ]
+                },
+                {
+                    "value": "butterfly",
+                    "name": "Danaus plexippus - monarch butterfly",
+                    "versions": [
+                        {
+                            "value": "Danaus plexippus (MEX_DaPlex) monarch butterfly",
+                            "name": "Danaus plexippus (MEX_DaPlex) monarch butterfly"
+                        }
+                    ]
+                },
+                {
+                    "value": "demophoon",
+                    "name": "Heliconius erato demophoon",
+                    "versions": [
+                        {
+                            "value": "Heliconius erato demophoon (SRR8883904)",
+                            "name": "Heliconius erato demophoon (SRR8883904)"
+                        }
+                    ]
+                },
+                {
+                    "value": "buckeye",
+                    "name": "Junonia coenia buckeye",
+                    "versions": [
+                        {
+                            "value": "Junonia coenia (SRR10765679) buckeye",
+                            "name": "Junonia coenia (SRR10765679) buckeye"
+                        }
+                    ]
+                },
+                {
+                    "value": "ant",
+                    "name": "Ant",
+                    "versions": [
+                        {
+                            "value": "Solenopsis invicta (UNIL_Sinv_3.0) red fire ant",
+                            "name": "Solenopsis invicta (UNIL_Sinv_3.0) red fire ant"
+                        },
+                        {
+                            "value": "Camponotus floridanus (Cflo_v7.5) Florida carpenter ant",
+                            "name": "Camponotus floridanus (Cflo_v7.5) Florida carpenter ant"
+                        },
+                        {
+                            "value": "Harpegnathos saltator (Hsal_v8.6) Jerdon's jumping ant", "name": "Harpegnathos saltator (Hsal_v8.6) Jerdon's jumping ant"
+                        }
+                    ]
+                },
+                {
+                    "value": "axyridis",
+                    "name": "Harmonia axyridis",
+                    "versions": [
+                        {
+                            "value": "Harmonia axyridis (icHarAxyr1.1)",
+                            "name": "Harmonia axyridis (icHarAxyr1.1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "cabbage",
+                    "name": "Pieris rapae cabbage white",
+                    "versions": [
+                        {
+                            "value": "Pieris rapae (ilPieRapa1.1) cabbage white",
+                            "name": "Pieris rapae (ilPieRapa1.1) cabbage white"
+                        }
+                    ]
+                },
+                {
+                    "value": "bug",
+                    "name": "Cimex lectularius bed bug",
+                    "versions": [
+                        {
+                            "value": "Cimex lectularius (Clec_2.1) bed bug",
+                            "name": "Cimex lectularius (Clec_2.1) bed bug"
+                        }
+                    ]
+                },
+                {
+                    "value": "hookeri",
+                    "name": "Clitarchus hookeri - smooth stick-insect", "versions": [
+                        {
+                            "value": "Clitarchus hookeri (ASM4018264v1) smooth stick-insect",
+                            "name": "Clitarchus hookeri (ASM4018264v1) smooth stick-insect"
+                        }
+                    ]
+                },
+                {
+                    "value": "tabaci",
+                    "name": "Bemisia tabaci - sweet potato whitefly",
+                    "versions": [
+                        {
+                            "value": "Bemisia tabaci (ASM185493v1) sweet potato whitefly",
+                            "name": "Bemisia tabaci (ASM185493v1) sweet potato whitefly"
+                        }
+                    ]
+                },
+                {
+                    "value": "niger",
+                    "name": "Lasius niger",
+                    "versions": [
+                        {
+                            "value": "Lasius niger (ASM104565v1)",
+                            "name": "Lasius niger (ASM104565v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "brasiliensis",
+                    "name": "Nippostrongylus brasiliensis",
+                    "versions": [
+                        {
+                            "value": "Nippostrongylus brasiliensis (ASM3055315v1)",
+                            "name": "Nippostrongylus brasiliensis (ASM3055315v1)"
+                        }
+                    ]
+                },
+                {
+                    "value": "furnacalis",
+                    "name": "Ostrinia furnacalis - Asian corn borer",
+                    "versions": [
+                        {
+                            "value": "Ostrinia furnacalis (ASM419383v2) Asian corn borer",
+                            "name": "Ostrinia furnacalis (ASM419383v2) Asian corn borer"
+                        }
+                    ]
+                },
+                {
+                    "value": "longisetosus",
+                    "name": "Archegozetes longisetosus",
+                    "versions": [
+                        {
+                            "value": "Archegozetes longisetosus (Caltech_Along_2.0)",
+                            "name": "Archegozetes longisetosus (Caltech_Along_2.0)"
+                        }
+                    ]
+                },
+                {
+                    "value": "bug",
+                    "name": "Oncopeltus fasciatus - milkweed bug",
+                    "versions": [
+                        {
+                            "value": "Oncopeltus fasciatus (Ofas_2.0) milkweed bug",
+                            "name": "Oncopeltus fasciatus (Ofas_2.0) milkweed bug"
+                        }
+                    ]
+                },
+                {
+                    "value": "septempunctata",
+                    "name": "Coccinella septempunctata - seven-spotted ladybird",
+                    "versions": [
+                        {
+                            "value": "Coccinella septempunctata ( icCocSept1.1) seven-spotted ladybird",
+                            "name": "Coccinella septempunctata ( icCocSept1.1) seven-spotted ladybird"
+                        }
+                    ]
+                },
+                {
+                    "value": "persicae",
+                    "name": "Myzus persicae - green peach aphid",
+                    "versions": [
+                        {
+                            "value": "Myzus persicae (MPER_G0061.0) green peach aphid",
+                            "name": "Myzus persicae (MPER_G0061.0) green peach aphid"
+                        }
+                    ]
+                },
+                {
+                    "value": "illucens",
+                    "name": "Hermetia illucens black soldier fly",
+                    "versions": [
+                        {
+                            "value": "Hermetia illucens (iHerIll2.2.curated.20191125 ) black soldier fly",
+                            "name": "Hermetia illucens (iHerIll2.2.curated.20191125 ) black soldier fly"
+                        }
+                    ]
+                },
+                {
+                    "value": "punctiferalis",
+                    "name": "Conogethes punctiferalis -  durian fruit borer",
+                    "versions": [
+                        {
+                            "value": "Conogethes punctiferalis (ASM3116337v1) durian fruit borer",
+                            "name": "Conogethes punctiferalis (ASM3116337v1) durian fruit borer"
+                        }
+                    ]
+                },
+                {
+                    "value": "gregaria",
+                    "name": "Schistocerca gregaria - desert locust",
+                    "versions": [
+                        {
+                            "value": "Schistocerca gregaria (iqSchGreg1.2) desert locust",
+                            "name": "Schistocerca gregaria (iqSchGreg1.2) desert locust"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "value": "others",
+            "name": "Others",
+            "orgranismtype": [
+                {
+                    "value": "others",
+                    "name": "Others",
+                    "versions": [
+                        {
+                            "value": "Escherichia coli K-12 (GCA_004919995)",
+                            "name": "Escherichia coli K-12 (GCA_004919995)"
+                        },
+                        {
+                            "value": "Saccharomycetales (GCA_000027005.1) Komagataella pastoris",
+                            "name": "Saccharomycetales (GCA_000027005.1) Komagataella pastoris"
+                        },
+                        {
+                            "value": "Saccharomycetales (ASM170810v1) Komagataella pastoris",
+                            "name": "Saccharomycetales (ASM170810v1) Komagataella pastoris"
+                        },
+                        {
+                            "value": "Leishmania major (ASM272v2)",
+                            "name": "Leishmania major (ASM272v2)"
+                        },
+                        {
+                            "value": "Paracoccus denitrificans PD1222",
+                            "name": "Paracoccus denitrificans PD1222"
+                        },
+                        {
+                            "value": "Metarhizium anisopliae BRIP 53293 (ASM42696v1)",
+                            "name": "Metarhizium anisopliae BRIP 53293 (ASM42696v1)"
+                        },
+                        {
+                            "value": "Metarhizium anisopliae ARSEF 549 (MAN_1.0)",
+                            "name": "Metarhizium anisopliae ARSEF 549 (MAN_1.0)"
+                        },
+                        {
+                            "value": "Metarhizium anisopliae BRIP 53284 (ASM42698v1)",
+                            "name": "Metarhizium anisopliae BRIP 53284 (ASM42698v1)"
+                        },
+                        {
+                            "value": "Metarhizium anisopliae str. E6 (Metarhizium_anisopliae)",
+                            "name": "Metarhizium anisopliae str. E6 (Metarhizium_anisopliae)"
+                        },
+                        {
+                            "value": "Rhodococcus jostii RHA1 (GCA_000014565)",
+                            "name": "Rhodococcus jostii RHA1 (GCA_000014565)"
+                        },
+                        {
+                            "value": "Klebsiella pneumoniae subsp. pneumoniae MGH 78578 (GCA_000016305)",
+                            "name": "Klebsiella pneumoniae subsp. pneumoniae MGH 78578 (GCA_000016305)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum 3D7",
+                            "name": "Plasmodium falciparum 3D7"
+                        },
+                        {
+                            "value": "Plasmodium falciparum 7G8 (GCA_000150435.3)",
+                            "name": "Plasmodium falciparum 7G8 (GCA_000150435.3)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum CAMP/Malaysia (GCA_000521115.1)",
+                            "name": "Plasmodium falciparum CAMP/Malaysia (GCA_000521115.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum Dd2 (GCA_000149795.1)",
+                            "name": "Plasmodium falciparum Dd2 (GCA_000149795.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum FCH/4 (GCA_000521155.1)",
+                            "name": "Plasmodium falciparum FCH/4 (GCA_000521155.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum HB3 (GCA_000149665.2)",
+                            "name": "Plasmodium falciparum HB3 (GCA_000149665.2)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum IGH-CR14 (GCA_000186055.2)",
+                            "name": "Plasmodium falciparum IGH-CR14 (GCA_000186055.2)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum MaliPS096_E11 (GCA_000521035.1)",
+                            "name": "Plasmodium falciparum MaliPS096_E11 (GCA_000521035.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum NF135/5.C10 (GCA_000521075.1)",
+                            "name": "Plasmodium falciparum NF135/5.C10 (GCA_000521075.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum NF54 (GCA_000401695.2)",
+                            "name": "Plasmodium falciparum NF54 (GCA_000401695.2)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum NF54 (GCA_002831795.1)",
+                            "name": "Plasmodium falciparum NF54 (GCA_002831795.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum Palo Alto/Uganda (GCA_000521095.1)",
+                            "name": "Plasmodium falciparum Palo Alto/Uganda (GCA_000521095.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum RAJ116 (GCA_000186025.2)",
+                            "name": "Plasmodium falciparum RAJ116 (GCA_000186025.2)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum Santa Lucia (GCA_000150455.3)",
+                            "name": "Plasmodium falciparum Santa Lucia (GCA_000150455.3)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum Tanzania (2000708) (GCA_000521055.1)",
+                            "name": "Plasmodium falciparum Tanzania (2000708) (GCA_000521055.1)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum UGT5.1 (GCA_000401715.2)",
+                            "name": "Plasmodium falciparum UGT5.1 (GCA_000401715.2)"
+                        },
+                        {
+                            "value": "Plasmodium falciparum Vietnam Oak-Knoll (FVO) (GCA_000521015.1)",
+                            "name": "Plasmodium falciparum Vietnam Oak-Knoll (FVO) (GCA_000521015.1)"
+                        },
+                        {
+                            "value": "Limosilactobacillus mucosae LM1 (GCA_000248095)",
+                            "name": "Limosilactobacillus mucosae LM1 (GCA_000248095)"
+                        },
+                        {
+                            "value": "Phaeodactylum tricornutum (ASM15095v2)",
+                            "name": "Phaeodactylum tricornutum (ASM15095v2)"
+                        },
+                        {
+                            "value": "Corynebacterium glutamicum ATCC 13032 (GCA_000011325)",
+                            "name": "Corynebacterium glutamicum ATCC 13032 (GCA_000011325)"
+                        },
+                        {
+                            "value": "Mycobacterium tuberculosis variant bovis AF2122/97 (GCA_000195835)",
+                            "name": "Mycobacterium tuberculosis variant bovis AF2122/97 (GCA_000195835)"
+                        },
+                        {
+                            "value": "Mycobacterium tuberculosis variant africanum (GCA_001544855)",
+                            "name": "Mycobacterium tuberculosis variant africanum (GCA_001544855)"
+                        },
+                        {
+                            "value": "Mycobacterium tuberculosis variant microti OV254 (GCA_002865895)",
+                            "name": "Mycobacterium tuberculosis variant microti OV254 (GCA_002865895)"
+                        },
+                        {
+                            "value": "Mycobacterium tuberculosis variant pinnipedii (GCA_003027895)",
+                            "name": "Mycobacterium tuberculosis variant pinnipedii (GCA_003027895)"
+                        },
+                        {
+                            "value": "Leishmania infantum (GCA_900500625.1)",
+                            "name": "Leishmania infantum (GCA_900500625.1)"
+                        },
+                        {
+                            "value": "Staphylococcus aureus subsp. aureus str. Newman (GCA_000010465)",
+                            "name": "Staphylococcus aureus subsp. aureus str. Newman (GCA_000010465)"
+                        },
+                        {
+                            "value": "Pseudomonas putida KT2440 (GCA_000007565)",
+                            "name": "Pseudomonas putida KT2440 (GCA_000007565)"
+                        },
+                        {
+                            "value": "Clostridium acetobutylicum ATCC 824 (GCA_000008765)",
+                            "name": "Clostridium acetobutylicum ATCC 824 (GCA_000008765)"
+                        },
+                        {
+                            "value": "Paraburkholderia sacchari str. LMG 19450 (GCA_000785435)",
+                            "name": "Paraburkholderia sacchari str. LMG 19450 (GCA_000785435)"
+                        },
+                        {
+                            "value": "Trypanosoma cruzi Dm28c",
+                            "name": "Trypanosoma cruzi Dm28c"
+                        },
+                        {
+                            "value": "Debaryomyces hansenii CBS767 (GCA_000006445)",
+                            "name": "Debaryomyces hansenii CBS767 (GCA_000006445)"
+                        },
+                        {
+                            "value": "Schistosoma mansoni (Flatworm)",
+                            "name": "Schistosoma mansoni (Flatworm)"
+                        },
+                        {
+                            "value": "Listeria monocytogenes (GCA_006364655)",
+                            "name": "Listeria monocytogenes (GCA_006364655)"
+                        },
+                        {
+                            "value": "Clostridium beijerinckii NCIMB 8052 (GCA_000016965)",
+                            "name": "Clostridium beijerinckii NCIMB 8052 (GCA_000016965)"
+                        },
+                        {
+                            "value": "Clostridium tyrobutyricum DIVETGP (GCA_000577845)",
+                            "name": "Clostridium tyrobutyricum DIVETGP (GCA_000577845)"
+                        },
+                        {
+                            "value": "Clostridium tyrobutyricum str. Cirm BIA 2237 (GCA_004924375)",
+                            "name": "Clostridium tyrobutyricum str. Cirm BIA 2237 (GCA_004924375)"
+                        },
+                        {
+                            "value": "Peptoclostridium acidaminophilum DSM 3953 (GCA_000597865)",
+                            "name": "Peptoclostridium acidaminophilum DSM 3953 (GCA_000597865)"
+                        },
+                        {
+                            "value": "Peptoclostridium litorale DSM 5388 str. W6 (GCA_000699585)",
+                            "name": "Peptoclostridium litorale DSM 5388 str. W6 (GCA_000699585)"
+                        },
+                        {
+                            "value": "Peptoclostridium sp. AF21-18 (GCA_003478825)",
+                            "name": "Peptoclostridium sp. AF21-18 (GCA_003478825)"
+                        },
+                        {
+                            "value": "Clostridium carboxidivorans P7 (GCA_000175595)",
+                            "name": "Clostridium carboxidivorans P7 (GCA_000175595)"
+                        },
+                        {
+                            "value": "Clostridium kluyveri DSM 555 (GCA_000016505)",
+                            "name": "Clostridium kluyveri DSM 555 (GCA_000016505)"
+                        },
+                        {
+                            "value": "Clavispora lusitaniae ATCC 42720",
+                            "name": "Clavispora lusitaniae ATCC 42720"
+                        },
+                        {
+                            "value": "Clavispora lusitaniae str. CBS 6936",
+                            "name": "Clavispora lusitaniae str. CBS 6936"
+                        },
+                        {
+                            "value": "Trypanosoma brucei equiperdum str. IVM-t1 (GCA_003543875.1)",
+                            "name": "Trypanosoma brucei equiperdum str. IVM-t1 (GCA_003543875.1)"
+                        },
+                        {
+                            "value": "Thalassiosira pseudonana",
+                            "name": "Thalassiosira pseudonana"
+                        },
+                        {
+                            "value": "Saccharomyces cerevisiae str. 131",
+                            "name": "Saccharomyces cerevisiae str. 131"
+                        },
+                        {
+                            "value": "Saccharomyces cerevisiae str. Kagoshima No.2",
+                            "name": "Saccharomyces cerevisiae str. Kagoshima No.2"
+                        },
+                        {
+                            "value": "Saccharomyces cerevisiae str. P-684",
+                            "name": "Saccharomyces cerevisiae str. P-684"
+                        },
+                        {
+                            "value": "Saccharomyces cerevisiae str. Pf-1",
+                            "name": "Saccharomyces cerevisiae str. Pf-1"
+                        },
+                        {
+                            "value": "Strongyloides ratti (Threadworm)",
+                            "name": "Strongyloides ratti (Threadworm)"
+                        },
+                        {
+                            "value": "Thioalkalivibrio versutus str. D301 (GCA_001020955)",
+                            "name": "Thioalkalivibrio versutus str. D301 (GCA_001020955)"
+                        },
+                        {
+                            "value": "Thioalkalivibrio versutus str. AL 2 (GCA_001999325)",
+                            "name": "Thioalkalivibrio versutus str. AL 2 (GCA_001999325)"
+                        },
+                        {
+                            "value": "Rhodotorula toruloides str. NBRC 0880",
+                            "name": "Rhodotorula toruloides str. NBRC 0880"
+                        },
+                        {
+                            "value": "Methylorubrum extorquens AM1 (GCA_000022685)",
+                            "name": "Methylorubrum extorquens AM1 (GCA_000022685)"
+                        },
+                        {
+                            "value": "Candidatus Brocadia sinica JPN1 (GCA_000949635)",
+                            "name": "Candidatus Brocadia sinica JPN1 (GCA_000949635)"
+                        },
+                        {
+                            "value": "Clostridium acetobutylicum ATCC 824 (GCA_000008765)",
+                            "name": "Clostridium acetobutylicum ATCC 824 (GCA_000008765)"
+                        },
+                        {
+                            "value": "Acinetobacter baumannii (GCA_006369845)",
+                            "name": "Acinetobacter baumannii (GCA_006369845)"
+                        },
+                        {
+                            "value": "Acinetobacter baumannii ATCC 19606 = CIP 70.34 = JCM 6841 (GCA_000162295)",
+                            "name": "Acinetobacter baumannii ATCC 19606 = CIP 70.34 = JCM 6841 (GCA_000162295)"
+                        },
+                        {
+                            "value": "Candida albicans SC5314 (Cand_albi_SC5314_V3) (GCA_000784655)",
+                            "name": "Candida albicans SC5314 (Cand_albi_SC5314_V3) (GCA_000784655)"
+                        },
+                        {
+                            "value": "Candida albicans SC5314 (Cand_albi_SC5314_V4) (GCA_000784635)",
+                            "name": "Candida albicans SC5314 (Cand_albi_SC5314_V4) (GCA_000784635)"
+                        },
+                        {
+                            "value": "Candida glabrata CBS138 (GCA_000002545.2)",
+                            "name": "Candida glabrata CBS138 (GCA_000002545.2)"
+                        },
+                        {
+                            "value": "Fusobacterium nucleatum subsp. nucleatum ATCC 25586 (GCA_000007325)",
+                            "name": "Fusobacterium nucleatum subsp. nucleatum ATCC 25586 (GCA_000007325)"
+                        },
+                        {
+                            "value": "Paenibacillus polymyxa (GCA_900454525)",
+                            "name": "Paenibacillus polymyxa (GCA_900454525)"
+                        },
+                        {
+                            "value": "Clostridium pasteurianum DSM 525 = ATCC 6013 (GCA_000807255)",
+                            "name": "Clostridium pasteurianum DSM 525 = ATCC 6013 (GCA_000807255)"
+                        },
+                        {
+                            "value": "Mycobacterium tuberculosis variant bovis BCG (GCA_001544735)",
+                            "name": "Mycobacterium tuberculosis variant bovis BCG (GCA_001544735)"
+                        },
+                        {
+                            "value": "Plasmodium knowlesi",
+                            "name": "Plasmodium knowlesi"
+                        },
+                        {
+                            "value": "Plasmodium knowlesi str. Malayan Strain Pk1 (A+) (GCA_002140095.1)",
+                            "name": "Plasmodium knowlesi str. Malayan Strain Pk1 (A+) (GCA_002140095.1)"
+                        },
+                        {
+                            "value": "Plasmodium knowlesi strain H (GCA_900004885.2)",
+                            "name": "Plasmodium knowlesi strain H (GCA_900004885.2)"
+                        },
+                        {
+                            "value": "Streptomyces ambofaciens ATCC 23877 str. ATCC23877 (GCA_001267885)",
+                            "name": "Streptomyces ambofaciens ATCC 23877 str. ATCC23877 (GCA_001267885)"
+                        },
+                        {
+                            "value": "Vibrio cholerae O1 biovar El Tor str. N16961 (GCA_000006745)",
+                            "name": "Vibrio cholerae O1 biovar El Tor str. N16961 (GCA_000006745)"
+                        },
+                        {
+                            "value": "Pseudomonas putida F1 (GCA_000016865)",
+                            "name": "Pseudomonas putida F1 (GCA_000016865)"
+                        },
+                        {
+                            "value": "Pantoea agglomerans (GCA_004793995)",
+                            "name": "Pantoea agglomerans (GCA_004793995)"
+                        },
+                        {
+                            "value": "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2 (GCA_000006945)",
+                            "name": "Salmonella enterica subsp. enterica serovar Typhimurium str. LT2 (GCA_000006945)"
+                        },
+                        {
+                            "value": "Ogataea polymorpha str. NCYC 495 leu1.1 (Hanpo2)",
+                            "name": "Ogataea polymorpha str. NCYC 495 leu1.1 (Hanpo2)"
+                        },
+                        {
+                            "value": "Bdellovibrio bacteriovorus HD100 (GCA_000196175)",
+                            "name": "Bdellovibrio bacteriovorus HD100 (GCA_000196175)"
+                        },
+                        {
+                            "value": "Mnemiopsis leidyi (Warty comb jelly)",
+                            "name": "Mnemiopsis leidyi (Warty comb jelly)"
+                        },
+                        {
+                            "value": "Bdellovibrio bacteriovorus (GCA_001592755)",
+                            "name": "Bdellovibrio bacteriovorus (GCA_001592755)"
+                        },
+                        {
+                            "value": "Emiliania huxleyi",
+                            "name": "Emiliania huxleyi"
+                        },
+                        {
+                            "value": "Schizophyllum commune H4-8",
+                            "name": "Schizophyllum commune H4-8"
+                        },
+                        {
+                            "value": "Trichoderma reesei",
+                            "name": "Trichoderma reesei"
+                        },
+                        {
+                            "value": "Trichoderma reesei RUT C-30",
+                            "name": "Trichoderma reesei RUT C-30"
+                        },
+                        {
+                            "value": "Toxoplasma gondii ARI (GCA_000250965.2)",
+                            "name": "Toxoplasma gondii ARI (GCA_000250965.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii CAST (GCA_000256705.2)",
+                            "name": "Toxoplasma gondii CAST (GCA_000256705.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii COUG (GCA_000338675.2)",
+                            "name": "Toxoplasma gondii COUG (GCA_000338675.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii FOU (GCA_000224905.2)",
+                            "name": "Toxoplasma gondii FOU (GCA_000224905.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii GAB2-2007-GAL-DOM2 (GCA_000325525.2)",
+                            "name": "Toxoplasma gondii GAB2-2007-GAL-DOM2 (GCA_000325525.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii GT1 (GCA_000149715.2)",
+                            "name": "Toxoplasma gondii GT1 (GCA_000149715.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii MAS (GCA_000224865.2)",
+                            "name": "Toxoplasma gondii MAS (GCA_000224865.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii ME49",
+                            "name": "Toxoplasma gondii ME49"
+                        },
+                        {
+                            "value": "Toxoplasma gondii RUB (GCA_000224805.2)",
+                            "name": "Toxoplasma gondii RUB (GCA_000224805.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii TgCATBr9 (GCA_000224825.2)",
+                            "name": "Toxoplasma gondii TgCATBr9 (GCA_000224825.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii TgCatPRC2 (GCA_000256725.2)",
+                            "name": "Toxoplasma gondii TgCatPRC2 (GCA_000256725.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii VAND (GCA_000224845.2)",
+                            "name": "Toxoplasma gondii VAND (GCA_000224845.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii VEG (GCA_000150015.2)",
+                            "name": "Toxoplasma gondii VEG (GCA_000150015.2)"
+                        },
+                        {
+                            "value": "Toxoplasma gondii p89 (GCA_000224885.2)",
+                            "name": "Toxoplasma gondii p89 (GCA_000224885.2)"
+                        },
+                        {
+                            "value": "Plasmodium berghei (GCA_900095635.1)",
+                            "name": "Plasmodium berghei (GCA_900095635.1)"
+                        },
+                        {
+                            "value": "Plasmodium yoelii str. 17X (GCA_900002385.1)",
+                            "name": "Plasmodium yoelii str. 17X (GCA_900002385.1)"
+                        },
+                        {
+                            "value": "Plasmodium yoelii str. YM (GCA_900002395.1)",
+                            "name": "Plasmodium yoelii str. YM (GCA_900002395.1)"
+                        },
+                        {
+                            "value": "Plasmodium yoelii yoelii str. 17XNL (GCA_000003085.2)",
+                            "name": "Plasmodium yoelii yoelii str. 17XNL (GCA_000003085.2)"
+                        },
+                        {
+                            "value": "Arthrospira platensis C1 (GCA_000307915)",
+                            "name": "Arthrospira platensis C1 (GCA_000307915)"
+                        },
+                        {
+                            "value": "Arthrospira platensis NIES-39 (GCA_000210375)",
+                            "name": "Arthrospira platensis NIES-39 (GCA_000210375)"
+                        },
+                        {
+                            "value": "Komagataeibacter rhaeticus AF1 (GCA_000700985)",
+                            "name": "Komagataeibacter rhaeticus AF1 (GCA_000700985)"
+                        },
+                        {
+                            "value": "Komagataeibacter rhaeticus (GCA_900086575)",
+                            "name": "Komagataeibacter rhaeticus (GCA_900086575)"
+                        },
+                        {
+                            "value": "Bacillus subtilis (GCA_000878265)",
+                            "name": "Bacillus subtilis (GCA_000878265)"
+                        },
+                        {
+                            "value": "Gonium pectorale",
+                            "name": "Gonium pectorale"
+                        },
+                        {
+                            "value": "Escherichia coli K-12 (GCA_004919995)",
+                            "name": "Escherichia coli K-12 (GCA_004919995)"
+                        },
+                        {
+                            "value": "Trichoderma harzianum str. T6776",
+                            "name": "Trichoderma harzianum str. T6776"
+                        },
+                        {
+                            "value": "Trichoderma harzianum str. TR274",
+                            "name": "Trichoderma harzianum str. TR274"
+                        },
+                        {
+                            "value": "Trichoderma harzianum str. Tr1",
+                            "name": "Trichoderma harzianum str. Tr1"
+                        },
+                        {
+                            "value": "Trichoderma harzianum CBS 226.95",
+                            "name": "Trichoderma harzianum CBS 226.95"
+                        },
+                        {
+                            "value": "Streptomyces albus str. DSM 41398 (GCA_000827005)",
+                            "name": "Streptomyces albus str. DSM 41398 (GCA_000827005)"
+                        },
+                        {
+                            "value": "Streptomyces albus subsp. albus (GCA_001541145)",
+                            "name": "Streptomyces albus subsp. albus (GCA_001541145)"
+                        },
+                        {
+                            "value": "Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130 (GCA_000007685)",
+                            "name": "Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130 (GCA_000007685)"
+                        },
+                        {
+                            "value": "Leptospira interrogans serovar Copenhageni str. LT2050 (GCA_000216155)",
+                            "name": "Leptospira interrogans serovar Copenhageni str. LT2050 (GCA_000216155)"
+                        },
+                        {
+                            "value": "Anaplasma phagocytophilum str. HZ (GCA_000013125)",
+                            "name": "Anaplasma phagocytophilum str. HZ (GCA_000013125)"
+                        },
+                        {
+                            "value": "Neisseria meningitidis (GCA_006334835)",
+                            "name": "Neisseria meningitidis (GCA_006334835)"
+                        },
+                        {
+                            "value": "Streptococcus pneumoniae (GCA_006376385)",
+                            "name": "Streptococcus pneumoniae (GCA_006376385)"
+                        },
+                        {
+                            "value": "Escherichia coli str. K-12 substr. MG1655 str. K12 (GCA_000005845)",
+                            "name": "Escherichia coli str. K-12 substr. MG1655 str. K12 (GCA_000005845)"
+                        },
+                        {
+                            "value": "Escherichia coli str. K-12 substr. W3110 (GCA_000010245)",
+                            "name": "Escherichia coli str. K-12 substr. W3110 (GCA_000010245)"
+                        },
+                        {
+                            "value": "Francisella tularensis subsp. holarctica str. FTT_1 (GCA_000833235)",
+                            "name": "Francisella tularensis subsp. holarctica str. FTT_1 (GCA_000833235)"
+                        },
+                        {
+                            "value": "Francisella tularensis subsp. holarctica str. 08T0073 (GCA_001953575)",
+                            "name": "Francisella tularensis subsp. holarctica str. 08T0073 (GCA_001953575)"
+                        },
+                        {
+                            "value": "Komagataella phaffii CBS 7435 (PicPas_Mar2011)",
+                            "name": "Komagataella phaffii CBS 7435 (PicPas_Mar2011)"
+                        },
+                        {
+                            "value": "Komagataella phaffii CBS 7435 (ASM90023503v1)",
+                            "name": "Komagataella phaffii CBS 7435 (ASM90023503v1)"
+                        },
+                        {
+                            "value": "Komagataella phaffii GS115",
+                            "name": "Komagataella phaffii GS115"
+                        },
+                        {
+                            "value": "Komagataella phaffii str. WT",
+                            "name": "Komagataella phaffii str. WT"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. UFLA 01-765 (GCA_001510895)",
+                            "name": "Mesorhizobium loti str. UFLA 01-765 (GCA_001510895)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. R7ANS::ICEMlSym2042 (GCA_001671485)",
+                            "name": "Mesorhizobium loti str. R7ANS::ICEMlSym2042 (GCA_001671485)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. NZP2042 (GCA_001672355)",
+                            "name": "Mesorhizobium loti str. NZP2042 (GCA_001672355)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. NZP2014 (GCA_001672365)",
+                            "name": "Mesorhizobium loti str. NZP2014 (GCA_001672365)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti (GCA_002356515)",
+                            "name": "Mesorhizobium loti (GCA_002356515)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. LU (GCA_002858745)",
+                            "name": "Mesorhizobium loti str. LU (GCA_002858745)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti (GCA_003024615)",
+                            "name": "Mesorhizobium loti (GCA_003024615)"
+                        },
+                        {
+                            "value": "Mesorhizobium loti str. DSM 2626 (GCA_003148495)",
+                            "name": "Mesorhizobium loti str. DSM 2626 (GCA_003148495)"
+                        },
+                        {
+                            "value": "Sinorhizobium meliloti 1021 (GCA_000006965)",
+                            "name": "Sinorhizobium meliloti 1021 (GCA_000006965)"
+                        },
+                        {
+                            "value": "Clostridium butyricum (GCA_002940805)",
+                            "name": "Clostridium butyricum (GCA_002940805)"
+                        },
+                        {
+                            "value": "Clostridium butyricum (GCA_003935945)",
+                            "name": "Clostridium butyricum (GCA_003935945)"
+                        },
+                        {
+                            "value": "Synechocystis sp. PCC 6714 (GCA_000478825)",
+                            "name": "Synechocystis sp. PCC 6714 (GCA_000478825)"
+                        },
+                        {
+                            "value": "Synechocystis sp. PCC 6803 (GCA_000009725)",
+                            "name": "Synechocystis sp. PCC 6803 (GCA_000009725)"
+                        },
+                        {
+                            "value": "Lachancea thermotolerans CBS 6340",
+                            "name": "Lachancea thermotolerans CBS 6340"
+                        },
+                        {
+                            "value": "Lactococcus lactis str. C2D (GCA_004022375)",
+                            "name": "Lactococcus lactis str. C2D (GCA_004022375)"
+                        },
+                        {
+                            "value": "Lactococcus lactis str. SRCM103457 (GCA_004194355)",
+                            "name": "Lactococcus lactis str. SRCM103457 (GCA_004194355)"
+                        },
+                        {
+                            "value": "Lactococcus lactis str. gh1 (GCA_004795205)",
+                            "name": "Lactococcus lactis str. gh1 (GCA_004795205)"
+                        },
+                        {
+                            "value": "Lactococcus lactis str. CH_LC01 (GCA_005146285)",
+                            "name": "Lactococcus lactis str. CH_LC01 (GCA_005146285)"
+                        },
+                        {
+                            "value": "Ganoderma sinense ZZ0214-1",
+                            "name": "Ganoderma sinense ZZ0214-1"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus E25 (GCA_000550765)",
+                            "name": "Komagataeibacter xylinus E25 (GCA_000550765)"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus (GCA_002762195)",
+                            "name": "Komagataeibacter xylinus (GCA_002762195)"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus (GCA_003207915)",
+                            "name": "Komagataeibacter xylinus (GCA_003207915)"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus str. DSM 2325 (GCA_004006375)",
+                            "name": "Komagataeibacter xylinus str. DSM 2325 (GCA_004006375)"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus (GCA_900016225)",
+                            "name": "Komagataeibacter xylinus (GCA_900016225)"
+                        },
+                        {
+                            "value": "Komagataeibacter xylinus NBRC 13693 (GCA_000964505)",
+                            "name": "Komagataeibacter xylinus NBRC 13693 (GCA_000964505)"
+                        },
+                        {
+                            "value": "Penicillium chrysogenum str. P2niaD18",
+                            "name": "Penicillium chrysogenum str. P2niaD18"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis 434/Bu (GCA_000068585)",
+                            "name": "Chlamydia trachomatis 434/Bu (GCA_000068585)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis A2497 (GCA_000226605)",
+                            "name": "Chlamydia trachomatis A2497 (GCA_000226605)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis A/HAR-13 (GCA_000012125)",
+                            "name": "Chlamydia trachomatis A/HAR-13 (GCA_000012125)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis D/UW-3/CX (GCA_000008725)",
+                            "name": "Chlamydia trachomatis D/UW-3/CX (GCA_000008725)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis (GCA_001213105)",
+                            "name": "Chlamydia trachomatis (GCA_001213105)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis (GCA_001317725)",
+                            "name": "Chlamydia trachomatis (GCA_001317725)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis (GCA_001317765)",
+                            "name": "Chlamydia trachomatis (GCA_001317765)"
+                        },
+                        {
+                            "value": "Chlamydia trachomatis (GCA_001398195)",
+                            "name": "Chlamydia trachomatis (GCA_001398195)"
+                        },
+                        {
+                            "value": "Nannochloropsis gaditana CCMP526 (GCA_000240725.1)",
+                            "name": "Nannochloropsis gaditana CCMP526 (GCA_000240725.1)"
+                        },
+                        {
+                            "value": "Nannochloropsis gaditana str. B-31 (GCA_000569095.1)",
+                            "name": "Nannochloropsis gaditana str. B-31 (GCA_000569095.1)"
+                        },
+                        {
+                            "value": "Streptomyces coelicolor str. O-10.2 (GCA_004368945)",
+                            "name": "Streptomyces coelicolor str. O-10.2 (GCA_004368945)"
+                        },
+                        {
+                            "value": "Streptomyces coelicolor str. O-10.1 (GCA_004368985)",
+                            "name": "Streptomyces coelicolor str. O-10.1 (GCA_004368985)"
+                        },
+                        {
+                            "value": "Entamoeba histolytica",
+                            "name": "Entamoeba histolytica"
+                        },
+                        {
+                            "value": "Entamoeba histolytica HM-1:IMSS-A (GCA_000365475.1)",
+                            "name": "Entamoeba histolytica HM-1:IMSS-A (GCA_000365475.1)"
+                        },
+                        {
+                            "value": "Entamoeba histolytica HM-1:IMSS-B str. HM3:IMSS-B (GCA_000344925.1)",
+                            "name": "Entamoeba histolytica HM-1:IMSS-B str. HM3:IMSS-B (GCA_000344925.1)"
+                        },
+                        {
+                            "value": "Entamoeba histolytica HM-3:IMSS (GCA_000346345.1)",
+                            "name": "Entamoeba histolytica HM-3:IMSS (GCA_000346345.1)"
+                        },
+                        {
+                            "value": "Entamoeba histolytica KU27 (GCA_000338855.1)",
+                            "name": "Entamoeba histolytica KU27 (GCA_000338855.1)"
+                        },
+                        {
+                            "value": "Entamoeba histolytica str. HM1:IMSS clone 6 (GCA_001662325.1)",
+                            "name": "Entamoeba histolytica str. HM1:IMSS clone 6 (GCA_001662325.1)"
+                        },
+                        {
+                            "value": "Saccharomyces eubayanus str. FM1318",
+                            "name": "Saccharomyces eubayanus str. FM1318"
+                        },
+                        {
+                            "value": "Fonsecaea monophora",
+                            "name": "Fonsecaea monophora"
+                        },
+                        {
+                            "value": "Clostridium cellulovorans 743B (GCA_000145275)",
+                            "name": "Clostridium cellulovorans 743B (GCA_000145275)"
+                        },
+                        {
+                            "value": "Lactobacillus plantarum WCFS1 (GCA_000203855)",
+                            "name": "Lactobacillus plantarum WCFS1 (GCA_000203855)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus B4 (GCA_000010805)",
+                            "name": "Rhodococcus opacus B4 (GCA_000010805)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus str. R7 (GCA_000736435)",
+                            "name": "Rhodococcus opacus str. R7 (GCA_000736435)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus str. 1CP (GCA_001685605)",
+                            "name": "Rhodococcus opacus str. 1CP (GCA_001685605)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus str. 04-OD7 (GCA_002968035)",
+                            "name": "Rhodococcus opacus str. 04-OD7 (GCA_002968035)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus str. DSM 44186 (GCA_003626495)",
+                            "name": "Rhodococcus opacus str. DSM 44186 (GCA_003626495)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus str. ATCC 51882 (GCA_004365075)",
+                            "name": "Rhodococcus opacus str. ATCC 51882 (GCA_004365075)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus M213 (GCA_000264745)",
+                            "name": "Rhodococcus opacus M213 (GCA_000264745)"
+                        },
+                        {
+                            "value": "Rhodococcus opacus PD630 (GCA_000599545)",
+                            "name": "Rhodococcus opacus PD630 (GCA_000599545)"
+                        },
+                        {
+                            "value": "Pseudomonas aeruginosa PAO1 (GCA_000006765)",
+                            "name": "Pseudomonas aeruginosa PAO1 (GCA_000006765)"
+                        },
+                        {
+                            "value": "Pseudomonas aeruginosa UCBPP-PA14 (GCA_000014625)",
+                            "name": "Pseudomonas aeruginosa UCBPP-PA14 (GCA_000014625)"
+                        },
+                        {
+                            "value": "Legionella pneumophila subsp. pneumophila str. Philadelphia 1 (GCA_000008485)",
+                            "name": "Legionella pneumophila subsp. pneumophila str. Philadelphia 1 (GCA_000008485)"
+                        },
+                        {
+                            "value": "Legionella pneumophila (GCA_006364635)",
+                            "name": "Legionella pneumophila (GCA_006364635)"
+                        },
+                        {
+                            "value": "Legionella pneumophila str. Lens (GCA_000048665)",
+                            "name": "Legionella pneumophila str. Lens (GCA_000048665)"
+                        },
+                        {
+                            "value": "Legionella pneumophila subsp. pascullei (GCA_001590695)",
+                            "name": "Legionella pneumophila subsp. pascullei (GCA_001590695)"
+                        },
+                        {
+                            "value": "Legionella pneumophila subsp. pneumophila (GCA_003605955)",
+                            "name": "Legionella pneumophila subsp. pneumophila (GCA_003605955)"
+                        },
+                        {
+                            "value": "Rhodobacter capsulatus SB 1003 str. SB1003 (GCA_000021865)",
+                            "name": "Rhodobacter capsulatus SB 1003 str. SB1003 (GCA_000021865)"
+                        },
+                        {
+                            "value": "Rhodobacter sphaeroides 2.4.1 (GCA_000012905)",
+                            "name": "Rhodobacter sphaeroides 2.4.1 (GCA_000012905)"
+                        },
+                        {
+                            "value": "Nitrosomonas europaea ATCC 19718 (GCA_000009145)",
+                            "name": "Nitrosomonas europaea ATCC 19718 (GCA_000009145)"
+                        },
+                        {
+                            "value": "Acanthamoeba castellanii str. Neff (GCA_000313135.1)",
+                            "name": "Acanthamoeba castellanii str. Neff (GCA_000313135.1)"
+                        },
+                        {
+                            "value": "Streptococcus suis (GCA_004922915)",
+                            "name": "Streptococcus suis (GCA_004922915)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. NSUI060 (GCA_001572685)",
+                            "name": "Streptococcus suis str. NSUI060 (GCA_001572685)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. DN13 (GCA_001640765)",
+                            "name": "Streptococcus suis str. DN13 (GCA_001640765)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. CZ130302 (GCA_002803825)",
+                            "name": "Streptococcus suis str. CZ130302 (GCA_002803825)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. AH681 (GCA_002812525)",
+                            "name": "Streptococcus suis str. AH681 (GCA_002812525)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. HN136 (GCA_002831545)",
+                            "name": "Streptococcus suis str. HN136 (GCA_002831545)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. NJAU-TF-202 (GCA_002896475)",
+                            "name": "Streptococcus suis str. NJAU-TF-202 (GCA_002896475)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. HN105 (GCA_003144175)",
+                            "name": "Streptococcus suis str. HN105 (GCA_003144175)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. 1081 (GCA_003285245)",
+                            "name": "Streptococcus suis str. 1081 (GCA_003285245)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. HA1003 (GCA_003352205)",
+                            "name": "Streptococcus suis str. HA1003 (GCA_003352205)"
+                        },
+                        {
+                            "value": "Streptococcus suis str. WUSS351 (GCA_004843685)",
+                            "name": "Streptococcus suis str. WUSS351 (GCA_004843685)"
+                        },
+                        {
+                            "value": "Streptococcus suis 05ZYH33 (GCA_000014305)",
+                            "name": "Streptococcus suis 05ZYH33 (GCA_000014305)"
+                        },
+                        {
+                            "value": "Streptococcus suis 6407 (GCA_000732355)",
+                            "name": "Streptococcus suis 6407 (GCA_000732355)"
+                        },
+                        {
+                            "value": "Streptococcus suis BM407 (GCA_000026745)",
+                            "name": "Streptococcus suis BM407 (GCA_000026745)"
+                        },
+                        {
+                            "value": "Streptococcus suis D12 (GCA_000231905)",
+                            "name": "Streptococcus suis D12 (GCA_000231905)"
+                        },
+                        {
+                            "value": "Streptococcus suis GZ1 (GCA_000018185)",
+                            "name": "Streptococcus suis GZ1 (GCA_000018185)"
+                        },
+                        {
+                            "value": "Streptococcus suis T15 (GCA_000494895)",
+                            "name": "Streptococcus suis T15 (GCA_000494895)"
+                        },
+                        {
+                            "value": "Clostridioides difficile (GCA_002301955)",
+                            "name": "Clostridioides difficile (GCA_002301955)"
+                        },
+                        {
+                            "value": "Clostridioides difficile 630 (GCA_000009205)",
+                            "name": "Clostridioides difficile 630 (GCA_000009205)"
+                        },
+                        {
+                            "value": "Clostridioides difficile ATCC 9689 = DSM 1296 (GCA_001077535)",
+                            "name": "Clostridioides difficile ATCC 9689 = DSM 1296 (GCA_001077535)"
+                        },
+                        {
+                            "value": "Clostridioides difficile CD160 (GCA_000449425)",
+                            "name": "Clostridioides difficile CD160 (GCA_000449425)"
+                        },
+                        {
+                            "value": "Clostridioides difficile CD196 (GCA_000085225)",
+                            "name": "Clostridioides difficile CD196 (GCA_000085225)"
+                        },
+                        {
+                            "value": "Clostridioides difficile F501 (GCA_000450805)",
+                            "name": "Clostridioides difficile F501 (GCA_000450805)"
+                        },
+                        {
+                            "value": "Clostridioides difficile str. RA09_70 (GCA_001299495)",
+                            "name": "Clostridioides difficile str. RA09_70 (GCA_001299495)"
+                        },
+                        {
+                            "value": "Clostridioides difficile str. CD-B18-123 (GCA_005502205)",
+                            "name": "Clostridioides difficile str. CD-B18-123 (GCA_005502205)"
+                        },
+                        {
+                            "value": "Clostridioides difficile str. WCH065050 (GCA_005786645)",
+                            "name": "Clostridioides difficile str. WCH065050 (GCA_005786645)"
+                        },
+                        {
+                            "value": "Clostridioides difficile NAP08 (GCA_000164175)",
+                            "name": "Clostridioides difficile NAP08 (GCA_000164175)"
+                        },
+                        {
+                            "value": "Clostridioides difficile P28 (GCA_000450985)",
+                            "name": "Clostridioides difficile P28 (GCA_000450985)"
+                        },
+                        {
+                            "value": "Clostridioides difficile R20291 (GCA_000027105)",
+                            "name": "Clostridioides difficile R20291 (GCA_000027105)"
+                        },
+                        {
+                            "value": "Clostridioides difficile Y384 (GCA_000451045)",
+                            "name": "Clostridioides difficile Y384 (GCA_000451045)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

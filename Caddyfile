@@ -1,0 +1,18 @@
+(logging) {
+    log stdoutlogger {
+        output stdout
+    }
+    log filelogger {
+        output file /var/log/caddy/access.log
+    }
+}
+
+:80 {
+    import logging
+    handle {
+        reverse_proxy http://frontend:3000
+    }
+    handle /api/v1/* {
+        reverse_proxy http://backend:8000
+    }
+}

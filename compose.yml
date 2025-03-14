@@ -1,0 +1,47 @@
+services:
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+  backend:
+    depends_on:
+      - redis
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    command: bash runserver.sh
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SMTP_EMAIL=${SMTP_EMAIL}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_USE_TLS=${SMTP_USE_TLS}
+      - SMTP_PORT=${SMTP_PORT}
+      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN}
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 2
+            capabilities: [gpu]
+    volumes:
+      - /bce/omics/references/cas-offinder:/app/genome
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:
