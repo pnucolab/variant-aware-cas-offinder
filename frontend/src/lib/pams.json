@@ -36,6 +36,7 @@
     {"value":"SpCas9 Variant (TAT.P5-1) from Streptococcus pyogenes: 5'-NRTH-3' (R=G or A, H=A or C orT)","name":"SpCas9 Variant (TAT.P5-1) from Streptococcus pyogenes: 5'-NRTH-3' (R=G or A, H=A or C orT)"},
     {"value":"SpCas9 from Staphylococcus Auricularis: 5'-NNGG-3'","name":"SpCas9 from Staphylococcus Auricularis: 5'-NNGG-3'"},
     {"value":"St3Cas9 from Streptococcus Thermophilus: 5'-NGGNG-3'","name":"St3Cas9 from Streptococcus Thermophilus: 5'-NGGNG-3'"},
-    {"value":"Frcas9 from Faecalibaculum rodentium: 5'-NRTA-3' for target (R=A or G)","name":"Frcas9 from Faecalibaculum rodentium: 5’-NRTA-3’ for target (R=A or G)"},
-    {"value":"Frcas9 from Faecalibaculum rodentium: 5'-NNNA-3'","name":"Frcas9 from Faecalibaculum rodentium: 5'-NNNA-3'"}
+    {"value":"Frcas9 from Faecalibaculum rodentium: 5'-NRTA-3' for target (R=A or G)","name":"Frcas9 from Faecalibaculum rodentium: 5'-NRTA-3' for target (R=A or G)"},
+    {"value":"Frcas9 from Faecalibaculum rodentium: 5'-NNNA-3'","name":"Frcas9 from Faecalibaculum rodentium: 5'-NNNA-3'"},
+    {"value": "LtCas12a from Cas12a family: 5'-TTNA-3'","name":"LtCas12a from Cas12a family: 5'-TTNA-3'"}
 ]

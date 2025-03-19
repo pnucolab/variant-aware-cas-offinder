@@ -36,7 +36,6 @@ async def cas_offinder(Target_Genome: Target_Genome, Pam: Pam,
                        query_seq: List[str]=Query(default="TTGTGAAATCTAAGTGTAG", title="Query Sequences without PAM from 5' to 3'"),
                          mismatches: int=Query(ge=0, le=9, default=0, title="Maximum number of mismatches between gRNA and the target genome"),
                          file:UploadFile = File(...), email: Optional[str] = Query(None)):
-        #contents = await file.read()
         chunk_size = 1024 * 1024
         with open(file.filename, "wb") as f:
             while chunk := await file.read(chunk_size): 
@@ -64,8 +63,6 @@ async def cas_offinder(Target_Genome: Target_Genome, Pam: Pam,
              line = 'N'*len(PAM)+item+'\t'+str(mismatches)+'\n'
              Target_sequence2.append(line)
 
-        #print(updated_data)
-        #print(query_seq[0])
         if Pam == "AsCpf1 from Acidaminococcus or LbCpf1 from Lachnospiraceae: 5'-TTTV-3' (V = G or C or A)" or \
            Pam == "AsCpf1 from Acidaminococcus or LbCpf1 from Lachnospiraceae: 5'-TTTN-3'" or \
            Pam == "FnCpf1 from Francisella: 5'-KYTV-3'" or \
@@ -96,17 +93,11 @@ async def cas_offinder(Target_Genome: Target_Genome, Pam: Pam,
            Pam == "XCas9 3.7 (TLIKDIV SpCas9) from Streptococcus pyogenes: 5'-NG-3'" or \
            Pam == "Nme2Cas9 from Neisseria meningitidis: 5'-NNNNCC-3'" or \
            Pam == "SaCas9 from Staphylococcus aureus: 5'-NNNRRT-'3 (R=A or G)" or \
-           Pam == "SaCas9 from Staphylococcus aureus: 5'-NNNRRT-'3 (R=A or G)" or \
            Pam == "SpCas9 from Streptococcus pasteurianus: 5'-NNGTGA-3'" or \
            Pam == "SaCas9 from Staphylococcus aureus: 5'-NNGRRT-'3 (R=A or G)" or \
            Pam == "CcCas9 from Clostridium cellulolyticum: 5'-NNNNGNA-3'" or \
            Pam == "ThermoCas9 from Geobacillus thermodenitrificans T1: 5'-NNNNCNR-3'" or \
            Pam == "StCas9 from Streptococcus thermophilus: 5'-NNAGAAW-3' (W = A or T)" or \
-           Pam == "Cas12f1 from Acidibacillus sulfuroxidans: 5'-TTTR-3'" or \
-           Pam == "Cas12f1 from Acidibacillus sulfuroxidans: 5'-NTTR-3'" or \
-           Pam == "Cas12f1 from Acidibacillus sulfuroxidans: 5'-NTTR-3'" or \
-           Pam == "DpbCasX (Cas12e) from Deltaproteobacteria: 5'-TTCN-3'" or \
-           Pam == "DpbCasX (Cas12e) from Deltaproteobacteria: 5'-TTCN-3'" or \
            Pam == "SpCas9 Variant (TAT.P5-1) from Streptococcus pyogenes: 5'-NRTH-3' (R=G or A, H=A or C orT)" or \
            Pam == "SpCas9 from Staphylococcus Auricularis: 5'-NNGG-3'" or \
            Pam == "Frcas9 from Faecalibaculum rodentium: 5'-NRTA-3' for target (R=A or G)" or \
@@ -153,7 +144,7 @@ async def result(ticket:str):
                finished_at = ''
                input_file = ''
             con.close()
-            #task_status = rofftarget.get()
+           
            
         existance = 'task_id exists'
         results= tasks.get(ticket)
@@ -162,7 +153,7 @@ async def result(ticket:str):
         existance = 'No such task_id'
         results= " "
         res_status = ''
-            #result.info
+            
    return {'status': res_status, 'uploaded_file': input_file,'created_at': created_at, 'finished_at': finished_at} 
 
 @app.get('/result_detail',  response_class =  PlainTextResponse, tags = ['result_detail'])
