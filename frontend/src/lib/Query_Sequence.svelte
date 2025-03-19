@@ -132,7 +132,7 @@
                 Chromosome names in the vcf file and in the indexed refernce genome should be identical.</span>
         </Alert>
         <Fileupload bind:files={files} on:upload={handleUpload}/>
-            <A class="pt-1" href="https://github.com/pnucolab/VarCas-OFFinder/raw/refs/heads/main/docs_old/Sample.vcf.gz" download>Download an example VCF file</A>
+            <A class="pt-1" href="https://github.com/pnucolab/variant-aware-cas-offinder/raw/refs/heads/main/docs/Sample.vcf.gz" download>Download an example VCF file</A>
             </Label>
             </div>
 
