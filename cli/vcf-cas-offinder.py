@@ -9,10 +9,10 @@ import time
 
 def compress_and_index(file_path, ref_path, query_input, device_id):
 
-    created_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
+    created_at = time.time()  # Start timing
     file_name = os.path.basename(file_path)
     output_vcf = file_name if file_name.endswith(".gz") else f"{file_name}.gz"
-    
+    error_message = ''
     tabix_result = subprocess.run(
         ['tabix', '-p', 'vcf', file_name],
         stdout=subprocess.DEVNULL,
@@ -25,12 +25,12 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
             subprocess.run(['gunzip', file_name])
             uncompressed_file = file_name[:-3]
             subprocess.run(["bgzip", "-c", uncompressed_file], stdout=open(output_vcf, "wb"))
+            subprocess.run(tabix_result, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         else:
             print("File is not compressed. Compressing with BGZF...")
             subprocess.run(["bgzip", "-c", file_name], stdout=open(output_vcf, "wb"))
-        
-        subprocess.run(['tabix', '-p', 'vcf', output_vcf], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-        print(f"File compressed and indexed as: {output_vcf}")
+            subprocess.run(['tabix', '-p', 'vcf', output_vcf], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            print(f"File compressed and indexed as: {output_vcf}")
     else:
         print(f"File is already BGZF-compressed and indexed: {file_name}")
     
@@ -159,12 +159,13 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
                      uploadedfile = f"Error: {output_vcf} is not phased VCF file. Only Phased and single sample vcf is allowed."  
                else:
                  uploadedfile = err_response
-    finished_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S") 
-    return {'success': True, 'input_vcf status': {uploadedfile}, 'off_target result': {combined_content}, 'created at': {created_at}, 'finished at': {finished_at}}
+    finished_at = time.time() 
+    execution_time = finished_at - created_at  
+    return {'success': True, 'input_vcf status': {uploadedfile}, 'off_target result': {combined_content}, 'Process completed in (Seconds)': {execution_time}}
 
 def main():
     parser = argparse.ArgumentParser(description="Identify potential off-target sites based on VCF files.")
-    parser.add_argument('-i', '--input', type=str, required=True, help="Path to the input VCF (Phased and single sample) file")
+    parser.add_argument('-i', '--input', type=str, required=True, help="input file name (Phased and single sample VCF file")
     parser.add_argument('-r', '--ref_path', type=str, required=True, help="Path to the target organism reference genome")
     parser.add_argument('-t', '--query_input', type = str, required = True,  help = "target sequence in the target organism genome (input.txt file)")
     parser.add_argument('-d', '--device_id', type=str, required=True, help="device_id(s): C for CPU and G for GPU, G0 for GPU device id=0")
