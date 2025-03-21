@@ -83,7 +83,6 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
     allfastafiles = output_vcf+'.fasta'
     print('Fasta file generation...')
     def process_input_file(input_file):
-         global error_message
          try:  
            vcf2fasta_cmd = ['vcf2fasta', '-f', ref_path, '-p', allfastafiles, '-n', 'NAN', input_file]
            subprocess.run(vcf2fasta_cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE, check = True, text=True)
