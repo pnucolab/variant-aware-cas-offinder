@@ -150,14 +150,16 @@ def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_li
                cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                if cas_result.returncode != 0:
                   off_target_allele = ['/app/cas-offinder', query_input, 'G1', off_target_output]
-                  cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) 
+                  cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                  if cas_result.returncode != 0:
+                     uploadedfile = "Error: Cas-OFFinder failed to run. Server error."
             allelic_off_target_files.append(off_target_output)
             try:
               with open(off_target_output, 'r') as file: 
                      combined_content += file.read()
             except FileNotFoundError:
-                 uploadedfile = f"Error: {output_vcf} is not phased VCF file. Only Phased and single sample vcf is allowed."
-
+                 uploadedfile = f"Error: server error."
+                 combined_content = ''
 
      file_content = combined_content
      id_no = output_file_name
@@ -196,8 +198,6 @@ def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_li
                if err_response =='':
                   if error_message !='':
                       uploadedfile = error_message
-                  else:
-                     uploadedfile = f"Error: {output_vcf} is not phased VCF file. Only Phased and single sample vcf is allowed."  
                else:
                  uploadedfile = err_response
   else:

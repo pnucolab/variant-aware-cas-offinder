@@ -124,7 +124,9 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
             off_target_output = fasta_files[i]+'.txt'
 
             off_target_allele = ['./cas-offinder', query_input, device_id, off_target_output] # G0 -GPU id 0
-            subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            if result.returncode != 0:
+                print(f"Error: {device_id} failed to generate off-target sites. Please try again with different device id.")
             allelic_off_target_files.append(off_target_output)
     try:
               with open(combined_content,'w') as  outfile:
@@ -133,7 +135,8 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
                             outfile.write(infile.read())
                             
     except FileNotFoundError:
-                 uploadedfile = f"Error: {output_vcf} is not phased VCF file. Only Phased and single sample vcf is allowed."
+                uploadedfile = f"Error: {device_id} failed."
+                combined_content = ''
     files_to_erase =  allelic_off_target_files + fasta_files + input_files
     for file in files_to_erase:
          try:
@@ -154,13 +157,12 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
                if err_response =='':
                   if error_message !='':
                       uploadedfile = error_message
-                  else:
-                     uploadedfile = f"Error: {output_vcf} is not phased VCF file. Only Phased and single sample vcf is allowed."  
                else:
                  uploadedfile = err_response
+                 
     finished_at = time.time() 
     execution_time = finished_at - created_at  
-    return {'success': True, 'input_vcf status': {uploadedfile}, 'off_target result': {combined_content}, 'Process completed in (Seconds)': {execution_time}}
+    return {'success': True, 'error': {uploadedfile}, 'off_target result': {combined_content}, 'Process completed in (Seconds)': {execution_time}}
 
 def main():
     parser = argparse.ArgumentParser(description="Identify potential off-target sites based on VCF files.")
