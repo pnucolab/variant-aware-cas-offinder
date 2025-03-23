@@ -143,8 +143,14 @@ def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_li
                        file.write(line)
             off_target_output = fasta_files[i]+'.txt'
 
-            off_target_allele = ['/app/cas-offinder', query_input, 'G1', off_target_output] # G0 -GPU id 0
-            subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            off_target_allele = ['/app/cas-offinder', query_input, 'G', off_target_output] # G0 -GPU id 0
+            cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            if cas_result.returncode != 0:
+               off_target_allele = ['/app/cas-offinder', query_input, 'G0', off_target_output]
+               cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+               if cas_result.returncode != 0:
+                  off_target_allele = ['/app/cas-offinder', query_input, 'G1', off_target_output]
+                  cas_result = subprocess.run(off_target_allele, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) 
             allelic_off_target_files.append(off_target_output)
             try:
               with open(off_target_output, 'r') as file: 
