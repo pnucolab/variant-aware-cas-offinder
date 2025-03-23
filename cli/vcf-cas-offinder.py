@@ -167,7 +167,7 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
 def main():
     parser = argparse.ArgumentParser(description="Identify potential off-target sites based on VCF files.")
     parser.add_argument('-i', '--input', type=str, required=True, help="input file name (Phased and single sample VCF file")
-    parser.add_argument('-r', '--ref_path', type=str, required=True, help="Path to the target organism reference genome")
+    parser.add_argument('-r', '--ref_path', type=str, required=True, help="Full Path to the target organism reference genome")
     parser.add_argument('-t', '--query_input', type = str, required = True,  help = "target sequence in the target organism genome (input.txt file)")
     parser.add_argument('-d', '--device_id', type=str, required=True, help="device_id(s): C for CPU and G for GPU, G0 for GPU device id=0")
     args = parser.parse_args()
