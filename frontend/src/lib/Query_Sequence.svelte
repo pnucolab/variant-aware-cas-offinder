@@ -5,6 +5,7 @@
 		Label,
 		Heading,
 		Select,
+		Helper,
 		Dropdown,
 		DropdownItem,
 		Fileupload
@@ -24,6 +25,7 @@
 	import {
 		Alert
 	} from 'flowbite-svelte';
+	
 	export let email;
 	export let mismatches;
 	export let Pam;
@@ -113,80 +115,91 @@
 	}
 </script>
 
-<Heading tag="h4" class="mb-4"> </Heading>
-
-<div class="mb-2">
-    <Label for="email" class= "" >
-        <span class="leading-relaxed dark:text-gray-400 mb-2"> E-mail (Optional): </span>
+<div class="mb-10">
+    <Label for="email" class= "mb-2 text-base" >
+        <span class="leading-relaxed dark:text-gray-400 mb-2 text-base"> E-mail (Optional): </span>
     </Label>
     <Input class="leading-relaxed dark:text-gray-400 mb-2" bind:value={email} type="email" size="lg" id="email" placeholder="your E-mail" />
-	<span class="m-4 font-italic"> The result will be notified by e-mail if an email adress is provided. </span>
+	<Helper class="mx-2"> 
+		<span class="text-sm">The result will be notified by e-mail if an email adress is provided. </span>
+	</Helper>
 </div>
 
-<div class="h-full w-full bg-white flex flex-col items-left">
+<div class="h-full w-full bg-white flex flex-col items-left space-y-5">
 
-    <Label class="space-y-1 mb-2">
-        <Alert class="mb-4 mt-2" border color="red">
-            <span>Upload VCF file </span><br>
-            <span class="block text-sm text-gray-500">The VCF file should be phased and contain only one sample.
+    <Label class="space-y-1 space-y-2">
+		<span class="dark:text-gray-400 mb-2 text-base">Upload VCF file </span>
+		<Alert>
+			<span class="font-bold">Notice! </span>
+			<span class="font-medium">The VCF file should be phased and contain only one sample.
                 Chromosome names in the vcf file and in the indexed refernce genome should be identical.</span>
-        </Alert>
+			<A class="pt-1" href="https://github.com/pnucolab/variant-aware-cas-offinder/raw/refs/heads/main/docs/Sample.vcf.gz" download>Download an example VCF file</A>
+		</Alert>
         <Fileupload bind:files={files} on:upload={handleUpload}/>
-            <A class="pt-1" href="https://github.com/pnucolab/variant-aware-cas-offinder/raw/refs/heads/main/docs/Sample.vcf.gz" download>Download an example VCF file</A>
-            </Label>
-            </div>
+    </Label>
 
-            <Heading tag="h4" class="mb-4"> </Heading>
+	<div class="space-y-2">
+		<Label for ="Pams">
+			<span class="dark:text-gray-400 text-base">Select PAM Type</span>
+		</Label>
+		<Select id="Pams" class="mt-2" bind:value={Pam} >
 
-            <div class="mb-2">
-                <Label for ="Pams">Select PAM Type</Label>
-                <Select id="Pams" class="mt-2" bind:value={Pam} >
+			{#each Pams as {value, name}}
+			<option {value}> {name}</option>
 
-                    {#each Pams as {value, name}}
-                    <option {value}> {name}</option>
+			{/each}
+		</Select>
+	</div>
 
-                    {/each}
-                </Select>
+	<div class="space-y-2">
+		<Label for="organisms">
+			<span class="dark:text-gray-400 text-base">Select Target Genome</span>
+		</Label>
+		<Select id="oorganism" class="mt-2" bind:value={selectedOrganism}>
+		{#each organisms as { value, name }}
+			<option {value}>{name}</option>
+			{/each}
+		</Select>
+	</div>
 
-            </div>
-            
-            <div>
+	{#if orgranismtype.length > 0}
+	<div class="space-y-2">
+		<Label for="oorgnismtypes">
+			<span class="dark:text-gray-400 text-base">Select Target Genome Type</span>
+		</Label>
+		<Select id="oorgnismtypes" class="mt-2" bind:value={selectedOrganismtype}>
+			{#each orgranismtype as { value, name }}
+			<option {value}>{name}</option>
+			{/each}
+		</Select>
+	</div>
+	{/if}
 
-            </div>
-            <Label for="organisms">Select Target Genome</Label>
-            <Select id="oorganism" class="mt-2" bind:value={selectedOrganism}>
-                {#each organisms as { value, name }}
-                <option {value}>{name}</option>
-                {/each}
-            </Select>
+	{#if versions.length > 0}
+	<div class="space-y-2">
+		<Label for="versions">
+			<span class="dark:text-gray-400 text-base">Select Target Genome Version</span>
+		</Label>
+		<Select id="versions" class="mt-2" bind:value={Target_Genome}>
+			{#each versions as { value, name }}
+			<option {value}>{name}</option>
+			{/each}
+		</Select>
+	</div>
+	{/if}
 
-            {#if orgranismtype.length > 0}
-            <Select id="oorgnismtypes" class="mt-4" bind:value={selectedOrganismtype}>
-                {#each orgranismtype as { value, name }}
-                <option {value}>{name}</option>
-                {/each}
-            </Select>
-            {/if}
+	<div class="space-y-2">
+		<Label for="query_seq">
+			<span class="dark:text-gray-400 text-base">Query Sequences without PAM from 5' to 3'</span>
+		</Label>
+		<Textarea {...textareaprops} bind:value={query_seq} on:input={queryInput} required />
 
-            {#if versions.length > 0}
-            <Select id="versions" class="mt-4" bind:value={Target_Genome}>
-                {#each versions as { value, name }}
-                <option {value}>{name}</option>
-                {/each}
-            </Select>
-            {/if}
+	</div>
 
-            <Heading tag="h4" class="mb-4"></Heading>
-
-            <div>
-                <span> Query Sequences without PAM from 5' to 3' </span>
-                <Textarea {...textareaprops} bind:value={query_seq} on:input={queryInput} required />
-
-            </div>
-
-            <Heading tag="h4" class="mb-4"></Heading>
-
-            <div class="mb-6">
-                <Label for="mismatches" class="mb-2">Maximum number of mismatches between gRNA and the target </Label>
-                <Input bind:value={mismatches} type="number" size = "lg" id="mismatches" placeholder="0" on:input={handlemismatchesInput} required/>
-            </div>
+	<div class="space-y-2">
+		<Label for="mismatches">
+			<span class="dark:text-gray-400 text-base">Maximum number of mismatches between gRNA and the target </span>
+		</Label>
+		<Input bind:value={mismatches} type="number" size = "lg" id="mismatches" placeholder="0" on:input={handlemismatchesInput} required/>
+	</div>
+</div>
