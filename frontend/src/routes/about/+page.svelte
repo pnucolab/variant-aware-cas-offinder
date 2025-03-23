@@ -1,7 +1,8 @@
 <script>
     import { Heading, P, A, List, Li, Button } from 'flowbite-svelte';
 </script>
-<Heading tag="h2" class="mt-5 mb-2">About</Heading>
+
+<Heading tag="h2" class="mt-10">About</Heading>
 
 
 <Heading tag="h4" class="mt-10 mb-2">Variant-aware Cas-OFFinder</Heading>
@@ -30,14 +31,13 @@
     </Li>
 </List>
 
-
-<h4 class="mt-10 mb-2" style="font-size: 24px; font-weight: bold; color: #333;">
-    📖 User Guide 
-    <Button class="ml-2 !py-2 !pl-3 !pr-4" href="https://rgen-toolkit.readthedocs.io/" 
+<div class="flex flex-row items-center mt-10 mb-2">
+    <h4 class="text-2xl font-bold text-gray-800"> 📖 User Guide </h4>
+    <Button class="ml-4 !py-2 !pl-3 !pr-4" href="https://rgen-toolkit.readthedocs.io/" 
         target="_blank">
         🔗 View Detailed User Guide
     </Button>
-</h4>
+</div>
 <List tag="ol" list="decimal" class="text-gray-600 dark:text-gray-400">
     <Li>  
         Upload VCF file
@@ -69,16 +69,17 @@
     <Li>To begin using the web tool efficiently, follow these straightforward steps to ensure a smooth start:</Li>
 </List>
 <List tag="ol" class="ps-5 mt-2 space-y-1">
-    <Li> Download the Required File: <Button class="ml-2 !py-2 !pl-3 !pr-4" href="https://github.com/pnucolab/VarCas-OFFinder/raw/refs/heads/main/docs_old/Sample.vcf.gz" download>
-        📥 Click here</Button></Li>
+    <Li> Download the Required File: 
+        <Button size="xs" class="ml-2 !py-2 !pl-3 !pr-4" href="https://github.com/pnucolab/variant-aware-cas-offinder/raw/refs/heads/main/docs/Sample.vcf.gz" download>
+        📥 Click here</Button>
+    </Li>
     <Li>Upload the File.</Li>
     <Li>Submit for Processing.</Li>
     <Li>View Results.</Li>
     <Li> Click here for details:
-        
-        <Button class="ml-2 !py-2 !pl-3 !pr-3" href="https://rgen-toolkit.readthedocs.io/en/latest/quickstart.html" 
+        <Button size="xs" class="ml-2 !py-2 !pl-3 !pr-3" href="https://rgen-toolkit.readthedocs.io/en/latest/quickstart.html" 
             target="_blank">
-            🌐   
+            🌐 Quick Start Guide
     </Button>
     </Li>
 </List>
