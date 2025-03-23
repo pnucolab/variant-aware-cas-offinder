@@ -1,4 +1,3 @@
-
 <script>
 	import Bottom from '$lib/Bottom.svelte';
 	import { Navbar, NavBrand, NavUl, NavLi, NavHamburger} from 'flowbite-svelte';
@@ -6,11 +5,10 @@
 	import './styles.css';
 </script>
 <Navbar color="form" class="sticky top-0 z-40 dark:bg-gray-900 shadow-sm">
-	<NavBrand href="/">
+	<NavBrand href="/home">
 		<span class="text-xl font-bold ml-3 sm:ml-0">RGEN Toolkit</span>
 	</NavBrand>
-	<NavHamburger />
-	<NavUl>
+	<NavUl class="flex items-center h-full" style="margin-bottom: 0;">
 		<NavLi href="/" active={$page.url.pathname === '/'}>Variant-aware Cas-OFFinder</NavLi>
 		<NavLi href="/about" active={$page.url.pathname === '/about'}>About</NavLi>
 		<a href="https://github.com/pnucolab/variant-aware-cas-offinder" target="_blank" rel="noopener noreferrer" class="text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white">
