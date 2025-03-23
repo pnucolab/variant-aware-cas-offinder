@@ -125,7 +125,7 @@
 	</Helper>
 </div>
 
-<div class="h-full w-full bg-white flex flex-col items-left space-y-5">
+<div class="h-full w-full bg-gray-100 flex flex-col items-left space-y-5 shadow-sm rounded-lg p-5">
 
     <Label class="space-y-1 space-y-2">
 		<span class="dark:text-gray-400 mb-2 text-base">Upload VCF file </span>
