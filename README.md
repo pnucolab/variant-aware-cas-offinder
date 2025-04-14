@@ -1,23 +1,76 @@
-VarCas-OFFinder
-===============
+# Variant-aware Cas-OFFinder
 
-This repository contains the source code for the variant-aware Cas-Offinder tool. The source code of the web tool, command-line interface, and the Docker compose file can be found in this repository. 
+**Variant-aware Cas-OFFinder** is an advanced, high-performance tool designed to identify potential off-target sites of RNA-guided genome editors while accounting for genomic variants such as SNPs and indels. This capability is critical for increasing the precision of genome editing, especially when working with genetically diverse populations or patient-specific data.
 
-Prerequisites
-=============
+This repository contains the full source code for:
 
-An OpenCL device is required to run the command-line interface and deploy the web source code on local machines. 
+- A web-based interactive interface
+- A command-line interface (CLI)
+- A Docker Compose setup for easy local deployment
 
+---
 
-Documentation
-=============
+## 🌐 Overview
 
-https://rgen-toolkit.readthedocs.io/
+Cas-OFFinder is widely used for identifying off-target effects in CRISPR experiments. The **variant-aware** version extends this functionality by integrating genetic variation data, allowing for more precise predictions in both research and therapeutic contexts.
 
-Benchmarks
-==========
+Key features include:
 
-https://github.com/pnucolab/variant-aware-cas-offinder-benchmark
+- Support unlimited mismatches
+- accounting for genetic variants (SNPs and indels)
+- Scalable performance
+- Easy deployment via Docker for local use
+
+---
+
+## ⚙️ Prerequisites
+
+To run the command-line interface or deploy the web interface locally, you will need:
+
+- An **OpenCL-compatible device** (GPU or CPU)
+- Docker and Docker Compose (for web deployment)
+- Python 3.7+ (for CLI and backend utilities)
+- Optional: Access to variant files in VCF format for personalized analysis
+
+---
+
+## 📚 Documentation
+
+Detailed installation guides and usage instructions are available in our documentation portal:
+
+🔗 [https://rgen-toolkit.readthedocs.io/](https://rgen-toolkit.readthedocs.io/)
+
+Topics covered include:
+
+- Getting started with the CLI and web tool
+- Preparing reference genomes and variant data
+- Customizing off-target search parameters
+- Interpreting output results
+
+---
+
+## 📈 Benchmarks and Performance
+
+Benchmarks comparing Variant-aware Cas-OFFinder to other tools and configurations can be found here:
+
+🔬 [https://github.com/pnucolab/variant-aware-cas-offinder-benchmark](https://github.com/pnucolab/variant-aware-cas-offinder-benchmark)
+
+---
+
+## 🧬 Applications
+
+- **Precision genome editing**: Account for individual variants to reduce unintended edits
+- **Therapeutic development**: Ensure off-target risk assessment in diverse or patient-derived genomes
+- **Large-scale screening**: Efficiently scan entire genomes, even with complex variant datasets
+
+---
+
+## 📩 Contact
+
+For questions, feedback, or collaboration inquiries, feel free to reach out through the Issues tab.
+
+---
+
 
 License
 =======
