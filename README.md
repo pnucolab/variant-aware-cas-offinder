@@ -29,7 +29,7 @@ To run the command-line interface or deploy the web interface locally, you will 
 
 - An **OpenCL-compatible device** (GPU or CPU)
 - Docker and Docker Compose (for web deployment)
-- Python 3.7+ (for CLI and backend utilities)
+- Python 3.10+ (for CLI and backend utilities)
 - Optional: Access to variant files in VCF format for personalized analysis
 
 ---
