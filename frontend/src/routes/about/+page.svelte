@@ -69,7 +69,7 @@
     <Li>To begin using the web tool efficiently, follow these straightforward steps to ensure a smooth start:</Li>
 </List>
 <List tag="ol" class="ps-5 mt-2 space-y-1">
-    <Li> Download the Required File: <Button class="ml-2 !py-2 !pl-3 !pr-4" href="https://github.com/pnucolab/VarCas-OFFinder/raw/refs/heads/main/docs_old/Sample.vcf.gz" download>
+    <Li> Download the Required File: <Button class="ml-2 !py-2 !pl-3 !pr-4" href="https://github.com/pnucolab/variant-aware-cas-offinder/raw/refs/heads/main/docs/Sample.vcf.gz" download>
         📥 Click here</Button></Li>
     <Li>Upload the File.</Li>
     <Li>Submit for Processing.</Li>
