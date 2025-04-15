@@ -26,16 +26,16 @@
 	} from 'flowbite-svelte';
 	export let email;
 	export let mismatches;
-	export let Pam;
+	export let pam;
 	export let query_seq;
-	export let Target_Genome;
+	export let target_genome;
 	export let files;
 
-	import pams_json from './pams.json';
-	import organisms_json from './organisms.json';
+	import pams_list from '../../config/pams.yml';
+	import organisms_list from '../../config/organisms.yml';
 
-	let Pams = pams_json;
-	let ooorganisms = organisms_json.organism_types;
+	let pams = pams_list.pams;
+	let ooorganisms = organisms_list.organisms;
 
 	let selectedoorganism = ooorganisms[0]; // Default selection
 	function changeorganism(organism) {
@@ -46,12 +46,12 @@
 	let selectedOrganismtype = '';
 	let selectedVersion = '';
 
-	let orgranismtype = [];
+	let organismtype = [];
 	let versions = [];
-	const organisms = organisms_json.organisms;
+	const organisms = organisms_list.organisms;
 	$: {
 		const selectedOrganismData = organisms.find(o => o.value === selectedOrganism);
-		orgranismtype = selectedOrganismData ? selectedOrganismData.orgranismtype : [];
+		organismtype = selectedOrganismData ? selectedOrganismData.organismtype : [];
 		if (selectedOrganism) {
 			selectedOrganismtype = '';
 			selectedVersion = '';
@@ -59,7 +59,7 @@
 	}
 
 	$: {
-		const selectedOrganismtypeData = orgranismtype.find(ot => ot.value === selectedOrganismtype);
+		const selectedOrganismtypeData = organismtype.find(ot => ot.value === selectedOrganismtype);
 		versions = selectedOrganismtypeData ? selectedOrganismtypeData.versions : [];
 		if (selectedOrganismtypeData && !versions.find(version => version.value === selectedVersion)) {
 			selectedVersion = '';
@@ -69,7 +69,7 @@
 	let textareaprops = {
 		id: 'Target_sequence',
 		name: 'query',
-		label: "Query Sequences without PAM from 5' to 3'",
+		label: "Query Sequences without pam from 5' to 3'",
 		rows: 10,
 		placeholder: 'AAAGGAAACCATTGTGTTAA\nCAGCAACTCCAGGGGGCCGC'
 	};
@@ -139,10 +139,10 @@
             <Heading tag="h4" class="mb-4"> </Heading>
 
             <div class="mb-2">
-                <Label for ="Pams">Select PAM Type</Label>
-                <Select id="Pams" class="mt-2" bind:value={Pam} >
+                <Label for ="pams">Select pam Type</Label>
+                <Select id="pams" class="mt-2" bind:value={pam} >
 
-                    {#each Pams as {value, name}}
+                    {#each pams as {value, name}}
                     <option {value}> {name}</option>
 
                     {/each}
@@ -156,22 +156,22 @@
             <Label for="organisms">Select Target Genome</Label>
             <Select id="oorganism" class="mt-2" bind:value={selectedOrganism}>
                 {#each organisms as { value, name }}
-                <option {value}>{name}</option>
+                <option {value}>{value,name}</option>
                 {/each}
             </Select>
 
-            {#if orgranismtype.length > 0}
+            {#if organismtype.length > 0}
             <Select id="oorgnismtypes" class="mt-4" bind:value={selectedOrganismtype}>
-                {#each orgranismtype as { value, name }}
+                {#each organismtype as { value, name }}
                 <option {value}>{name}</option>
                 {/each}
             </Select>
             {/if}
 
             {#if versions.length > 0}
-            <Select id="versions" class="mt-4" bind:value={Target_Genome}>
-                {#each versions as { value, name }}
-                <option {value}>{name}</option>
+            <Select id="versions" class="mt-4" bind:value={target_genome}>
+                {#each versions as  version}
+                <option value={version.value}>{version.name}</option>
                 {/each}
             </Select>
             {/if}
@@ -179,7 +179,7 @@
             <Heading tag="h4" class="mb-4"></Heading>
 
             <div>
-                <span> Query Sequences without PAM from 5' to 3' </span>
+                <span> Query Sequences without pam from 5' to 3' </span>
                 <Textarea {...textareaprops} bind:value={query_seq} on:input={queryInput} required />
 
             </div>

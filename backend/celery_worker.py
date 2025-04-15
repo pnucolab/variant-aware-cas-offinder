@@ -12,7 +12,7 @@ from email.mime.text import MIMEText
 
 
 @celery_task.task
-def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_line, target_line, email):
+def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_line, target_lines, email):
   time.sleep(5)
   con = duckdb.connect(f"task_time_{ticket}.db")
   con.execute("CREATE TABLE IF NOT EXISTS task_times (id VARCHAR, created_at TIMESTAMP, finished_at TIMESTAMP, input_file VARCHAR)")
@@ -128,19 +128,10 @@ def off_target(ticket,output_file_name, file_name, output_vcf, ref_path,  pam_li
      query_input = output_vcf+'_input.txt'
      for i in range(len(fasta_files)):
             target_path = "/app/"+fasta_files[i]+"\n"
-            
             with open(query_input, "w") as file:
-                 pass   
-
-            with open(query_input, "w") as file:
-                file.write(target_path)
-                file.write(pam_line)
-            with open(query_input, 'r') as file:
-                  lines = file.readlines()
-                  lines[2:] = target_line
-            with open(query_input, 'w') as file:
-                  for line in lines:
-                       file.write(line)
+               file.write(target_path)
+               file.write(pam_line)
+               file.write(''.join(target_lines))
             off_target_output = fasta_files[i]+'.txt'
 
             off_target_allele = ['/app/cas-offinder', query_input, 'G', off_target_output] # G0 -GPU id 0

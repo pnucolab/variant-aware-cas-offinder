@@ -1,0 +1,2285 @@
+organisms:
+- name: Favourites
+  organismtype:
+  - name: Human
+    value: human
+    versions:
+    - name: Homo sapiens (GRCh38/hg38) - Human
+      path: ./genome/human38/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      value: human
+  - name: Mouse
+    value: mouse
+    versions:
+    - name: Mus musculus (GRCm39) - Mouse
+      path: ./genome/grcm39/Mus_musculus.GRCm39.dna.toplevel.fa
+      value: grcm39
+  - name: Zebrafish
+    value: zebrafish
+    versions:
+    - name: Danio rerio (GRCz11) - Zebrafish
+      path: ./genome/zebrafishGRCz11/Danio_rerio.GRCz11.dna.toplevel.fa
+      value: GRCz11
+  value: favourites
+- name: Vertebrates
+  organismtype:
+  - name: Human
+    value: human
+    versions:
+    - name: Homo sapiens (GRCh38/hg38) - Human
+      path: ./genome/human38/Homo_sapiens.GRCh38.dna.primary_assembly.fa
+      value: human
+    - name: Homo sapiens (hg19) - Human
+      path: ./genome/human19/hg19.fa
+      value: human1
+    - name: Human Mitochondria genome (NC_012920.1)
+      path: ./genome/Mitochondria/NC_012920.1.fna
+      value: NC012920
+    - name: Homo sapiens (CHM13 T2T v2.0) - Human
+      path: ./genome/humanCHM13/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna
+      value: CHM13T2Tv11
+  - name: Mouse
+    value: mouse
+    versions:
+    - name: Mus musculus (GRCm39) - Mouse
+      path: ./genome/grcm39/Mus_musculus.GRCm39.dna.toplevel.fa
+      value: grcm39
+    - name: Mus musculus (mm10) - Mouse
+      path: ./genome/mm10/Mus_musculus.GRCm39.dna_sm.primary_assembly.fa
+      value: mm10
+    - name: Peromyscus maniculatus (Pman_2.1) - North American deer mouse
+      path: ./genome/mousePman21/Peromyscus_maniculatus_bairdii.HU_Pman_2.1.dna.toplevel.fa
+      value: Pman10
+    - name: BalbC/J mouse Mitochondria genome (AJ512208.1)
+      path: ./genome/mouseAJ512208/AJ512208.1.fna
+      value: AJ512208
+    - name: Mus spretus (SPRET_EiJ_v1) Algerian mouse
+      path: ./genome/spretus/Mus_spretus.SPRET_EiJ_v1.dna.toplevel.fa
+      value: spretus
+    - name: Mus musculus (129S1_SvImJ_v1) Mouse 129S1_SvImJ_v1
+      path: ./genome/mousesvimj/Mus_musculus_129s1svimj.129S1_SvImJ_v1.dna.toplevel.fa
+      value: musculus
+    - name: Mus musculus (GRCm39) - Mouse
+      path: ./genome/grcm39/Mus_musculus.GRCm39.dna.toplevel.fa
+      value: grcm39
+    - name: Mus musculus (A_J_v1) Mouse A_J_v1
+      path: ./genome/mouseajv/Mus_musculus_aj.A_J_v1.dna.toplevel.fa
+      value: mouseaj
+    - name: Mus musculus (AKR_J_v1) Mouse AKR_J_v1
+      path: ./genome/mouseakr/Mus_musculus_akrj.AKR_J_v1.dna.toplevel.fa
+      value: mouseakr
+    - name: Mus musculus (BALB_cJ_v1) Mouse BALB_cJ_v1
+      path: ./genome/mousebalb/Mus_musculus_balbcj.BALB_cJ_v1.dna.toplevel.fa
+      value: mousebalb
+    - name: Mus musculus (C3H_HeJ_v1) Mouse C3H_HeJ_v1
+      path: ./genome/mousec3h/Mus_musculus_c3hhej.C3H_HeJ_v1.dna.toplevel.fa
+      value: mousec3h
+    - name: Mus musculus (C57BL_6NJ_v1) Mouse  C57BL_6NJ_v1
+      path: ./genome/mousec57/Mus_musculus_c57bl6nj.C57BL_6NJ_v1.dna.toplevel.fa
+      value: mouseC57BL
+    - name: Mus musculus (CAST_EiJ_v1) Mouse CAST/EiJ
+      path: ./genome/mousecast/Mus_musculus_casteij.CAST_EiJ_v1.dna.toplevel.fa
+      value: mouseCAST
+    - name: Mus musculus (CBA_J_v1) Mouse CBA/J
+      path: ./genome/mousecba/Mus_musculus_cbaj.CBA_J_v1.dna.toplevel.fa
+      value: mousecba
+    - name: Mus musculus (DBA_2J_v1) Mouse DBA/2J
+      path: ./genome/mousedba/Mus_musculus_dba2j.DBA_2J_v1.dna.toplevel.fa
+      value: mousedba
+    - name: Mus musculus (FVB_NJ_v1) Mouse FVB/NJ
+      path: ./genome/mousefvb/Mus_musculus_fvbnj.FVB_NJ_v1.dna.toplevel.fa
+      value: mousefvb
+    - name: Mus musculus (LP_J_v1) Mouse  LP/J
+      path: ./genome/mouselp/Mus_musculus_lpj.LP_J_v1.dna.toplevel.fa
+      value: mouselp
+    - name: Mus musculus (Mmur_3.0) Mouse Lemur
+      path: ./genome/mouselemur/Microcebus_murinus.Mmur_3.0.dna.toplevel.fa
+      value: mouselemur
+    - name: Mus musculus (NOD_ShiLtJ_v1) Mouse NOD/ShiLtJ
+      path: ./genome/mousenod/Mus_musculus_nodshiltj.NOD_ShiLtJ_v1.dna.toplevel.fa
+      value: mousenod
+    - name: Mus musculus (NZO_HlLtJ_v1) Mouse NZO/HlLtJ
+      path: ./genome/mousenzo/Mus_musculus_nzohlltj.NZO_HlLtJ_v1.dna.toplevel.fa
+      value: mousenzo
+    - name: Mus musculus (PWK_PhJ_v1) Mouse PWK/PhJ
+      path: ./genome/mousepwk/Mus_musculus_pwkphj.PWK_PhJ_v1.dna.toplevel.fa
+      value: mousepwk
+    - name: Mus musculus (WSB_EiJ_v1) Mouse WSB/EiJ
+      path: ./genome/mousewsb/Mus_musculus_wsbeij.WSB_EiJ_v1.dna.toplevel.fa
+      value: mousewsb
+    - name: Mus musculus (CAROLI_EIJ_v1.1) Ryukyu mouse
+      path: ./genome/mouseryu/Mus_caroli.CAROLI_EIJ_v1.1.dna.toplevel.fa
+      value: mouseryu
+    - name: Mus musculus (PAHARI_EIJ_v1.1) Shrew mouse
+      path: ./genome/mouseshre/Mus_pahari.PAHARI_EIJ_v1.1.dna.toplevel.fa
+      value: mouseshrew
+    - name: Peromyscus maniculatus (Pman_2.1) - North American deer mouse
+      path: ./genome/mousePman21/Peromyscus_maniculatus_bairdii.HU_Pman_2.1.dna.toplevel.fa
+      value: Pman10
+    - name: Mus musculus (MUSP714) Steppe mouse
+      path: ./genome/mousestep/Mus_spicilegus.MUSP714.dna.toplevel.fa
+      value: mousesteppe
+  - name: Rat
+    value: rat
+    versions:
+    - name: Rattus norvegicus (rn5) - Rat
+      path: ./genome/rat/GCF_036323735.1_GRCr8_genomic.fna
+      value: rn5
+    - name: Rattus norvegicus (Rnor 6.0) - Rat
+      path: ./genome/ratRnor60/GCF_000001895.5.fa
+      value: Rnor60
+    - name: Rattus norvegicus (mRatBN7.2) - Rat
+      path: ./genome/rat3/Rattus_norvegicus.mRatBN7.2.dna.toplevel.fa
+      value: rat3
+    - name: Rattus norvegicus (UTH_Rnor_SHR_Utx) - Rat
+      path: ./genome/rat4/Rattus_norvegicus_shrutx.UTH_Rnor_SHR_Utx.dna.toplevel.fa
+      value: rat4
+    - name: Rattus norvegicus (UTH_Rnor_SHRSP_BbbUtx_1.0) - Rat
+      path: ./genome/rat5/Rattus_norvegicus_shrspbbbutx.UTH_Rnor_SHRSP_BbbUtx_1.0.dna.toplevel.fa
+      value: rat5
+    - name: Rattus norvegicus (UTH_Rnor_WKY_Bbb_1.0) - Rat
+      path: ./genome/rat6/Rattus_norvegicus_wkybbb.UTH_Rnor_WKY_Bbb_1.0.dna.toplevel.fa
+      value: rat6
+  - name: Cow
+    value: cow
+    versions:
+    - name: Bos taurus (bosTau7) - Cow
+      path: ./genome/cow/GCF_002263795.3_ARS-UCD2.0_genomic.fna
+      value: bosTau7
+    - name: Bos taurus (bosTau8) - Cow
+      path: ./genome/cowbosTau8/GCF_002263795.3_ARS-UCD2.0_genomic.fna
+      value: bosTau8
+    - name: Bos taurus (ARS-UCD1.3) - Cow
+      path: ./genome/arsd/Bos_taurus.ARS-UCD1.3.dna.toplevel.fa
+      value: arsd
+    - name: Bos taurus (ARS-UCD1.2) - Cow
+      path: ./genome/arsd2/Bos_taurus.ARS-UCD1.2.dna.toplevel.fa
+      value: arsd2
+  - name: Dog
+    value: dog
+    versions:
+    - name: Canis familiaris (canFam3) - Dog
+      path: ./genome/dog/GCF_011100685.1_UU_Cfam_GSD_1.0_genomic.fna
+      value: canFam3
+    - name: Canis lupus familiaris (ROS_Cfam_1.0) - Dog
+      path: ./genome/dog2/Canis_lupus_familiaris.ROS_Cfam_1.0.dna.toplevel.fa
+      value: dog2
+    - name: Canis lupus familiaris ( Basenji_breed-1.1) - Dog
+      path: ./genome/dog3/Canis_lupus_familiarisbasenji.Basenji_breed-1.1.dna.toplevel.fa
+      value: dog3
+    - name: Canis lupus familiaris ( Dog10K_Boxer_Tasha) - Dog
+      path: ./genome/dog4/Canis_lupus_familiarisboxer.Dog10K_Boxer_Tasha.dna.toplevel.fa
+      value: dog4
+    - name: Canis lupus familiaris ( UU_Cfam_GSD_1.0) - Dog
+      path: ./genome/dog5/Canis_lupus_familiarisgsd.UU_Cfam_GSD_1.0.dna.toplevel.fa
+      value: dog5
+    - name: Canis lupus familiaris ( UMICH_Zoey_3.1) - Dog
+      path: ./genome/dog6/Canis_lupus_familiarisgreatdane.UMICH_Zoey_3.1.dna.toplevel.fa
+      value: dog6
+  - name: Pig
+    value: Pig
+    versions:
+    - name: Sus scrofa (susScr11) - Pig
+      path: ./genome/pig/GCF_000003025.6_Sscrofa11.1_genomic.fna
+      value: susScr11
+    - name: Cavia porcellus (Cavpor3.0) -guinea pig
+      path: ./genome/pigCavpor30/Cavia_porcellus.Cavpor3.0.dna.toplevel.fa
+      value: Cavpor30
+    - name: Sus scrofa (Large white v1 from ensembl) - pig
+      path: ./genome/pigLargewhitev1/Sus_scrofa_largewhite.Large_White_v1.dna.toplevel.fa
+      value: Largewhitev1
+    - name: Cavia aperea( CavAp1.0) - Brazilian guinea pig
+      path: ./genome/pig3/Cavia_aperea.CavAp1.0.dna.toplevel.fa
+      value: pig3
+    - name: Sus scrofa (Sscrofa11.1 ) - Pig
+      path: ./genome/pig4/Sus_scrofa.Sscrofa11.1.dna.toplevel.fa
+      value: pig4
+    - name: Sus scrofa (Bamei_pig_v1) - Bamei Pig
+      path: ./genome/pig5/Sus_scrofa_bamei.Bamei_pig_v1.dna.toplevel.fa
+      value: pig5
+    - name: Sus scrofa (Berkshire_pig_v1) - Pig - Berkshire
+      path: ./genome/pig6/Sus_scrofa_berkshire.Berkshire_pig_v1.dna.toplevel.fa
+      value: pig6
+    - name: Sus scrofa (Hampshire_pig_v1) - Pig - Hampshire
+      path: ./genome/pig7/Sus_scrofa_hampshire.Hampshire_pig_v1.dna.toplevel.fa
+      value: pig7
+    - name: Sus scrofa (Jinhua_pig_v1) - Pig - Jinhua
+      path: ./genome/pig8/Sus_scrofa_jinhua.Jinhua_pig_v1.dna.toplevel.fa
+      value: pig8
+    - name: Sus scrofa (Landrace_pig_v1) - Pig - Landrace
+      path: ./genome/pig9/Sus_scrofa_landrace.Landrace_pig_v1.dna.toplevel.fa
+      value: pig9
+    - name: Sus scrofa (Meishan_pig_v1) - Pig - Meishan
+      path: ./genome/pig10/Sus_scrofa_meishan.Meishan_pig_v1.dna.toplevel.fa
+      value: pig10
+    - name: Sus scrofa (Pietrain_pig_v1) - Pig - Pietrain
+      path: ./genome/pig11/Sus_scrofa_pietrain.Pietrain_pig_v1.dna.toplevel.fa
+      value: pig11
+    - name: Sus scrofa (Rongchang_pig_v1) - Pig - Rongchang
+      path: ./genome/pig12/Sus_scrofa_rongchang.Rongchang_pig_v1.dna.toplevel.fa
+      value: pig12
+    - name: Sus scrofa (Tibetan_Pig_v2) - Pig - Tibetan
+      path: ./genome/pig13/Sus_scrofa_tibetan.Tibetan_Pig_v2.dna.toplevel.fa
+      value: pig13
+    - name: Sus scrofa (minipig_v1.0) - Pig - Wuzhishan
+      path: ./genome/pig14/Sus_scrofa_wuzhishan.minipig_v1.0.dna.toplevel.fa
+      value: pig14
+    - name: Sus scrofa (USMARCv1.0) - Pig - USMARC
+      path: ./genome/pig15/Sus_scrofa_usmarc.USMARCv1.0.dna.toplevel.fa
+      value: pig15
+  - name: Zebrafish
+    value: zebrafish
+    versions:
+    - name: Danio rerio (danRer7) - Zebrafish
+      path: ./genome/zebrafish/GCF_000002035.6_GRCz11_genomic.fna
+      value: danRer7
+    - name: Danio rerio (GRCz11) - Zebrafish
+      path: ./genome/zebrafishGRCz11/Danio_rerio.GRCz11.dna.toplevel.fa
+      value: GRCz11
+  - name: Monkey
+    value: monkey
+    versions:
+    - name: Macaca mulatta(rheMac3) - Monkey
+      path: './genome/monkey/GCF_003339765.1_Mmul_10_genomic.fna '
+      value: rheMac3
+    - name: Macaca mulatta (Mmul_10)
+      path: ./genome/mulatta/Macaca_mulatta.Mmul_10.dna.toplevel.fa
+      value: Mmul10
+    - name: Chlorocebus_sabeus (ChlSab1.1) - green monkey
+      path: ./genome/greenmonkey/Chlorocebus_sabaeus.ChlSab1.1.dna.toplevel.fa
+      value: AQIB01
+    - name: Macaca mulatta (Mmul_10) - Monkey
+      path: ./genome/monekyMuml10/Macaca_mulatta.Mmul_10.dna.toplevel.fa
+      value: Muml801
+    - name: Rhinopithecus bieti (ASM169854v1) - Black snub-nosed monkey
+      path: ./genome/monkey4/Rhinopithecus_bieti.ASM169854v1.dna.toplevel.fa
+      value: monkey4
+    - name: Saimiri boliviensis boliviensis (SaiBol1.0) - Bolivian squirrel monkey
+      path: ./genome/monkey5/Saimiri_boliviensis_boliviensis.SaiBol1.0.dna.toplevel.fa
+      value: monkey5
+    - name: Rhinopithecus roxellana (Rrox_v1) - Golden snub-nosed monkey
+      path: ./genome/monkey6/Rhinopithecus_roxellana.Rrox_v1.dna.toplevel.fa
+      value: monkey6
+    - name: Aotus nancymaae (Anan_2.0) - Ma's night monkey
+      path: ./genome/monkey7/Aotus_nancymaae.Anan_2.0.dna.toplevel.fa
+      value: monkey7
+  - name: Frog
+    value: frog
+    versions:
+    - name: Xenopus tropicalis (JGI 4.2/xenTro3) - Western clawed frog
+      path: ./genome/frogJGI42/GCF_000004195.4_UCB_Xtro_10.0_genomic.fna
+      value: JGI42
+    - name: Xenopus tropicalis (JGI 7.1) - Western clawed frog
+      path: './genome/frogJGI71/GCF_000004195.4_UCB_Xtro_10.0_genomic.fna '
+      value: JGI71
+    - name: Xenopus_tropicalis_v9.1/xenTro9 - Western clawed frog
+      path: ./genome/frogv9.1/GCF_000004195.4_UCB_Xtro_10.0_genomic.fna
+      value: JGI90
+    - name: Xenopus tropicalis (xenTro10) - Western clawed frog
+      path: ./genome/frogxen10/GCF_000004195.4_UCB_Xtro_10.0_genomic.fna
+      value: xentro10
+    - name: Xenopus laevis_v10.1 - African clawed frog
+      path: './genome/frogv10.1/GCF_017654675.1.fa '
+      value: JGI91
+  - name: Crab-eating macaque
+    value: macaque
+    versions:
+    - name: Macaca fascicularis (5.0) - Crab-eating macaque
+      path: ./genome/macaque/GCF_037993035.1_T2T-MFA8v1.0_genomic.fna
+      value: macaca50
+    - name: Macaca nemestrina (Mnem_1.0)
+      path: ./genome/macacaMnem10/Macaca_nemestrina.Mnem_1.0.dna.toplevel.fa
+      value: Mnem10
+    - name: Macaca fascicularis (6.0) - Crab-eating macaque
+      path: ./genome/macaca60/Macaca_fascicularis.Macaca_fascicularis_6.0.dna.toplevel.fa
+      value: Macaca60
+  - name: Horse
+    value: horse
+    versions:
+    - name: Equus caballus (EquCab3.0) - horse
+      path: ./genome/horseEquCab30/Equus_caballus.EquCab3.0.dna.toplevel.fa
+      value: EquCab30
+  - name: Rabbit
+    value: rabit
+    versions:
+    - name: Oryctolagus cuniculus (OryCun2) - Rabbit
+      path: ./genome/rabbit/GCF_000003625.3_OryCun2.0_genomic.fna
+      value: OryCun2
+  - name: Hamster
+    value: hamster
+    versions:
+    - name: Cricetulus griseus (v1.0) - Chinese Hamster
+      path: ./genome/hamster/GCF_003668045.3_CriGri-PICRH-1.0_genomic.fna
+      value: Cv10
+    - name: Mesocricetus auratus (MesAur1.0) - Golden hamster
+      path: ./genome/hamsterMesAur10/GCF_000349665.1.fa
+      value: MesAur10
+    - name: Cricetulus griseus (CriGri_1.0) - Chinese hamster
+      path: ./genome/hamsterCriGri10/Cricetulus_griseus_crigri.CriGri_1.0.dna.toplevel.fa
+      value: CriGri10
+  - name: Cat
+    value: cat
+    versions:
+    - name: Felis catus - Cat
+      path: ./genome/cat/GCF_018350175.1_F.catus_Fca126_mat1.0_genomic.fna
+      value: Felis62
+  - name: Prairie vole
+    value: prvole
+    versions:
+    - name: Microtus ochrogaster - Prairie vole
+      path: ./genome/Prairie/GCF_000317375.1.fa
+      value: AHZW01
+  - name: Marmoset
+    value: marmoset
+    versions:
+    - name: Callithrix jacchus (mCalJac1.pat.X) -marmoset
+      path: ./genome/marmoset/Callithrix_jacchus.mCalJac1.pat.X.dna.toplevel.fa
+      value: calJac3
+  - name: Fathead minnow
+    value: minnow
+    versions:
+    - name: Pimephales promelas (SOAPdenovo v. 2) - fathead minnow
+      path: ./genome/minnow/GCF_016745375.1.fa
+      value: SOAPdenovov2
+  - name: Sheep
+    value: sheep
+    versions:
+    - name: ovis_aries (Oar_v3.1) - sheep
+      path: ./genonme/sheep/GCF_016772045.2_ARS-UI_Ramb_v3.0_genomic.fna
+      value: Oarv31
+    - name: Ovis aries (ARS-UI_Ramb_v2.0) - Sheep
+      path: ./genome/sheepARSUIRambv20/Ovis_aries_rambouillet.ARS-UI_Ramb_v2.0.dna.toplevel.fa
+      value: ARSUIRambv20
+  - name: Chicken
+    value: chicken
+    versions:
+    - name: Gallus gallus (Galgal4) - Chicken
+      path: ./genome/chicken/GCF_016699485.2_bGalGal1.mat.broiler.GRCg7b_genomic.fna
+      value: Galga14
+    - name: Gallus gallus (bGalGal1.mat.broiler.GRCg7b) - Chicken
+      path: ./genome/chickenGallus7b/Gallus_gallus.bGalGal1.mat.broiler.GRCg7b.dna.toplevel.fa
+      value: Gallus50
+    - name: Gallus gallus (GRCg6a) - chicken
+      path: ./genome/chickenGRCg6a/Gallus_gallus_gca000002315v5.GRCg6a.dna.toplevel.fa
+      value: GRCg6a
+  - name: Oreochromis niloticus
+    value: niloticus
+    versions:
+    - name: Oreochromis niloticus
+      path: ./genome/niloticus/Oreochromis_niloticus.O_niloticus_UMD_NMBU.dna.toplevel.fa
+      value: ASM1858804v2
+  - name: Goat
+    value: goat
+    versions:
+    - name: Capra hircus (ARS1) - goat
+      path: ./genome/goat/Capra_hircus.ARS1.dna.toplevel.fa
+      value: ARS1
+  - name: Duck
+    value: duck
+    versions:
+    - name: Anas platyrhynchos (CAU_duck_1.0) - duck
+      path: ./genome/duck/Anas_platyrhynchos_platyrhynchos.CAU_duck1.0.dna.toplevel.fa
+      value: BGIduk10
+  - name: Salmon
+    value: salmon
+    versions:
+    - name: Salmo salar (Ssal_v3.1) -Atlantic salmon
+      path: ./genome/salmon/Salmo_salar.Ssal_v3.1.dna.toplevel.fa
+      value: ICSASGv2
+    - name: Salmo salar (USDA_NASsal_1.1) - Atlantic salmon
+      path: ./genome/salmonUSDANASsal11/Salmo_salar_gca021399835v1.USDA_NASsal_1.1.dna.toplevel.fa
+      value: USDANASsal11
+    - name: Oncorhynchus tshawytscha (Otsh_v2.0) - Chinook salmon
+      path: ./genome/salmonOtshv20/Oncorhynchus_tshawytscha.Otsh_v2.0.dna.toplevel.fa
+      value: Otshv20
+    - name: Oncorhynchus tshawytscha (Otsh_v1.0) - Chinook salmon
+      path: ./genome/salmonOtshv10/Oncorhynchus_tshawytscha.Otsh_v1.0.dna.toplevel.fa
+      value: Otshv10
+  - name: Cyprinus carpio
+    value: carpio
+    versions:
+    - name: Cyprinus carpio (Cypcar_WagV4.0)
+      path: ./genome/carp/Cyprinus_carpio_carpio.Cypcar_WagV4.0.dna.toplevel.fa
+      value: commoncarp
+  - name: Paralichthys olivaceus
+    value: olivaceus
+    versions:
+    - name: Paralichthys olivaceus (Flounder_ref_guided_V1.0)
+      path: ./genome/olivaceus/GCF_001970005.1_Flounder_ref_guided_V1.0_genomic.fna
+      value: Flounderrefguidedv10
+  - name: Myotis lucifugus
+    value: lucifugus
+    versions:
+    - name: Myotis lucifugus (Myoluc2.0)
+      path: ./genome/lucifugus/Myotis_lucifugus.Myoluc2.0.dna.toplevel.fa
+      value: Myoluc20
+  - name: Rousettus aegyptiacus
+    value: aegyptiacus
+    versions:
+    - name: Rousettus aegyptiacus (RouAeg_v1_BIUU)
+      path: ./genome/aegyptiacus/GCA_004024865.1_RouAeg_v1_BIUU_genomic.fna
+      value: Raegyp20
+    - name: Rousettus aegyptiacus (mRouAeg1.p)
+      path: ./genome/aegyptiacusmRouAeg1/GCF_014176215.1_mRouAeg1.p_genomic.fna
+      value: mRouAeg1
+  - name: Tree shrew
+    value: shrew
+    versions:
+    - name: Tree shrew (TS_20 long-read)
+      path: ./genome/shrew/Tupaia_belangeri.TREESHREW.dna.toplevel.fa
+      value: TS20longread
+  - name: Ambystoma mexicanum
+    value: axolotl
+    versions:
+    - name: Ambystoma mexicanum (AmbMex60DD) -axolotl
+      path: ./genome/Ambystoma/GCA_002915635.3_AmbMex60DD_genomic.fna
+      value: ASM291563v2
+  - name: Ictalurus punctatus
+    value: punctatus
+    versions:
+    - name: Ictalurus punctatus (IpCoco_1.2)
+      path: ./genome/punctatus/Ictalurus_punctatus.IpCoco_1.2.dna.toplevel.fa
+      value: IPCoco12
+    - name: Ictalurus punctatus (ASM400665v3)
+      path: ./genome/punctatusASM400665v3/Ictalurus_punctatus.ASM400665v3.dna.toplevel.fa
+      value: Ictalurus
+  - name: Ferret
+    value: ferret
+    versions:
+    - name: Mustela putorius furo (MusPutFur1.0) - Ferret
+      path: ./genome/ferret/Mustela_putorius_furo.MusPutFur1.0.dna.toplevel.fa
+      value: Musputfur10
+  - name: Pagrus major
+    value: pagrus
+    versions:
+    - name: Pagrus major (Pma_NU_1.0)
+      path: ./genome/pagrus/GCA_040436345.1_Pma_NU_1.0_genomic.fna
+      value: Pmaj10
+  - name: Petromyzon marinus
+    value: marinus
+    versions:
+    - name: Petromyzon marinus
+      path: ./genome/Petromyzon/Petromyzon_marinus.Pmarinus_7.0.dna.toplevel.fa
+      value: Petromyzon
+  - name: Epinephelus lanceolatus
+    value: lanceolatus
+    versions:
+    - name: Epinephelus lanceolatus (giant grouper)
+      path: ./genome/lanceolatus/GCF_005281545.1_ASM528154v1_genomic.fna
+      value: Epinephelus
+  - name: Climbing perch
+    value: perch
+    versions:
+    - name: Anabas testudineus (fAnaTes1.2) - Climbing perch
+      path: ./genome/perch12/Anabas_testudineus.fAnaTes1.2.dna.toplevel.fa
+      value: fAnaTes12
+    - name: Anabas testudineus (fAnaTes1.3) - Climbing perch
+      path: ./genome/perch13/Anabas_testudineus.fAnaTes1.3.dna.toplevel.fa
+      value: fAnaTes13
+  - name: Fox
+    value: fox
+    versions:
+    - name: Vulpes lagopus (VulLag_v1_BIUU) - Arctic fox
+      path: ./genome/fox/GCA_004023825.1_VulLag_v1_BIUU_genomic.fna
+      value: ASM1834538v1
+    - name: Pteropus alecto (ASM32557v1) - Black flying fox
+      path: ./genome/foxASM32557v1/GCF_000325575.1_ASM32557v1_genomic.fna
+      value: ASM32557v1
+  - name: Takifugu rubripes
+    value: rubripes
+    versions:
+    - name: Takifugu rubripes (fTakRub1.3 from ENA)
+      path: ./genome/rubripes/GCA_901000725.3_fTakRub1.3_genomic.fna
+      value: fTakRub13
+  - name: Bat
+    value: bat
+    versions:
+    - name: Eptesicus fuscus (DD_ASM_mEF_20220401) - Big brown bat
+      path: ./genome/fuscus/GCF_027574615.1_DD_ASM_mEF_20220401_genomic.fna
+      value: EptFus10
+  - name: Trout
+    value: trout
+    versions:
+    - name: Oncorhynchus mykiss (USDA_OmykA_1.1) - rainbow trout
+      path: ./genome/trout/Oncorhynchus_mykiss.USDA_OmykA_1.1.dna.toplevel.fa
+      value: USDAOmykA11
+  - name: Seabass
+    value: seabass
+    versions:
+    - name: Dicentrarchus labrax - (European seabass)
+      path: ./genome/seabass/Dicentrarchus_labrax.dlabrax2021.dna.toplevel.fa
+      value: Europeanseabass
+  - name: Donkey
+    value: donkey
+    versions:
+    - name: Equus asinus (ASM1607732v2) - Ass
+      path: ./genome/Equus/Equus_asinus.ASM1607732v2.dna.toplevel.fa
+      value: ASM1607732v2
+  - name: Alpaca
+    value: alpaca
+    versions:
+    - name: Vicugna pacos (vicPac1) Alpaca
+      path: ./genome/pacos/Vicugna_pacos.vicPac1.dna.toplevel.fa
+      value: pacos
+  - name: Alpine marmot
+    value: alpinemarmot
+    versions:
+    - name: Marmota marmota marmota (marMar2.1) Alpine marmot
+      path: ./genome/marmota/Marmota_marmota_marmota.marMar2.1.dna.toplevel.fa
+      value: marmota
+  - name: Amazon molly
+    value: amazonmolly
+    versions:
+    - name: Poecilia formosa (Poecilia_formosa-5.1.2) Amazon molly
+      path: ./genome/formosa/Poecilia_formosa.PoeFor_5.1.2.dna.toplevel.fa
+      value: formosa
+  - name: American beaver
+    value: beaver
+    versions:
+    - name: Castor canadensis (C.can_genome_v1.0) American beaver
+      path: ./genome/canadensis/Castor_canadensis.C.can_genome_v1.0.dna.toplevel.fa
+      value: canadensis
+  - name: American bison
+    value: bison
+    versions:
+    - name: Bison bison bison (Bison_UMD1.0) American bison
+      path: ./genome/bison/Bison_bison_bison.Bison_UMD1.0.dna.toplevel.fa
+      value: bison
+  value: vertebrates
+- name: Plants
+  organismtype:
+  - name: Pepper
+    value: pepper
+    versions:
+    - name: CM334
+      path: ./genome/pepper/pepper_ref/GCA_000512255.2_ASM51225v2_genomic.fa
+      value: pepper
+    - name: Capsicum annuum (UCD10Xv1.1)
+      path: ./genome/annuum/GCF_002878395.1_UCD10Xv1.1_genomic.fna
+      value: capsicum
+    - name: Dempsey
+      path: ./genome/dempsey/dempsey_ref/Dempsey.v1.0.fasta
+      value: dempsey
+  - name: Thale cress
+    value: thale
+    versions:
+    - name: Arabidopsis thaliana (TAIR10.1)-Thale cress
+      path: ./genome/thaliana/GCF_000001735.4_TAIR10.1_genomic.fna
+      value: tair101
+  - name: Vigna umbellata
+    value: umbellata
+    versions:
+    - name: Vigna umbellata (ASM1883591v1) rice bean
+      path: ./genome/umbellata/GCF_018835915.1_ASM1883591v1_genomic.fna
+      value: umbellata
+  - name: Tomato
+    value: tomato
+    versions:
+    - name: Solanum lycopersicum (SL3.1) - Tomato
+      path: ./genome/tomato/GCF_000188115.5_SL3.1_genomic.fna
+      value: tomato
+    - name: Pseudomonas syringae pv. tomato str. DC3000 (ASM780v1)
+      path: ./genome/syringae/GCF_000007805.1_ASM780v1_genomic.fna
+      value: syringae
+    - name: Solanum pimpinellifolium (SDAU_Spim_LA1589_1.0) - currant tomato
+      path: ./genome/pimpinellifolium/GCA_034621305.1_SDAU_Spim_LA1589_1.0_genomic.fna
+      value: pimpinellifolium
+  - name: Maize
+    value: maize
+    versions:
+    - name: Zea mays (Zm-B73-REFERENCE-NAM-5.0)-maize
+      path: ./genome/maize/GCF_902167145.1_Zm-B73-REFERENCE-NAM-5.0_genomic.fna
+      value: maize
+  - name: Chlamydomonas reinhardtii
+    value: chlamydomonas
+    versions:
+    - name: Chlamydomonas_reinhardtii_v5.5
+      path: ./genome/chlamydomonas/GCF_000002595.2_Chlamydomonas_reinhardtii_v5.5_genomic.fna
+      value: chlamydomonas
+  - name: Potato
+    value: potato
+    versions:
+    - name: Solanum tuberosum (SolTub_3.0) - Potato
+      path: ./genome/potato/GCF_000226075.1_SolTub_3.0_genomic.fna
+      value: potato
+    - name: Solanum chacoense (chc0917) Chaco potato
+      path: ./genome/chacoense/GCA_029582705.1_chc0917_genomic.fna
+      value: chacoense
+    - name: Solanum commersonii (CGN18024_1v5_2 ) Commerson's wild potato
+      path: ./genome/commersonii/GCA_029007595.1_CGN18024_1v5_2_genomic.fna
+      value: commersonii
+  - name: Soybean
+    value: soybean
+    versions:
+    - name: Glycine max(v4.0) - Soybean
+      path: ./genome/soybean/GCF_000004515.6_Glycine_max_v4.0_genomic.fna
+      value: soybean
+  - name: Wine grape
+    value: wine
+    versions:
+    - name: Vitis vinifera (ASM3070453v1) - wine grape
+      path: ./genome/winegrape/GCF_030704535.1_ASM3070453v1_genomic.fna
+      value: winegrape
+  - name: Cassava
+    value: cassava
+    versions:
+    - name: Manihot esculenta (M.esculenta_v8)-cassava
+      path: ./genome/cassava/GCF_001659605.2_M.esculenta_v8_genomic.fna
+      value: casava
+    - name: Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia
+      path: ./genome/pulcherrima/GCA_947683365.1_Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0_genomic.fna
+      value: pulcherrima
+  - name: Apple
+    value: apple
+    versions:
+    - name: Malus domestica (ASM211411v1)-apple
+      path: ./genome/apple/GCF_002114115.1_ASM211411v1_genomic.fna
+      value: apple
+  - name: Barley
+    value: barley
+    versions:
+    - name: Hordeum vulgare subsp. vulgare (MorexV3_pseudomolecules)-domesticated
+        barley
+      path: ./genome/barley/GCF_904849725.1_MorexV3_pseudomolecules_assembly_genomic.fna
+      value: barley
+  - name: Nicotiana benthamiana
+    value: nicotiana
+    versions:
+    - name: Nicotiana benthamiana(ASM3437652v1)
+      path: ./genome/nicotiana/GCA_034376525.1_ASM3437652v1_genomic.fna
+      value: nicotiana
+  - name: Wild strawberry
+    value: strawberry
+    versions:
+    - name: Fragaria vesca (FraVesHawaii_1.0)-Wild strawberry
+      path: ./genome/strawberry/GCF_000184155.1_FraVesHawaii_1.0_genomic.fna
+      value: strawberry
+  - name: Orange
+    value: orange
+    versions:
+    - name: Citrus sinensis (DVS_A1.0) - Sweet orange
+      path: ./genome/orange/GCF_022201045.2_DVS_A1.0_genomic.fna
+      value: citrus
+    - name: Citrus trifoliata (ASM1835013v1) hardy orange
+      path: ./genome/trifoliata/GCA_018350135.1_ASM1835013v1_genomic.fna
+      value: trifoliata
+  - name: Cacao
+    value: cacao
+    versions:
+    - name: Theobroma cacao (Criollo_cocoa_genome_V2) - Cacao
+      path: ./genome/cacao/GCF_000208745.1_Criollo_cocoa_genome_V2_genomic.fna
+      value: cacao
+  - name: Banana
+    value: banana
+    versions:
+    - name: Musa acuminata AAA Group (Cavendish_Baxijiao_AAA) - Dessert banana
+      path: ./genome/dessertbanana/GCF_036884655.1_Cavendish_Baxijiao_AAA_genomic.fna
+      value: banana
+  - name: Peanut
+    value: peanut
+    versions:
+    - name: Arachis ipaensis (Araip1.1) - Wild peanut
+      path: ./genome/wildpeanut/GCF_000816755.2_Araip1.1_genomic.fna
+      value: peanut
+    - name: Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut
+      path: ./genome/peanutaradu/GCF_000817695.3_aradu.V14167.gnm2.J7QH_genomic.fna
+      value: wildpeanutdura
+    - name: Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut
+      path: ./genome/hypogaea/GCF_003086295.2_arahy.Tifrunner.gnm1.KYV3_genomic.fna
+      value: hypogaea
+    - name: Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut
+      path: ./genome/hypogaea5/GCA_003086295.3_arahy.Tifrunner.gnm2.J5K5_genomic.fna
+      value: hypogaea5
+  - name: Kiwifruit
+    value: kiwifruit
+    versions:
+    - name: Actinidia chinensis (ASM966300v1) - Golden kiwifruit
+      path: ./genome/kiwifruit/GCA_009663005.1_ASM966300v1_genomic.fna
+      value: kiwifruit
+  - name: Rape
+    value: rape
+    versions:
+    - name: Brassica napus (Da-Ae)-Rape
+      path: ./genome/rape/GCF_020379485.1_Da-Ae_genomic.fna
+      value: rape
+  - name: Sorghum
+    value: sorghum
+    versions:
+    - name: Sorghum bicolor (Sorghum_bicolor_NCBIv3) - Sorghum
+      path: ./genome/sorghum/GCF_000003195.3_Sorghum_bicolor_NCBIv3_genomic.fna
+      value: sorghum
+  - name: Switchgrass
+    value: switchgrass
+    versions:
+    - name: Panicum virgatum (P.virgatum_v5) - Switchgrass
+      path: ./genome/switchgrass/GCF_016808335.1_P.virgatum_v5_genomic.fna
+      value: switchgrass
+  - name: Cannabis sativa
+    value: cannabis
+    versions:
+    - name: Cannabis sativa (Cannabis sativa)
+      path: ./genome/canabis/GCF_029168945.1_ASM2916894v1_genomic.fna
+      value: canabis
+    - name: Cannabis sativa female
+      path: ./genome/cannabisf/Cannabis_sativa_female.cs10.dna.toplevel.fa
+      value: canabisf
+  - name: Barrel medic
+    value: barrel
+    versions:
+    - name: Medicago truncatula (MtrunA17r5.0-ANR)-Barrel medic
+      path: ./genome/truncatula/GCF_003473485.1_MtrunA17r5.0-ANR_genomic.fna
+      value: truncatula
+  - name: Exserohilum turcica
+    value: turcica
+    versions:
+    - name: Exserohilum turcica Et28A (v1.0)
+      path: ./genome/turcica/GCF_000359705.1_Setospaeria_trucica_Et28A_v1.0_genomic.fna
+      value: turcica
+  - name: Carrot
+    value: carrot
+    versions:
+    - name: Daucus carota subsp. sativus (DH1 v3.0)- Carrot
+      path: ./genome/carota/GCF_001625215.2_DH1_v3.0_genomic.fna
+      value: carrot
+  - name: Phaseolus vulgaris
+    value: vulgaris
+    versions:
+    - name: Phaseolus vulgaris (PhaVulg1_0)
+      path: ./genome/vulgaris/GCF_000499845.1_PhaVulg1_0_genomic.fna
+      value: vulgaris
+    - name: Phaseolus vulgaris (P. vulgaris v2.0 ) - string bean
+      path: ./genome/pvulgaris/GCA_000499845.2_P._vulgaris_v2.0_genomic.fna
+      value: pvulgaris
+  - name: Eragrostis tef
+    value: tef
+    versions:
+    - name: Eragrostis tef (tef)
+      path: ./genome/tef/GCA_000970635.1_ASM97063v1_genomic.fna
+      value: tef
+  - name: Schistosoma haematobium
+    value: haematobium
+    versions:
+    - name: Schistosoma haematobium (UoM_Shae.V3)
+      path: ./genome/haematobium/GCF_000699445.3_UoM_Shae.V3_genomic.fna
+      value: haematobium
+  - name: Eucalyptus
+    value: grandis
+    versions:
+    - name: Eucalyptus camaldulensis (ASM1991518v1) Murray red gum
+      path: ./genome/camaldulensis/GCA_019915185.1_ASM1991518v1_genomic.fna
+      value: camaldulensis
+    - name: Eucalyptus grandis (rose gum)
+      path: ./genome/grandis/GCF_016545825.1_ASM1654582v1_genomic.fna
+      value: grandis
+  - name: Cajanus cajan
+    value: cajan
+    versions:
+    - name: Cajanus cajan (C.cajan_V1.1) - pigeon pea
+      path: ./genome/cajan/GCF_000340665.2_C.cajan_V1.1_genomic.fna
+      value: cajan
+  - name: Fragilariopsis cylindrus CCMP1102
+    value: cylindrus
+    versions:
+    - name: Fragilariopsis cylindrus CCMP1102 (Fc_falcon_quiver_polished)
+      path: ./genome/cylindrus/GCA_900095095.1_Fc_falcon_quiver_polished_genomic.fna
+      value: cylindrus
+  - name: Field mustard
+    value: mustard
+    versions:
+    - name: Brassica rapa (CAAS_Brap_v3.01) - field mustard
+      path: ./genome/rapa/GCF_000309985.2_CAAS_Brap_v3.01_genomic.fna
+      value: rapa
+  - name: Cotton
+    value: cotton
+    versions:
+    - name: Gossypium hirsutum (Gossypium_hirsutum_v2.1) - cotton
+      path: ./genome/hirsutum/GCF_007990345.1_Gossypium_hirsutum_v2.1_genomic.fna
+      value: hirsutum
+    - name: Populus alba x Populus glandulosa (84K_subgenomeG)
+      path: ./genome/albax/GCA_033617975.1_84K_subgenomeG_genomic.fna
+      value: albax
+    - name: Populus trichocarpa (P.trichocarpa_v4.1) - black cottonwood
+      path: ./genome/trichocarpa/GCF_000002775.5_P.trichocarpa_v4.1_genomic.fna
+      value: trichocarpa
+  - name: Brassica oleracea
+    value: oleracea
+    versions:
+    - name: Brassica oleracea var. oleracea (BOL)
+      path: ./genome/oleracea/GCF_000695525.1_BOL_genomic.fna
+      value: oleracea
+  - name: tobacco
+    value: tabacum
+    versions:
+    - name: Nicotiana tabacum (Ntab-TN90) - common tobacco
+      path: ./genome/tabacum/GCF_000715135.1_Ntab-TN90_genomic.fna
+      value: tabacum
+    - name: Nicotiana glauca (ASM2677062v1) - tree tobacco
+      path: ./genome/glauca/GCA_026770625.1_ASM2677062v1_genomic.fna
+      value: glauca
+    - name: Nicotiana attenuata (NIATTr2)
+      path: ./genome/attenuata/GCF_001879085.1_NIATTr2_genomic.fna
+      value: attenuata
+    - name: Nicotiana benthamiana(ASM3437652v1)
+      path: ./genome/nicotiana/GCA_034376525.1_ASM3437652v1_genomic.fna
+      value: nicotiana
+    - name: Nicotiana obtusifolia (NIOBT.version3)
+      path: ./genome/obtusifolia/GCA_002018475.1_NIOBT.version3_genomic.fna
+      value: obtusifolia
+  - name: Coffea canephora
+    value: canephora
+    versions:
+    - name: Coffea canephora (robusta coffee)
+      path: ./genome/canephora/GCA_036785865.1_ASM3678586v1_genomic.fna
+      value: canephora
+  - name: Citrus
+    value: citrus
+    versions:
+    - name: Citrus trifoliata (ASM1835013v1) hardy orange
+      path: ./genome/trifoliata/GCA_018350135.1_ASM1835013v1_genomic.fna
+      value: trifoliata
+    - name: Citrus sinensis (DVS_A1.0) - Sweet orange
+      path: ./genome/orange/GCF_022201045.2_DVS_A1.0_genomic.fna
+      value: citrus
+    - name: Citrus x clementina (Citrus_clementina_v1.0) - clementine
+      path: ./genome/clementina/GCF_000493195.1_Citrus_clementina_v1.0_genomic.fna
+      value: clementina
+  - name: Sugar beet
+    value: sbeet
+    versions:
+    - name: Beta vulgaris subsp. vulgaris (EL10.2) - sugar beet
+      path: ./genome/betavulgaris/GCF_026745355.1_EL10.2_genomic.fna
+      value: betavulgaris
+  - name: Kalanchoe fedtschenkoi
+    value: airplant
+    versions:
+    - name: Kalanchoe fedtschenkoi (K_fedtschenkoi_M2_v1) - South American air plant
+      path: ./genome/fedtschenkoi/GCA_002312845.1_K_fedtschenkoi_M2_v1_genomic.fna
+      value: fedtschenkoi
+  - name: Sesamum indicum
+    value: sesame
+    versions:
+    - name: Sesamum indicum (S_indicum_v1.0)-sesame
+      path: ./genome/indicum/GCF_000512975.1_S_indicum_v1.0_genomic.fna
+      value: indicum
+  - name: Cucumis sativus
+    value: cucumber
+    versions:
+    - name: Cucumis sativus (Cucumber_9930_V3) - cucumber
+      path: ./genome/sativus/GCF_000004075.3_Cucumber_9930_V3_genomic.fna
+      value: sativus
+  - name: Citrullus lanatus
+    value: watermelon
+    versions:
+    - name: Citrullus lanatus (watermelon)
+      path: ./genome/lanatus/GCA_039639715.1_ASM3963971v1_genomic.fna
+      value: lanatus
+  - name: Cucumis melo
+    value: muskmelon
+    versions:
+    - name: Cucumis melo (USDA_Cmelo_AY_1.0) - muskmelon
+      path: ./genome/melo/GCF_025177605.1_USDA_Cmelo_AY_1.0_genomic.fna
+      value: melo
+  - name: Populus tremula
+    value: easpen
+    versions:
+    - name: Populus tremula (ddPopTrem1.hap1.1) - European aspen
+      path: ./genome/tremula/GCA_964106015.1_ddPopTrem1.hap1.1_genomic.fna
+      value: tremula
+  - name: Physcomitrium patens
+    value: patens
+    versions:
+    - name: Physcomitrium patens (Phypa V3)
+      path: ./genome/patens/GCF_000002425.4_Phypa_V3_genomic.fna
+      value: patens
+  - name: Brachypodium distachyon
+    value: distachyon
+    versions:
+    - name: Brachypodium distachyon (v3.0) - stiff brome
+      path: ./genome/distachyon/GCF_000005505.3_Brachypodium_distachyon_v3.0_genomic.fna
+      value: distachyon
+  - name: Triticum aestivum - bread wheat
+    value: aestivum
+    versions:
+    - name: Triticum aestivum (IWGSC CS RefSeq v2.1)-bread wheat
+      path: ./genome/aestivum/GCF_018294505.1_IWGSC_CS_RefSeq_v2.1_genomic.fna
+      value: aestivum
+  - name: Camelina sativa
+    value: sativa
+    versions:
+    - name: Camelina sativa (Cs)-false flax
+      path: ./genome/sativa/GCF_000633955.1_Cs_genomic.fna
+      value: sativa
+  - name: Lactuca sativa - garden lettuce
+    value: lettuce
+    versions:
+    - name: Lactuca sativa (Lsat_Salinas_v11) - garden lettuce
+      path: ./genome/lasativa/GCF_002870075.4_Lsat_Salinas_v11_genomic.fna
+      value: lasativa
+  - name: Helianthus annuus - common sunflower
+    value: helianthusannuus
+    versions:
+    - name: Helianthus annuus (HanXRQr2.0-SUNRISE) - common sunflower
+      path: ./genome/annuus/GCF_002127325.2_HanXRQr2.0-SUNRISE_genomic.fna
+      value: annuus
+  - name: Elaeis guineensis - African oil palm
+    value: oilpalm
+    versions:
+    - name: Elaeis guineensis (EG5) - African oil palm
+      path: ./genome/guineensis/GCF_000442705.1_EG5_genomic.fna
+      value: guineensis
+  - name: Spirodela polyrhiza - great duckweed
+    value: duckweed
+    versions:
+    - name: Spirodela polyrhiza (Salk_sp9512.v2) - great duckweed
+      path: ./genome/polyrhiza/GCA_024713555.1_Salk_sp9512.v2_genomic.fna
+      value: polyrhiza
+  - name: Setaria viridis
+    value: viridis
+    versions:
+    - name: Setaria viridis (Setaria_viridis_v2.0)
+      path: ./genome/viridis/GCF_005286985.1_Setaria_viridis_v2.0_genomic.fna
+      value: viridis
+  - name: Lotus japonicus
+    value: japonicus
+    versions:
+    - name: Lotus japonicus (LjGifu_v1.2)
+      path: ./genome/japonicus/GCF_012489685.1_LjGifu_v1.2_genomic.fna
+      value: japonicus
+  - name: Solanum virginianum
+    value: virginianum
+    versions:
+    - name: Solanum virginianum (SME_r2.5.1) - eggplant
+      path: ./genome/virginianum/GCA_000787875.1_SME_r2.5.1_genomic.fna
+      value: virginianum
+  - name: Ricinus communis
+    value: communis
+    versions:
+    - name: Ricinus communis (castor bean)
+      path: ./genome/communis/GCF_019578655.1_ASM1957865v1_genomic.fna
+      value: communis
+  - name: Populus deltoides
+    value: deltoides
+    versions:
+    - name: 'Populus deltoides '
+      path: ./genome/deltoides/GCA_015852605.2_ASM1585260v2_genomic.fna
+      value: deltoides
+  - name: Marchantiopsida
+    value: marchantiopsida
+    versions:
+    - name: Marchantia paleacea (ASM1418076v2)
+      path: ./genome/paleacea/GCA_014180765.2_ASM1418076v2_genomic.fna
+      value: paleacea
+    - name: Marchantia polymorpha subsp. ruderalis (MpTak2_v7.1)
+      path: ./genome/polymorpha/GCA_037833965.1_MpTak2_v7.1_genomic.fna
+      value: polymorpha
+  - name: 'Cicer arietinum '
+    value: arietinum
+    versions:
+    - name: Cicer arietinum (ASM33114v1) - chickpea
+      path: ./genome/arietinum/GCF_000331145.1_ASM33114v1_genomic.fna
+      value: arietinum
+  - name: Humulus lupulus
+    value: lupulus
+    versions:
+    - name: Humulus lupulus (drHumLupu1.1)-European hop
+      path: ./genome/lupulus/GCF_963169125.1_drHumLupu1.1_genomic.fna
+      value: lupulus
+  - name: "Panax ginseng - jins\xE3o"
+    value: jinsao
+    versions:
+    - name: "Panax ginseng (ASM2020560v1) - jins\xE3o"
+      path: ./genome/ginseng/GCA_020205605.1_ASM2020560v1_genomic.fna
+      value: ginseng
+  - name: Erythranthe guttata
+    value: guttata
+    versions:
+    - name: Erythranthe guttata (Mimgu1_0) - spotted monkey flower
+      path: ./genome/guttata/GCF_000504015.1_Mimgu1_0_genomic.fna
+      value: guttata
+  - name: Mentha longifolia - horsemint
+    value: horsemint
+    versions:
+    - name: Mentha longifolia (Mlong_CMEN585_v3) - horsemint
+      path: ./genome/longifolia/GCA_001642375.2_Mlong_CMEN585_v3_genomic.fna
+      value: longifolia
+  - name: Thlaspi arvense
+    value: arvense
+    versions:
+    - name: Thlaspi arvense (T_arvense_v2)
+      path: ./genome/arvense/GCA_911865555.2_T_arvense_v2_genomic.fna
+      value: arvense
+  - name: Bean
+    value: radiata
+    versions:
+    - name: Vigna radiata var. radiata (Vradiata_ver6) - mung bean
+      path: ./genome/radiata/GCF_000741045.1_Vradiata_ver6_genomic.fna
+      value: radiata
+    - name: Vigna unguiculata (ASM411807v2 ) - cowpea
+      path: ./genome/unguiculata/GCF_004118075.2_ASM411807v2_genomic.fna
+      value: unguiculata
+    - name: Vicia faba (Hedin2 genome v1) fava bean
+      path: ./genome/faba/GCA_948472305.1_Hedin2_genome_v1_genomic.fna
+      value: faba
+    - name: Vigna umbellata (ASM1883591v1) rice bean
+      path: ./genome/umbellata/GCF_018835915.1_ASM1883591v1_genomic.fna
+      value: umbellata
+  - name: Phalaenopsis equestris
+    value: equestris
+    versions:
+    - name: Phalaenopsis equestris (ASM126359v1)
+      path: ./genome/equestris/GCF_001263595.1_ASM126359v1_genomic.fna
+      value: equestris
+  - name: Dendrobium catenatum
+    value: catenatum
+    versions:
+    - name: Dendrobium catenatum (ASM160598v2)
+      path: ./genome/catenatum/GCF_001605985.2_ASM160598v2_genomic.fna
+      value: catenatum
+  - name: Prunus avium
+    value: avium
+    versions:
+    - name: Prunus avium (PAV_r1.0)-sweet cherry
+      path: ./genome/avium/GCF_002207925.1_PAV_r1.0_genomic.fna
+      value: avium
+  - name: Saccharum spontaneum - fodder cane
+    value: spontaneum
+    versions:
+    - name: Saccharum spontaneum (ASM2245720v1)-fodder cane
+      path: ./genome/spontaneum/GCA_022457205.1_ASM2245720v1_genomic.fna
+      value: spontaneum
+  - name: Prunus persica  - peach
+    value: persica
+    versions:
+    - name: Prunus persica (Prunus_persica_NCBIv2) - peach
+      path: ./genome/persica/GCA_022457205.1_ASM2245720v1_genomic.fna
+      value: persica
+  - name: Brassica juncea -brown mustard
+    value: juncea
+    versions:
+    - name: Brassica juncea (ASM1870372v1)-brown mustard
+      path: ./genome/juncea/GCA_018703725.1_ASM1870372v1_genomic.fna
+      value: juncea
+  - name: Cucurbita maxima - winter squash
+    value: cucurbita
+    versions:
+    - name: Cucurbita maxima (Cmax_1.0) - winter squash
+      path: ./genome/maxima/GCF_002738345.1_Cmax_1.0_genomic.fna
+      value: maxima
+  - name: Cucurbita moschata - crookneck pumpkin
+    value: moschata
+    versions:
+    - name: Cucurbita moschata (Cmos_1.0) - crookneck pumpkin
+      path: ./genome/moschata/GCF_002738365.1_Cmos_1.0_genomic.fna
+      value: moschata
+  - name: Cucurbita pepo - vegetable marrow
+    value: pepo
+    versions:
+    - name: Cucurbita pepo subsp. pepo (ASM280686v2) - vegetable marrow
+      path: ./genome/pepo/GCF_002806865.2_ASM280686v2_genomic.fna
+      value: pepo
+  - name: Artemisia annua -sweet wormwood
+    value: artannua
+    versions:
+    - name: Artemisia annua (Aran) -sweet wormwood
+      path: ./genome/annua/GCA_014162995.1_Aran_genomic.fna
+      value: annua
+  - name: Saccharum hybrid cultivar R570
+    value: saccharumcultivar
+    versions:
+    - name: Saccharum hybrid cultivar R570 (Saccharum officinarum X spontaneum var
+        R570 v2.1)
+      path: ./genome/Saccharumhyb/GCA_038087645.1_Saccharum_officinarum_X_spontaneum_var_R570_v2.1_genomic.fna
+      value: Saccharumhyby
+  - name: Chrysanthemum
+    value: chrysanthemum
+    versions:
+    - name: Chrysanthemum makinoi
+      path: ./genome/makinoi/GCA_910596185.1_chrysanthemum_makinoi_genome_sequence_genomic.fna
+      value: makinoi
+    - name: Chrysanthemum lavandulifolium (ASM2254549v1)
+      path: ./genome/lavandulifolium/GCA_022545495.1_ASM2254549v1_genomic.fna
+      value: lavandulifolium
+    - name: Chrysanthemum seticuspe(CsGojo-0_v1)
+      path: ./genome/seticuspe/GCA_019973895.1_CsGojo-0_v1_genomic.fna
+      value: seticuspe
+  - name: Papaver somniferum
+    value: somniferum
+    versions:
+    - name: Papaver somniferum (ASM357369v1) -opium poppy
+      path: ./genome/somniferum/GCF_003573695.1_ASM357369v1_genomic.fna
+      value: somniferum
+  - name: Castanea mollissima
+    value: mollissima
+    versions:
+    - name: Castanea mollissima (ASM1418300v1) - Chinese chestnut
+      path: ./genome/mollissima/GCA_014183005.1_ASM1418300v1_genomic.fna
+      value: mollissima
+  - name: Chenopodium quinoa
+    value: quinoa
+    versions:
+    - name: Chenopodium quinoa (ASM168347v1) - quinoa
+      path: ./genome/quinoa/GCF_001683475.1_ASM168347v1_genomic.fna
+      value: quinoa
+  - name: Benincasa hispida
+    value: hispida
+    versions:
+    - name: Benincasa hispida (ASM972705v1) -wax gourd
+      path: ./genome/hispida/GCF_009727055.1_ASM972705v1_genomic.fna
+      value: hispida
+  - name: Ipomoea nil
+    value: ipomoea
+    versions:
+    - name: Ipomoea nil (Asagao_1.1) - Japanese morning glory
+      path: ./genome/nil/GCF_001879475.1_Asagao_1.1_genomic.fna
+      value: nil
+  - name: Rosa chinensis
+    value: chinensis
+    versions:
+    - name: Rosa chinensis (RchiOBHm-V2) - China rose
+      path: ./genome/chinensis/GCF_002994745.2_RchiOBHm-V2_genomic.fna
+      value: chinensis
+  - name: Catharanthus roseus
+    value: roseus
+    versions:
+    - name: Catharanthus roseus (ASM2865129v1) - Madagascar periwinkle
+      path: ./genome/roseus/GCA_028651295.1_ASM2865129v1_genomic.fna
+      value: roseus
+  - name: Oryza sativa
+    value: oryzasativa
+    versions:
+    - name: Oryza sativa Japonica Group (Japanese rice)
+      path: ./genome/Japonica/GCF_034140825.1_ASM3414082v1_genomic.fna
+      value: Japonica
+  - name: Digitaria exilis
+    value: exilis
+    versions:
+    - name: Digitaria exilis (DiExil)
+      path: ./genome/exilis/GCA_015342445.1_DiExil_genomic.fna
+      value: exilis
+  - name: Raphanus sativus
+    value: rsativus
+    versions:
+    - name: Raphanus sativus (ASM80110v3) - radish
+      path: ./genome/rapsativus/GCF_000801105.2_ASM80110v3_genomic.fna
+      value: sativusradish
+  - name: Lonicera japonica
+    value: loniceraja
+    versions:
+    - name: Lonicera japonica (ASM2146441v1) Japanese honeysuckle
+      path: ./genome/japonica/GCA_021464415.1_ASM2146441v1_genomic.fna
+      value: japonica
+  - name: Ostreococcus tauri
+    value: ostreococcusta
+    versions:
+    - name: Ostreococcus tauri (version 140606)
+      path: ./genome/tauri/GCF_000214015.3_version_140606_genomic.fna
+      value: tauri
+  - name: Camellia sinensis
+    value: sinensis
+    versions:
+    - name: Camellia sinensis (AHAU_CSS_1) black tea
+      path: ./genome/sinensis/GCF_004153795.1_AHAU_CSS_1_genomic.fna
+      value: sinensis
+    - name: Camellia sinensis var. sinensis (AHAU_CSS_2)
+      path: ./genome/sinensis2/GCA_004153795.2_AHAU_CSS_2_genomic.fna
+      value: sinensis2
+  - name: Walnut
+    value: walnut
+    versions:
+    - name: Juglans regia (Walnut 2.0) English walnut
+      path: ./genome/regia/GCF_001411555.2_Walnut_2.0_genomic.fna
+      value: regia
+    - name: Juglans microcarpa (ASM312384v1)
+      path: ./genome/microcarpa/GCA_003123845.1_ASM312384v1_genomic.fna
+      value: microcarpa
+  - name: Ananas comosus
+    value: pineapple
+    versions:
+    - name: Ananas comosus (ASM154086v1) pineapple
+      path: ./genome/comosus/GCF_001540865.1_ASM154086v1_genomic.fna
+      value: comosus
+  - name: Pyrus x bretschneideri
+    value: bretschneideri
+    versions:
+    - name: Pyrus x bretschneideri (Pyrus_bretschneideri_v1) Chinese white pear
+      path: ./genome/bretschneideri/GCF_019419815.1_Pyrus_bretschneideri_v1_genomic.fna
+      value: bretschneideri
+  - name: 'Pisum sativum '
+    value: psativum
+    versions:
+    - name: Pisum sativum (CAAS_Psat_ZW6_1.0) garden pea
+      path: ./genome/sativum/GCF_024323335.1_CAAS_Psat_ZW6_1.0_genomic.fna
+      value: sativum
+  - name: Dianthus caryophyllus
+    value: caryophyllus
+    versions:
+    - name: Dianthus caryophyllus (ASM2309106v1) clove pink
+      path: ./genome/caryophyllus/GCA_023091065.1_ASM2309106v1_genomic.fna
+      value: caryophyllus
+  - name: Capsella
+    value: capsella
+    versions:
+    - name: Capsella rubella (Caprub1_0)
+      path: ./genome/rubella/GCF_000375325.1_Caprub1_0_genomic.fna
+      value: rubella
+    - name: Capsella grandiflora (UAZ_Capgrnd_2)
+      path: ./genome/grandiflora/GCA_040086895.1_UAZ_Capgrnd_2_genomic.fna
+      value: grandiflora
+    - name: Capsella bursa-pastoris (ASM3645264v1) shepherd's purse
+      path: ./genome/pastoris/GCA_036452645.1_ASM3645264v1_genomic.fna
+      value: pastoris
+  - name: Vaccinium corymbosum
+    value: corymbosum
+    versions:
+    - name: Vaccinium corymbosum (ASM1450483v1) American blueberry
+      path: ./genome/corymbosum/GCA_014504835.1_ASM1450483v1_genomic.fna
+      value: corymbosum
+  - name: Picea abies
+    value: abies
+    versions:
+    - name: Picea abies (Pabies01) Norway spruce
+      path: ./genome/abies/GCA_900067695.1_Pabies01_genomic.fna
+      value: abies
+  - name: Stevia rebaudiana
+    value: rebaudiana
+    versions:
+    - name: Stevia rebaudiana (ASM993640v2)
+      path: ./genome/rebaudiana/GCA_009936405.2_ASM993640v2_genomic.fna
+      value: rebaudiana
+  - name: Peanut
+    value: peanut
+    versions:
+    - name: Arachis hypogaea (arahy.Tifrunner.gnm1.KYV3) peanut
+      path: ./genome/hypogaea/GCF_003086295.2_arahy.Tifrunner.gnm1.KYV3_genomic.fna
+      value: hypogaea
+    - name: Arachis hypogaea (arahy.Tifrunner.gnm2.J5K5) peanut
+      path: ./genome/hypogaea5/GCA_003086295.3_arahy.Tifrunner.gnm2.J5K5_genomic.fna
+      value: hypogaea5
+    - name: Arachis ipaensis (Araip1.1) - Wild peanut
+      path: ./genome/wildpeanut/GCF_000816755.2_Araip1.1_genomic.fna
+      value: peanut
+    - name: Arachis duranensis (aradu.V14167.gnm2.J7QH) - Wild peanut
+      path: ./genome/peanutaradu/GCF_000817695.3_aradu.V14167.gnm2.J7QH_genomic.fna
+      value: wildpeanutdura
+  - name: Carica papaya
+    value: papaya
+    versions:
+    - name: Carica papaya (Papaya1.0) papaya
+      path: ./genome/papaya/GCF_000150535.2_Papaya1.0_genomic.fna
+      value: papaya
+  - name: Casuarina equisetifolia
+    value: equisetifolia
+    versions:
+    - name: Casuarina equisetifolia (ASM2855147v1)
+      path: ./genome/equisetifolia/GCA_028551475.1_ASM2855147v1_genomic.fna
+      value: equisetifolia
+  - name: Punica granatum
+    value: granatum
+    versions:
+    - name: Punica granatum (ASM765513v2) pomegranate
+      path: ./genome/granatum/GCF_007655135.1_ASM765513v2_genomic.fna
+      value: granatum
+  - name: Lupinus albus
+    value: albus
+    versions:
+    - name: Lupinus albus (CNRS_Lalb_1.0) white lupine
+      path: ./genome/albus/GCA_009771035.1_CNRS_Lalb_1.0_genomic.fna
+      value: albus
+  - name: Allium cepa
+    value: cepa
+    versions:
+    - name: Allium cepa (ASM3076508v1) onion
+      path: ./genome/cepa/GCA_030765085.1_ASM3076508v1_genomic.fna
+      value: cepa
+  - name: Morus notabilis
+    value: Morus notabilis
+    versions:
+    - name: Morus notabilis (ASM41409v2)
+      path: ./genome/notabilis/GCF_000414095.1_ASM41409v2_genomic.fna
+      value: notabilis
+  - name: Euphorbia pulcherrima
+    value: pulcherrima
+    versions:
+    - name: Euphorbia pulcherrima (Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0) poinsettia
+      path: ./genome/pulcherrima/GCA_947683365.1_Ep-USBG2016-0302-DRAFT-NextGenCassava-1.0_genomic.fna
+      value: pulcherrima
+  - name: Hydrangea macrophylla
+    value: macrophylla
+    versions:
+    - name: Hydrangea macrophylla( Hmc_EndlessSummer_p1.0)
+      path: ./genome/macrophylla/GCA_033977485.1_Hmc_EndlessSummer_p1.0_genomic.fna
+      value: macrophylla
+  - name: Olea europaea
+    value: olive
+    versions:
+    - name: Olea europaea var. sylvestris (O_europaea_v1) wild olive
+      path: ./genome/sylvestris/GCF_002742605.1_O_europaea_v1_genomic.fna
+      value: sylvestris
+  - name: Millet
+    value: coracana
+    versions:
+    - name: Cenchrus americanus (pearl_millet_23DB_ONT_assembly ) bulrush millet
+      path: ./genome/americanus/GCA_947561735.1_pearl_millet_23DB_ONT_assembly_genomic.fna
+      value: americanus
+    - name: Eleusine coracana subsp. coracana (Eleusine_coracana_v1.0 ) Indian finger
+        millet
+      path: ./genome/coracana/GCA_032690845.1_Eleusine_coracana_v1.0_genomic.fna
+      value: coracana
+  - name: Vanilla planifolia
+    value: planifolia
+    versions:
+    - name: Vanilla planifolia (ASM2384627v1 ) ASM2384627v1
+      path: ./genome/planifolia/GCA_023846275.1_ASM2384627v1_genomic.fna
+      value: planifolia
+  - name: Ceratopteris richardii
+    value: richardii
+    versions:
+    - name: Ceratopteris richardii (C.richardii_v2)
+      path: ./genome/richardii/GCA_020310875.1_C.richardii_v2_genomic.fna
+      value: richardii
+  - name: Bryum argenteum
+    value: argenteum
+    versions:
+    - name: Bryum argenteum (EGI_Barg_1.0)
+      path: ./genome/argenteum/GCA_037043015.1_EGI_Barg_1.0_genomic.fna
+      value: argenteum
+  - name: 'Areca catechu '
+    value: catechu
+    versions:
+    - name: Areca catechu (ASM2139784v1 ) areca-nut
+      path: ./genome/catechu/GCA_021397845.1_ASM2139784v1_genomic.fna
+      value: catechu
+  value: plants
+- name: Insects
+  organismtype:
+  - name: Drosophila
+    value: melanogaster
+    versions:
+    - name: Drosophila melanogaster ( BDGP6.46) Fruit fly
+      path: ./genome/melanogaster/Drosophila_melanogaster.BDGP6.46.dna.toplevel.fa
+      value: melanogaster
+    - name: Drosophila melanogaster ( BDGP6.32) Fruit fly
+      path: ./genome/melanogaster632/Drosophila_melanogaster.BDGP6.32.dna.toplevel.fa
+      value: melanogaster632
+    - name: Drosophila melanogaster (Release 6 plus ISO1 MT) fruit fly
+      path: ./genome/drosophila/GCF_000001215.4_Release_6_plus_ISO1_MT_genomic.fna
+      value: Drosophila
+    - name: Drosophila suzukii (Dsuz_RU_1.0)
+      path: ./genome/suzukii/GCF_037355615.1_Dsuz_RU_1.0_genomic.fna
+      value: suzukii
+    - name: Drosophila simulans (Prin_Dsim_3.1)
+      path: ./genome/simulans/GCF_016746395.2_Prin_Dsim_3.1_genomic.fna
+      value: simulans
+  - name: Apis mellifera
+    value: honeybee
+    versions:
+    - name: Apis mellifera (Amel_HAv3.1) honey bee
+      path: ./genome/mellifera/GCF_003254395.2_Amel_HAv3.1_genomic.fna
+      value: mellifera
+  - name: Musca domestica
+    value: housefly
+    versions:
+    - name: Musca domestica (Musca_domestica.polishedcontigs.V.1.1) house fly
+      path: ./genome/domesticamusca/GCF_030504385.1_Musca_domestica.polishedcontigs.V.1.1_genomic.fna
+      value: domestica
+  - name: Tribolium castaneum
+    value: castaneum
+    versions:
+    - name: Tribolium castaneum (icTriCast1.1) red flour beetle
+      path: ./genome/castaneum/GCF_031307605.1_icTriCast1.1_genomic.fna
+      value: castaneum
+  - name: Mosquito
+    value: mosquito
+    versions:
+    - name: Aedes albopictus (AalbF5) Asian tiger mosquito
+      path: ./genome/albopictus/GCF_035046485.1_AalbF5_genomic.fna
+      value: albopictus
+    - name: Anopheles gambiae (idAnoGambNW_F1_1) African malaria mosquito
+      path: ./genome/gambiae/GCF_943734735.2_idAnoGambNW_F1_1_genomic.fna
+      value: gambiae
+    - name: Aedes aegypti (AaegL5.0) yellow fever mosquito
+      path: ./genome/mosquito/GCF_002204515.2_AaegL5.0_genomic.fna
+      value: mosquito
+    - name: Anopheles stephensi (UCI_ANSTEP_V1.0) Asian malaria mosquito
+      path: ./genome/stephensi/GCF_013141755.1_UCI_ANSTEP_V1.0_genomic.fna
+      value: stephensi
+    - name: Culex quinquefasciatus (VPISU_Cqui_1.0_pri_paternal) southern house mosquito
+      path: ./genome/quinquefasciatus/GCF_015732765.1_VPISU_Cqui_1.0_pri_paternal_genomic.fna
+      value: quinquefasciatus
+    - name: Anopheles sinensis (AS2)
+      path: ./genome/anopheles/GCA_000441895.2_AS2_genomic.fna
+      value: anopheles
+    - name: Anopheles arabiensis (AaraD3)
+      path: ./genome/arabiensis/GCF_016920715.1_AaraD3_genomic.fna
+      value: arabiensis
+  - name: Plutella xylostella
+    value: diamondback
+    versions:
+    - name: Plutella xylostella (ilPluXylo3.1) diamondback moth
+      path: ./genome/xylostella/GCF_932276165.1_ilPluXylo3.1_genomic.fna
+      value: xylostella
+  - name: Bombus terrestris
+    value: bumblebee
+    versions:
+    - name: Bombus terrestris (iyBomTerr1.2) buff-tailed bumblebee
+      path: ./genome/terrestris/GCF_910591885.1_iyBomTerr1.2_genomic.fna
+      value: terrestris
+  - name: Worm
+    value: worm
+    versions:
+    - name: Helicoverpa armigera (ASM3070526v1) cotton bollworm
+      path: ./genome/armigera/GCF_030705265.1_ASM3070526v1_genomic.fna
+      value: armigera
+    - name: Bombyx mori (ASM3026992v2) domestic silkworm
+      path: ./genome/silkworm/GCF_030269925.1_ASM3026992v2_genomic.fna
+      value: silkworm
+    - name: Diabrotica virgifera virgifera (PGI_DIABVI_V3a) western corn rootworm
+      path: ./genome/virgifera/GCF_917563875.1_PGI_DIABVI_V3a_genomic.fna
+      value: virgifera
+    - name: Spodoptera frugiperda (AGI-APGP_CSIRO_Sfru_2.0) fall armyworm
+      path: ./genome/frugiperda/GCF_023101765.2_AGI-APGP_CSIRO_Sfru_2.0_genomic.fna
+      value: frugiperda
+  - name: Diaphorina citri Asian citrus psyllid
+    value: psyllid
+    versions:
+    - name: Diaphorina citri (Diaci psyllid genome assembly version 1.1) Asian citrus
+        psyllid
+      path: ./genome/citri/GCF_000475195.1_Diaci_psyllid_genome_assembly_version_1.1_genomic.fna
+      value: citri
+  - name: Danaus plexippus - monarch butterfly
+    value: butterfly
+    versions:
+    - name: Danaus plexippus (MEX_DaPlex) monarch butterfly
+      path: ./genome/plexippus/GCF_018135715.1_MEX_DaPlex_genomic.fna
+      value: plexippus
+  - name: Heliconius erato demophoon
+    value: demophoon
+    versions:
+    - name: Heliconius erato demophoon (SRR8883904)
+      path: ./genome/demophoon/GCA_018249695.1_SRR8883904_genomic.fna
+      value: demophoon
+  - name: Junonia coenia buckeye
+    value: buckeye
+    versions:
+    - name: Junonia coenia (SRR10765679) buckeye
+      path: ./genome/coenia/GCA_018235105.1_SRR10765679_genomic.fna
+      value: coenia
+  - name: Ant
+    value: ant
+    versions:
+    - name: Solenopsis invicta (UNIL_Sinv_3.0) red fire ant
+      path: ./genome/invicta/GCF_016802725.1_UNIL_Sinv_3.0_genomic.fna
+      value: invicta
+    - name: Camponotus floridanus (Cflo_v7.5) Florida carpenter ant
+      path: ./genome/floridanus/GCF_003227725.1_Cflo_v7.5_genomic.fna
+      value: floridanus
+    - name: Harpegnathos saltator (Hsal_v8.6) Jerdon's jumping ant
+      path: ./genome/saltator/GCF_003227715.2_Hsal_v8.6_genomic.fna
+      value: saltator
+  - name: Harmonia axyridis
+    value: axyridis
+    versions:
+    - name: Harmonia axyridis (icHarAxyr1.1)
+      path: ./genome/axyridis/GCF_914767665.1_icHarAxyr1.1_genomic.fna
+      value: axyridis
+  - name: Pieris rapae cabbage white
+    value: cabbage
+    versions:
+    - name: Pieris rapae (ilPieRapa1.1) cabbage white
+      path: ./genome/rapae/GCF_905147795.1_ilPieRapa1.1_genomic.fna
+      value: rapae
+  - name: Cimex lectularius bed bug
+    value: bug
+    versions:
+    - name: Cimex lectularius (Clec_2.1) bed bug
+      path: ./genome/lectularius/GCF_000648675.2_Clec_2.1_genomic.fna
+      value: lectularius
+  - name: Clitarchus hookeri - smooth stick-insect
+    value: hookeri
+    versions:
+    - name: Clitarchus hookeri (ASM4018264v1) smooth stick-insect
+      path: ./genome/hookeri/GCA_040182645.1_ASM4018264v1_genomic.fna
+      value: hookeri
+  - name: Bemisia tabaci - sweet potato whitefly
+    value: tabaci
+    versions:
+    - name: Bemisia tabaci (ASM185493v1) sweet potato whitefly
+      path: ./genome/tabaci/GCF_001854935.1_ASM185493v1_genomic.fna
+      value: tabaci
+  - name: Lasius niger
+    value: niger
+    versions:
+    - name: Lasius niger (ASM104565v1)
+      path: ./genome/niger/GCA_001045655.1_ASM104565v1_genomic.fna
+      value: niger
+  - name: Nippostrongylus brasiliensis
+    value: brasiliensis
+    versions:
+    - name: Nippostrongylus brasiliensis (ASM3055315v1)
+      path: ./genome/brasiliensis/GCA_030553155.1_ASM3055315v1_genomic.fna
+      value: brasiliensis
+  - name: Ostrinia furnacalis - Asian corn borer
+    value: furnacalis
+    versions:
+    - name: Ostrinia furnacalis (ASM419383v2) Asian corn borer
+      path: ./genome/furnacalis/GCF_004193835.3_ASM419383v2_genomic.fna
+      value: furnacalis
+  - name: Archegozetes longisetosus
+    value: longisetosus
+    versions:
+    - name: Archegozetes longisetosus (Caltech_Along_2.0)
+      path: ./genome/longisetosus/GCA_018873245.2_Caltech_Along_2.0_genomic.fna
+      value: longisetosus
+  - name: Oncopeltus fasciatus - milkweed bug
+    value: bug
+    versions:
+    - name: Oncopeltus fasciatus (Ofas_2.0) milkweed bug
+      path: ./genome/fasciatus/GCA_000696205.2_Ofas_2.0_genomic.fna
+      value: fasciatus
+  - name: Coccinella septempunctata - seven-spotted ladybird
+    value: septempunctata
+    versions:
+    - name: Coccinella septempunctata ( icCocSept1.1) seven-spotted ladybird
+      path: ./genome/septempunctata/GCF_907165205.1_icCocSept1.1_genomic.fna
+      value: septempunctata
+  - name: Myzus persicae - green peach aphid
+    value: persicae
+    versions:
+    - name: Myzus persicae (MPER_G0061.0) green peach aphid
+      path: ./genome/persicae/GCF_001856785.1_MPER_G0061.0_genomic.fna
+      value: persicae
+  - name: Hermetia illucens black soldier fly
+    value: illucens
+    versions:
+    - name: Hermetia illucens (iHerIll2.2.curated.20191125 ) black soldier fly
+      path: ./genome/illucens/GCF_905115235.1_iHerIll2.2.curated.20191125_genomic.fna
+      value: illucens
+  - name: Conogethes punctiferalis -  durian fruit borer
+    value: punctiferalis
+    versions:
+    - name: Conogethes punctiferalis (ASM3116337v1) durian fruit borer
+      path: ./genome/punctiferalis/GCA_031163375.1_ASM3116337v1_genomic.fna
+      value: punctiferalis
+  - name: Schistocerca gregaria - desert locust
+    value: gregaria
+    versions:
+    - name: Schistocerca gregaria (iqSchGreg1.2) desert locust
+      path: ./genome/gregaria/GCF_023897955.1_iqSchGreg1.2_genomic.fna
+      value: gregaria
+  value: insects
+- name: Others
+  organismtype:
+  - name: Others
+    value: others
+    versions:
+    - name: Escherichia coli K-12 (GCA_004919995)
+      path: ./genome/colik12/Escherichia_coli_k_12_gca_004919995.ASM491999v1_.dna.toplevel.fa
+      value: ecoli
+    - name: Saccharomycetales (GCA_000027005.1) Komagataella pastoris
+      path: ./genome/Saccharomycetales/Komagataella_pastoris.GCA_000027005.1.dna.toplevel.fa
+      value: Saccharomycetales
+    - name: Saccharomycetales (ASM170810v1) Komagataella pastoris
+      path: ./genome/Komagataella/Komagataella_pastoris_gca_001708105.ASM170810v1.dna.toplevel.fa
+      value: Komagataella
+    - name: Leishmania major (ASM272v2)
+      path: ./genome/leishmania/Leishmania_major.ASM272v2.dna.toplevel.fa
+      value: leishmania
+    - name: Paracoccus denitrificans PD1222 (GCA_000203895)
+      path: ./genome/denitrificans/Paracoccus_denitrificans_pd1222_gca_000203895.ASM20389v1.dna.toplevel.fa
+      value: denitrificans
+    - name: Metarhizium anisopliae BRIP 53293 (ASM42696v1)
+      path: ./genome/anisopliae/Metarhizium_anisopliae_brip_53293_gca_000426965.ASM42696v1.dna.toplevel.fa
+      value: anisopliae
+    - name: Metarhizium anisopliae ARSEF 549 (MAN_1.0)
+      path: ./genome/anisopliae549/Metarhizium_anisopliae_arsef_549_gca_000814975.MAN_1.0.dna.toplevel.fa
+      value: anisopliae549
+    - name: Metarhizium anisopliae BRIP 53284 (ASM42698v1)
+      path: ./genome/anisopliae53284/Metarhizium_anisopliae_brip_53284_gca_000426985.ASM42698v1.dna.toplevel.fa
+      value: anisopliae53284
+    - name: Metarhizium anisopliae str. E6 (Metarhizium_anisopliae)
+      path: ./genome/anisopliaee6/Metarhizium_anisopliae_gca_000739145.Metarhizium_anisopliae.dna.toplevel.fa
+      value: anisopliaee6
+    - name: Rhodococcus jostii RHA1 (GCA_000014565)
+      path: ./genome/jostii/Rhodococcus_jostii_rha1_gca_000014565.ASM1456v1_.dna.toplevel.fa
+      value: jostii
+    - name: Klebsiella pneumoniae subsp. pneumoniae MGH 78578 (GCA_000016305)
+      path: ./genome/pneumoniae/Klebsiella_pneumoniae_subsp_pneumoniae_mgh_78578_gca_000016305.ASM1630v1.dna.toplevel.fa
+      value: pneumoniae
+    - name: Plasmodium falciparum 3D7
+      path: ./genome/falciparum3d7/Plasmodium_falciparum.ASM276v2.dna.toplevel.fa
+      value: falciparum3d7
+    - name: Plasmodium falciparum 7G8 (GCA_000150435.3)
+      path: ./genome/falciparum7g8/Plasmodium_falciparum_7g8_gca_000150435.Plas_falc_7G8_V1.dna.toplevel.fa
+      value: falciparum7g8
+    - name: Plasmodium falciparum CAMP/Malaysia (GCA_000521115.1)
+      path: ./genome/falciparumcamp/Plasmodium_falciparum_camp_malaysia_gca_000521115.Plas_falc_Malayan_Camp_V1.dna.toplevel.fa
+      value: falciparumcamp
+    - name: Plasmodium falciparum Dd2 (GCA_000149795.1)
+      path: ./genome/falciparumdd2/Plasmodium_falciparum_dd2_gca_000149795.ASM14979v1.dna.toplevel.fa
+      value: falciparumdd2
+    - name: Plasmodium falciparum FCH/4 (GCA_000521155.1)
+      path: ./genome/falciparumfch/Plasmodium_falciparum_fch_4_gca_000521155.Plas_falc_FCH_4_V2.dna.toplevel.fa
+      value: falciparumfch
+    - name: Plasmodium falciparum HB3 (GCA_000149665.2)
+      path: ./genome/falciparumhb3/Plasmodium_falciparum_hb3_gca_000149665.ASM14966v2.dna.toplevel.fa
+      value: falciparumhb3
+    - name: Plasmodium falciparum IGH-CR14 (GCA_000186055.2)
+      path: ./genome/falciparumigh/Plasmodium_falciparum_igh_cr14_gca_000186055.ASM18605v2.dna.toplevel.fa
+      value: falciparumigh
+    - name: Plasmodium falciparum MaliPS096_E11 (GCA_000521035.1)
+      path: ./genome/falciparummali/Plasmodium_falciparum_malips096_e11_gca_000521035.Plas_falc_MaliPS096_E11_V1.dna.toplevel.fa
+      value: falciparummali
+    - name: Plasmodium falciparum NF135/5.C10 (GCA_000521075.1)
+      path: ./genome/falciparumnf/Plasmodium_falciparum_nf135_5_c10_gca_000521075.Plas_falc_NF135_5_C10_V1.dna.toplevel.fa
+      value: falciparumnf
+    - name: Plasmodium falciparum NF54 (GCA_000401695.2)
+      path: ./genome/falciparumnf54/Plasmodium_falciparum_nf54_gca_000401695.Plas_falc_NF4_V1.dna.toplevel.fa
+      value: falciparumnf54
+    - name: Plasmodium falciparum NF54 (GCA_002831795.1)
+      path: ./genome/falciparum542/Plasmodium_falciparum_nf54_gca_002831795.ASM283179v1.dna.toplevel.fa
+      value: falciparum542
+    - name: Plasmodium falciparum Palo Alto/Uganda (GCA_000521095.1)
+      path: ./genome/falciparumpalo/Plasmodium_falciparum_palo_alto_uganda_gca_000521095.Plas_falc_Uganda_Palo-Alto_FUP_H_V1.dna.toplevel.fa
+      value: falciparumpalo
+    - name: Plasmodium falciparum RAJ116 (GCA_000186025.2)
+      path: ./genome/falciparumraji/Plasmodium_falciparum_raj116_gca_000186025.ASM18602v2.dna.toplevel.fa
+      value: falciparumraji
+    - name: Plasmodium falciparum Santa Lucia (GCA_000150455.3)
+      path: ./genome/falciparumsanta/Plasmodium_falciparum_santa_lucia_gca_000150455.Plas_falc_Santa_Lucia_Salvador_I_V1.dna.toplevel.fa
+      value: falciparumsanta
+    - name: Plasmodium falciparum Tanzania (2000708) (GCA_000521055.1)
+      path: ./genome/falciparumtanza/Plasmodium_falciparum_tanzania_2000708__gca_000521055.Plas_falc_02000708_V1.dna.toplevel.fa
+      value: falciparumtanza
+    - name: Plasmodium falciparum UGT5.1 (GCA_000401715.2)
+      path: ./genome/falciparumugt/Plasmodium_falciparum_ugt5_1_gca_000401715.Plas_falc_5_1_V1.dna.toplevel.fa
+      value: falciparumugt
+    - name: Plasmodium falciparum Vietnam Oak-Knoll (FVO) (GCA_000521015.1)
+      path: ./genome/falciparumvet/Plasmodium_falciparum_vietnam_oak_knoll_fvo__gca_000521015.Plas_falc_Vietnam_Oak-Knoll_FVO_V1.dna.toplevel.fa
+      value: falciparumvet
+    - name: Limosilactobacillus mucosae LM1 (GCA_000248095)
+      path: ./genome/mucosae/Limosilactobacillus_mucosae_lm1_gca_000248095.ASM24809v3_.dna.toplevel.fa
+      value: mucosae
+    - name: Phaeodactylum tricornutum (ASM15095v2)
+      path: ./genome/tricornutum/Phaeodactylum_tricornutum.ASM15095v2.dna.toplevel.fa
+      value: tricornutum
+    - name: Corynebacterium glutamicum ATCC 13032 (GCA_000011325)
+      path: ./genome/glutamicum/Corynebacterium_glutamicum_atcc_13032_gca_000011325.ASM1132v1_.dna.toplevel.fa
+      value: glutamicum
+    - name: Mycobacterium tuberculosis variant bovis AF2122/97 (GCA_000195835)
+      path: ./genome/tuberculosis/Mycobacterium_bovis_af2122_97_gca_000195835.ASM19583v2_.dna.toplevel.fa
+      value: tuberculosis
+    - name: Mycobacterium tuberculosis variant africanum (GCA_001544855)
+      path: ./genome/africanum/Mycobacterium_tuberculosis_variant_africanum_gca_001544855.ASM154485v1_.dna.toplevel.fa
+      value: africanum
+    - name: Mycobacterium tuberculosis variant microti OV254 (GCA_002865895)
+      path: ./genome/microti/Mycobacterium_tuberculosis_variant_microti_ov254_gca_002865895.ASM286589v1_.dna.toplevel.fa
+      value: microti
+    - name: Mycobacterium tuberculosis variant pinnipedii (GCA_003027895)
+      path: ./genome/pinnipedii/Mycobacterium_tuberculosis_variant_pinnipedii_gca_003027895.ASM302789v2_.dna.toplevel.fa
+      value: pinnipedii
+    - name: Leishmania infantum (GCA_900500625.1)
+      path: ./genome/infantum/Leishmania_infantum_gca_900500625.LINF.dna.toplevel.fa
+      value: infantum
+    - name: Staphylococcus aureus subsp. aureus str. Newman (GCA_000010465)
+      path: ./genome/aureus/Staphylococcus_aureus_subsp_aureus_str_newman_gca_000010465.ASM1046v1_.dna.toplevel.fa
+      value: aureus
+    - name: Pseudomonas putida KT2440 (GCA_000007565)
+      path: ./genome/putida/Pseudomonas_putida_kt2440_gca_000007565.ASM756v2_.dna.toplevel.fa
+      value: putida
+    - name: Clostridium acetobutylicum ATCC 824 (GCA_000008765)
+      path: ./genome/acetobutylicumatcc/Clostridium_acetobutylicum_atcc_824_gca_000008765.ASM876v1_.dna.toplevel.fa
+      value: acetobutylicum
+    - name: Paraburkholderia sacchari str. LMG 19450 (GCA_000785435)
+      path: ./genome/sacchari/Paraburkholderia_sacchari_gca_000785435.ASM78543v1_.dna.toplevel.fa
+      value: sacchari
+    - name: Trypanosoma cruzi Dm28c
+      path: ./genome/cruzi/Trypanosoma_cruzi_dm28c_gca_000496795.T.cruzi.Dm28c_v01.dna.toplevel.fa
+      value: cruzi
+    - name: Debaryomyces hansenii CBS767 (GCA_000006445)
+      path: ./genome/hansenii/Debaryomyces_hansenii_cbs767_gca_000006445.ASM644v2.dna.toplevel.fa
+      value: hansenii
+    - name: Schistosoma mansoni (Flatworm)
+      path: ./genome/mansoni/Schistosoma_mansoni.Smansoni_v7.dna.toplevel.fa
+      value: mansoni
+    - name: Listeria monocytogenes (GCA_006364655)
+      path: ./genome/monocytogenes/Listeria_monocytogenes_gca_006364655.ASM636465v1_.dna.toplevel.fa
+      value: monocytogenes
+    - name: Clostridium beijerinckii NCIMB 8052 (GCA_000016965)
+      path: ./genome/beijerinckii/Clostridium_beijerinckii_ncimb_8052_gca_000016965.ASM1696v1_.dna.toplevel.fa
+      value: beijerinckii
+    - name: Clostridium tyrobutyricum DIVETGP (GCA_000577845)
+      path: ./genome/tyrobutyricum/Clostridium_tyrobutyricum_divetgp_gca_000577845.CTDIVETGP_.dna.toplevel.fa
+      value: tyrobutyricum
+    - name: Clostridium tyrobutyricum str. Cirm BIA 2237 (GCA_004924375)
+      path: ./genome/tyrobutyricumbia/Clostridium_tyrobutyricum_gca_004924375.ASM492437v1_.dna.toplevel.fa
+      value: tyrobutyricumbia
+    - name: Peptoclostridium acidaminophilum DSM 3953 (GCA_000597865)
+      path: ./genome/acidaminophilum/Peptoclostridium_acidaminophilum_dsm_3953_gca_000597865.ASM59786v1_.dna.toplevel.fa
+      value: acidaminophilum
+    - name: Peptoclostridium litorale DSM 5388 str. W6 (GCA_000699585)
+      path: ./genome/litorale/Peptoclostridium_litorale_dsm_5388_gca_000699585.CLIT1_.dna.toplevel.fa
+      value: litorale
+    - name: Peptoclostridium sp. AF21-18 (GCA_003478825)
+      path: ./genome/peptoclostridium/Peptoclostridium_sp_af21_18_gca_003478825.ASM347882v1_.dna.toplevel.fa
+      value: peptoclostridium
+    - name: Clostridium carboxidivorans P7 (GCA_000175595)
+      path: ./genome/carboxidivorans/Clostridium_carboxidivorans_p7_gca_000175595.ASM17559v1_.dna.toplevel.fa
+      value: carboxidivorans
+    - name: Clostridium kluyveri DSM 555 (GCA_000016505)
+      path: ./genome/kluyveri/Clostridium_kluyveri_dsm_555_gca_000016505.ASM1650v1_.dna.toplevel.fa
+      value: kluyveri
+    - name: Clavispora lusitaniae ATCC 42720
+      path: ./genome/lusitaniae/Clavispora_lusitaniae_atcc_42720_gca_000003835.ASM383v1.dna.toplevel.fa
+      value: lusitaniae
+    - name: Clavispora lusitaniae str. CBS 6936
+      path: ./genome/lusitaniaecbs/Clavispora_lusitaniae_gca_001673695.ASM167369v2.dna.toplevel.fa
+      value: lusitaniaecbs
+    - name: Trypanosoma brucei equiperdum str. IVM-t1 (GCA_003543875.1)
+      path: ./genome/equiperdum/Trypanosoma_brucei_equiperdum_gca_003543875.ASM354387v1.dna.toplevel.fa
+      value: equiperdum
+    - name: Thalassiosira pseudonana
+      path: ./genome/pseudonana/Thalassiosira_pseudonana.ASM14940v2.dna.toplevel.fa
+      value: pseudonana
+    - name: Saccharomyces cerevisiae str. 131
+      path: ./genome/cerevisiae131/Saccharomyces_cerevisiae_gca_001983315.ASM198331v1.dna.toplevel.fa
+      value: cerevisiae131
+    - name: Saccharomyces cerevisiae str. Kagoshima No.2
+      path: ./genome/cerevisiae2/Saccharomyces_cerevisiae_gca_002335645.ScerevisiaeKagoshima_assembly01.dna.toplevel.fa
+      value: cerevisiae2
+    - name: Saccharomyces cerevisiae str. P-684
+      path: ./genome/cerevisiae684/Saccharomyces_cerevisiae_gca_014132395.Scer_P-684_01.dna.toplevel.fa
+      value: cerevisiae684
+    - name: Saccharomyces cerevisiae str. Pf-1
+      path: ./genome/cerevisiaepf/Saccharomyces_cerevisiae_gca_009014655.Scer_Pf_1_01.dna.toplevel.fa
+      value: cerevisiaepf
+    - name: Strongyloides ratti (Threadworm)
+      path: ./genome/threadworm/Strongyloides_ratti.S_ratti_ED321_v5_0_4.dna.toplevel.fa
+      value: threadworm
+    - name: Thioalkalivibrio versutus str. D301 (GCA_001020955)
+      path: ./genome/versutusd301/Thioalkalivibrio_versutus_gca_001020955.ASM102095v1_.dna.toplevel.fa
+      value: versutusd301
+    - name: Thioalkalivibrio versutus str. AL 2 (GCA_001999325)
+      path: ./genome/versutusal2/Thioalkalivibrio_versutus_gca_001999325.ASM199932v1_.dna.toplevel.fa
+      value: versutusal2
+    - name: Rhodotorula toruloides str. NBRC 0880
+      path: ./genome/toruloides/Rhodotorula_toruloides_gca_000988875.ASM98887v2.dna.toplevel.fa
+      value: toruloides
+    - name: Methylorubrum extorquens AM1 (GCA_000022685)
+      path: ./genome/extorquens/Methylorubrum_extorquens_am1_gca_000022685.ASM2268v1_.dna.toplevel.fa
+      value: extorquens
+    - name: Candidatus Brocadia sinica JPN1 (GCA_000949635)
+      path: ./genome/sinica/Candidatus_brocadia_sinica_jpn1_gca_000949635.ASM94963v1_.dna.toplevel.fa
+      value: sinica
+    - name: Clostridium acetobutylicum ATCC 824 (GCA_000008765)
+      path: ./genome/acetobutylicumatcc/Clostridium_acetobutylicum_atcc_824_gca_000008765.ASM876v1_.dna.toplevel.fa
+      value: acetobutylicum
+    - name: Acinetobacter baumannii (GCA_006369845)
+      path: ./genome/baumannii/Acinetobacter_baumannii_gca_006369845.ASM636984v1_.dna.toplevel.fa
+      value: baumannii
+    - name: Acinetobacter baumannii ATCC 19606 = CIP 70.34 = JCM 6841 (GCA_000162295)
+      path: ./genome/baumanniiatcc/Acinetobacter_baumannii_atcc_19606_cip_70_34_jcm_6841_gca_000162295.ASM16229v1_.dna.toplevel.fa
+      value: baumanniiatcc
+    - name: Candida albicans SC5314 (Cand_albi_SC5314_V3) (GCA_000784655)
+      path: ./genome/albicans/Candida_albicans_sc5314_gca_000784655.Cand_albi_SC5314_V3.dna.toplevel.fa
+      value: albicans
+    - name: Candida albicans SC5314 (Cand_albi_SC5314_V4) (GCA_000784635)
+      path: ./genome/albicansv4/Candida_albicans_sc5314_gca_000784635.Cand_albi_SC5314_V4.dna.toplevel.fa
+      value: albicansv4
+    - name: Candida glabrata CBS138 (GCA_000002545.2)
+      path: ./genome/glabrata/Candida_glabrata.GCA000002545v2.dna.toplevel.fa
+      value: glabrata
+    - name: Fusobacterium nucleatum subsp. nucleatum ATCC 25586 (GCA_000007325)
+      path: ./genome/nucleatum/Fusobacterium_nucleatum_subsp_nucleatum_atcc_25586_gca_000007325.ASM732v1.dna.toplevel.fa
+      value: nucleatum
+    - name: Paenibacillus polymyxa (GCA_900454525)
+      path: ./genome/polymyxa/Paenibacillus_polymyxa_gca_900454525.49508_G02_.dna.toplevel.fa
+      value: polymyxa
+    - name: Clostridium pasteurianum DSM 525 = ATCC 6013 (GCA_000807255)
+      path: ./genome/pasteurianum/Clostridium_pasteurianum_dsm_525_atcc_6013_gca_000807255.ASM80725v1_.dna.toplevel.fa
+      value: pasteurianum
+    - name: Mycobacterium tuberculosis variant bovis BCG (GCA_001544735)
+      path: ./genome/bovis/Mycobacterium_tuberculosis_variant_bovis_bcg_gca_001544735.ASM154473v1_.dna.toplevel.fa
+      value: bovis
+    - name: Plasmodium knowlesi
+      path: ./genome/knowlesi/Plasmodium_knowlesi.ASM635v1.dna.toplevel.fa
+      value: knowlesi
+    - name: Plasmodium knowlesi str. Malayan Strain Pk1 (A+) (GCA_002140095.1)
+      path: ./genome/knowlesimala/Plasmodium_knowlesi_gca_002140095.PKNOHv1.dna.toplevel.fa
+      value: knowlesimala
+    - name: Plasmodium knowlesi strain H (GCA_900004885.2)
+      path: ./genome/knowlesih/Plasmodium_knowlesi_strain_h_gca_900004885.PKNA1-C.2.dna.toplevel.fa
+      value: knowlesih
+    - name: Streptomyces ambofaciens ATCC 23877 str. ATCC23877 (GCA_001267885)
+      path: ./genome/ambofaciens/Streptomyces_ambofaciens_atcc_23877_gca_001267885.ASM126788v1_.dna.toplevel.fa
+      value: ambofaciens
+    - name: Vibrio cholerae O1 biovar El Tor str. N16961 (GCA_000006745)
+      path: ./genome/biovar/Vibrio_cholerae_o1_biovar_el_tor_str_n16961_gca_000006745.ASM674v1.dna.toplevel.fa
+      value: biovar
+    - name: Pseudomonas putida F1 (GCA_000016865)
+      path: ./genome/putidaf1/Pseudomonas_putida_f1_gca_000016865.ASM1686v1_.dna.toplevel.fa
+      value: putidaf1
+    - name: Pantoea agglomerans (GCA_004793995)
+      path: ./genome/agglomerans/Pantoea_agglomerans_gca_004793995.ASM479399v1_.dna.toplevel.fa
+      value: agglomerans
+    - name: Salmonella enterica subsp. enterica serovar Typhimurium str. LT2 (GCA_000006945)
+      path: ./genome/enterica/Salmonella_enterica_subsp_enterica_serovar_typhimurium_str_lt2_gca_000006945.ASM694v2_.dna.toplevel.fa
+      value: enterica
+    - name: Ogataea polymorpha str. NCYC 495 leu1.1 (Hanpo2)
+      path: ./genome/hanpo2/Ogataea_polymorpha_gca_001664045.Hanpo2.dna.toplevel.fa
+      value: hanpo2
+    - name: Bdellovibrio bacteriovorus HD100 (GCA_000196175)
+      path: ./genome/bacteriovorus/Bdellovibrio_bacteriovorus_hd100_gca_000196175.ASM19617v1_.dna.toplevel.fa
+      value: bacteriovorus
+    - name: Mnemiopsis leidyi (Warty comb jelly)
+      path: ./genome/leidyi/Mnemiopsis_leidyi.MneLei_Aug2011.dna.toplevel.fa
+      value: leidyi
+    - name: Bdellovibrio bacteriovorus (GCA_001592755)
+      path: ./genome/bdellovibrio/Bdellovibrio_bacteriovorus_gca_001592755.ASM159275v1_.dna.toplevel.fa
+      value: bdellovibrio
+    - name: Emiliania huxleyi
+      path: ./genome/huxleyi/Emiliania_huxleyi.Emiliana_huxleyi_CCMP1516_main_genome_assembly_v1.0.dna.toplevel.fa
+      value: huxleyi
+    - name: Schizophyllum commune H4-8
+      path: ./genome/commune/Schizophyllum_commune_h4_8_gca_000143185.v1.0.dna.toplevel.fa
+      value: commune
+    - name: Trichoderma reesei
+      path: ./genome/reesei/Trichoderma_reesei.GCA_000167675.2.dna.toplevel.fa
+      value: reesei
+    - name: Trichoderma reesei RUT C-30
+      path: ./genome/reeseirut/Trichoderma_reesei_rut_c_30_gca_000513815.TrireRUTC30_1.dna.toplevel.fa
+      value: reeseirut
+    - name: Toxoplasma gondii ARI (GCA_000250965.2)
+      path: ./genome/ari/Toxoplasma_gondii_ari_gca_000250965.TGARI_v2.dna.toplevel.fa
+      value: ari
+    - name: Toxoplasma gondii CAST (GCA_000256705.2)
+      path: ./genome/cast/Toxoplasma_gondii_gca_000256705.TGCAST_v2.dna.toplevel.fa
+      value: cast
+    - name: Toxoplasma gondii COUG (GCA_000338675.2)
+      path: ./genome/coug/Toxoplasma_gondii_coug_gca_000338675.TGCOUG_v2.dna.toplevel.fa
+      value: coug
+    - name: Toxoplasma gondii FOU (GCA_000224905.2)
+      path: ./genome/fou/Toxoplasma_gondii_fou_gca_000224905.TGFOU1v02.dna.toplevel.fa
+      value: fou
+    - name: Toxoplasma gondii GAB2-2007-GAL-DOM2 (GCA_000325525.2)
+      path: ./genome/gab2/Toxoplasma_gondii_gab2_2007_gal_dom2_gca_000325525.TGGABGALDOM2_v2.1.dna.toplevel.fa
+      value: gab2
+    - name: Toxoplasma gondii GT1 (GCA_000149715.2)
+      path: ./genome/gt1/Toxoplasma_gondii_gt1_gca_000149715.TGGT1.dna.toplevel.fa
+      value: gti
+    - name: Toxoplasma gondii MAS (GCA_000224865.2)
+      path: ./genome/mas/Toxoplasma_gondii_mas_gca_000224865.TGMAS1_v2.dna.toplevel.fa
+      value: mas
+    - name: Toxoplasma gondii ME49
+      path: ./genome/me49/Toxoplasma_gondii.TGA4.dna.toplevel.fa
+      value: me49
+    - name: Toxoplasma gondii RUB (GCA_000224805.2)
+      path: ./genome/rub/Toxoplasma_gondii_rub_gca_000224805.TGRUB_v2.dna.toplevel.fa
+      value: rub
+    - name: Toxoplasma gondii TgCATBr9 (GCA_000224825.2)
+      path: ./genome/tgcat/Toxoplasma_gondii_tgcatbr9_gca_000224825.TGCATBR9_v2.dna.toplevel.fa
+      value: tgcat
+    - name: Toxoplasma gondii TgCatPRC2 (GCA_000256725.2)
+      path: ./genome/tgcatprc/Toxoplasma_gondii_tgcatprc2_gca_000256725.TGCATPRC2_v2.dna.toplevel.fa
+      value: tgcatprc
+    - name: Toxoplasma gondii VAND (GCA_000224845.2)
+      path: ./genome/vand/Toxoplasma_gondii_vand_gca_000224845.TGVAND_v2.dna.toplevel.fa
+      value: vand
+    - name: Toxoplasma gondii VEG (GCA_000150015.2)
+      path: ./genome/veg/Toxoplasma_gondii_veg_gca_000150015.TGVEG.dna.toplevel.fa
+      value: veg
+    - name: Toxoplasma gondii p89 (GCA_000224885.2)
+      path: ./genome/p89/Toxoplasma_gondii_p89_gca_000224885.TGP89A_v02.dna.toplevel.fa
+      value: p89
+    - name: Plasmodium berghei (GCA_900095635.1)
+      path: ./genome/berghei/Plasmodium_berghei_gca_900095635.PbSP11A.dna.toplevel.fa
+      value: berghei
+    - name: Plasmodium yoelii str. 17X (GCA_900002385.1)
+      path: ./genome/yoelii17x/Plasmodium_yoelii_gca_900002385.PY17X01.dna.toplevel.fa
+      value: yoelii17x
+    - name: Plasmodium yoelii str. YM (GCA_900002395.1)
+      path: ./genome/yoeliiym/Plasmodium_yoelii_gca_900002395.PYYM01.dna.toplevel.fa
+      value: yoeliiym
+    - name: Plasmodium yoelii yoelii str. 17XNL (GCA_000003085.2)
+      path: ./genome/yoelii17xnl/Plasmodium_yoelii_yoelii_gca_000003085.ASM308v2.dna.toplevel.fa
+      value: yoelii17xnl
+    - name: Arthrospira platensis C1 (GCA_000307915)
+      path: ./genome/platensisc1/Arthrospira_platensis_c1_gca_000307915.ASM30791v1_.dna.toplevel.fa
+      value: platensisc1
+    - name: Arthrospira platensis NIES-39 (GCA_000210375)
+      path: ./genome/platensisnies/Arthrospira_platensis_nies_39_gca_000210375.ASM21037v1_.dna.toplevel.fa
+      value: platensisnies
+    - name: Komagataeibacter rhaeticus AF1 (GCA_000700985)
+      path: ./genome/rhaeticus/Komagataeibacter_rhaeticus_af1_gca_000700985.GLUCORHAEAF1_v1_.dna.toplevel.fa
+      value: rhaeticus
+    - name: Komagataeibacter rhaeticus (GCA_900086575)
+      path: ./genome/komagataeibacter/Komagataeibacter_rhaeticus_gca_900086575.K.rhaeticus_iGEM_genome_.dna.toplevel.fa
+      value: komagataeibacter
+    - name: Bacillus subtilis (GCA_000878265)
+      path: ./genome/subtilis/Bacillus_subtilis_gca_000878265.ASM87826v1_.dna.toplevel.fa
+      value: subtilis
+    - name: Gonium pectorale
+      path: ./genome/pectorale/GCA_001584585.1_ASM158458v1_genomic.fna
+      value: pectorale
+    - name: Escherichia coli K-12 (GCA_004919995)
+      path: ./genome/colik12/Escherichia_coli_k_12_gca_004919995.ASM491999v1_.dna.toplevel.fa
+      value: ecoli
+    - name: Trichoderma harzianum str. T6776
+      path: ./genome/harzianum/Trichoderma_harzianum_gca_000988865.ASM98886v1.dna.toplevel.fa
+      value: harzianum
+    - name: Trichoderma harzianum str. TR274
+      path: ./genome/harzianum274/Trichoderma_harzianum_gca_002838845.ASM283884v1.dna.toplevel.fa
+      value: harzianum274
+    - name: Trichoderma harzianum str. Tr1
+      path: ./genome/harzianumTr1/Trichoderma_harzianum_gca_002894145.Tr1.dna.toplevel.fa
+      value: harzianumTr1
+    - name: Trichoderma harzianum CBS 226.95
+      path: ./genome/harzianumCBS/Trichoderma_harzianum_cbs_226_95_gca_003025095.Triha_v1.0.dna.toplevel.fa
+      value: harzianumCBS
+    - name: Streptomyces albus str. DSM 41398 (GCA_000827005)
+      path: ./genome/albusdsm/Streptomyces_albus_gca_000827005.ASM82700v1_.dna.toplevel.fa
+      value: albusdsm
+    - name: Streptomyces albus subsp. albus (GCA_001541145)
+      path: ./genome/albusalbus/Streptomyces_albus_subsp_albus_gca_001541145.ASM154114v1_.dna.toplevel.fa
+      value: albusalbus
+    - name: Leptospira interrogans serovar Copenhageni str. Fiocruz L1-130 (GCA_000007685)
+      path: ./genome/fiocruz/Leptospira_interrogans_serovar_copenhageni_str_fiocruz_l1_130_gca_000007685.ASM768v1_.dna.toplevel.fa
+      value: fiocruz
+    - name: Leptospira interrogans serovar Copenhageni str. LT2050 (GCA_000216155)
+      path: ./genome/lT2050/Leptospira_interrogans_serovar_copenhageni_str_lt2050_gca_000216155.gls454150v02_.dna.toplevel.fa
+      value: lT2050
+    - name: Anaplasma phagocytophilum str. HZ (GCA_000013125)
+      path: ./genome/phagocytophilum/Anaplasma_phagocytophilum_str_hz_gca_000013125.ASM1312v1.dna.toplevel.fa
+      value: phagocytophilum
+    - name: Neisseria meningitidis (GCA_006334835)
+      path: ./genome/meningitidis/Neisseria_meningitidis_gca_006334835.ASM633483v1_.dna.toplevel.fa
+      value: meningitidis
+    - name: Streptococcus pneumoniae (GCA_006376385)
+      path: ./genome/pneumoniaes/Streptococcus_pneumoniae_gca_006376385.ASM637638v1_.dna.toplevel.fa
+      value: pneumoniaes
+    - name: Escherichia coli str. K-12 substr. MG1655 str. K12 (GCA_000005845)
+      path: ./genome/mg1655/Escherichia_coli_str_k_12_substr_mg1655_gca_000005845.ASM584v2.dna.toplevel.fa
+      value: mg1655
+    - name: Escherichia coli str. K-12 substr. W3110 (GCA_000010245)
+      path: ./genome/w3110/Escherichia_coli_str_k_12_substr_w3110_gca_000010245.ASM1024v1_.dna.toplevel.fa
+      value: w3110
+    - name: Francisella tularensis subsp. holarctica str. FTT_1 (GCA_000833235)
+      path: ./genome/holarctica/Francisella_tularensis_subsp_holarctica_gca_000833235.ASM83323v1_.dna.toplevel.fa
+      value: holarctica
+    - name: Francisella tularensis subsp. holarctica str. 08T0073 (GCA_001953575)
+      path: ./genome/holarctica08/Francisella_tularensis_subsp_holarctica_gca_001953575.ASM195357v1_.dna.toplevel.fa
+      value: holarctica08
+    - name: Komagataella phaffii CBS 7435 (PicPas_Mar2011)
+      path: ./genome/phaffii/Komagataella_phaffii_cbs_7435_gca_000223565.PicPas_Mar2011.dna.toplevel.fa
+      value: phaffii
+    - name: Komagataella phaffii CBS 7435 (ASM90023503v1)
+      path: ./genome/phaffiicbs/Komagataella_phaffii_cbs_7435_gca_900235035.ASM90023503v1.dna.toplevel.fa
+      value: phaffiicbs
+    - name: Komagataella phaffii GS115
+      path: ./genome/phaffiigs/Komagataella_phaffii_gs115_gca_001746955.ASM174695v1.dna.toplevel.fa
+      value: phaffiigs
+    - name: Komagataella phaffii str. WT
+      path: ./genome/phaffiiwt/Komagataella_phaffii_gca_001708085.ASM170808v1.dna.toplevel.fa
+      value: phaffiiwt
+    - name: Mesorhizobium loti str. UFLA 01-765 (GCA_001510895)
+      path: ./genome/loti/Mesorhizobium_loti_gca_001510895.ASM151089v1_.dna.toplevel.fa
+      value: loti
+    - name: Mesorhizobium loti str. R7ANS::ICEMlSym2042 (GCA_001671485)
+      path: ./genome/loti1/Mesorhizobium_loti_gca_001671485.ASM167148v1_.dna.toplevel.fa
+      value: loti1
+    - name: Mesorhizobium loti str. NZP2042 (GCA_001672355)
+      path: ./genome/loti2/Mesorhizobium_loti_gca_001672355.NZP2042_.dna.toplevel.fa
+      value: loti2
+    - name: Mesorhizobium loti str. NZP2014 (GCA_001672365)
+      path: ./genome/loti3/Mesorhizobium_loti_gca_001672365.ASM167236v1_.dna.toplevel.fa
+      value: loti3
+    - name: Mesorhizobium loti (GCA_002356515)
+      path: ./genome/loti4/Mesorhizobium_loti_gca_002356515.MlotiTONO_1.0_.dna.toplevel.fa
+      value: loti4
+    - name: Mesorhizobium loti str. LU (GCA_002858745)
+      path: ./genome/loti5/Mesorhizobium_loti_gca_002858745.ASM285874v1_.dna.toplevel.fa
+      value: loti5
+    - name: Mesorhizobium loti (GCA_003024615)
+      path: ./genome/loti6/Mesorhizobium_loti_gca_003024615.ASM302461v1_.dna.toplevel.fa
+      value: loti6
+    - name: Mesorhizobium loti str. DSM 2626 (GCA_003148495)
+      path: ./genome/loti7/Mesorhizobium_loti_gca_003148495.ASM314849v1_.dna.toplevel.fa
+      value: loti7
+    - name: Sinorhizobium meliloti 1021 (GCA_000006965)
+      path: ./genome/meliloti/Sinorhizobium_meliloti_1021_gca_000006965.ASM696v1.dna.toplevel.fa
+      value: meliloti
+    - name: Clostridium butyricum (GCA_002940805)
+      path: ./genome/butyricum1/Clostridium_butyricum_gca_002940805.ASM294080v1_.dna.toplevel.fa
+      value: butyricum1
+    - name: Clostridium butyricum (GCA_003935945)
+      path: ./genome/butyricum2/Clostridium_butyricum_gca_003935945.ASM393594v1_.dna.toplevel.fa
+      value: butyricum2
+    - name: Synechocystis sp. PCC 6714 (GCA_000478825)
+      path: ./genome/pcc6714/Synechocystis_sp_pcc_6714_gca_000478825.ASM47882v2_.dna.toplevel.fa
+      value: pcc6714
+    - name: Synechocystis sp. PCC 6803 (GCA_000009725)
+      path: ./genome/pcc6803/Synechocystis_sp_pcc_6803_gca_000009725.ASM972v1.dna.toplevel.fa
+      value: pcc6803
+    - name: Lachancea thermotolerans CBS 6340
+      path: ./genome/thermotolerans/Lachancea_thermotolerans_cbs_6340_gca_000142805.ASM14280v1.dna.toplevel.fa
+      value: thermotolerans
+    - name: Lactococcus lactis str. C2D (GCA_004022375)
+      path: ./genome/lactis1/Lactococcus_lactis_gca_004022375.ASM402237v1_.dna.toplevel.fa
+      value: lactis1
+    - name: Lactococcus lactis str. SRCM103457 (GCA_004194355)
+      path: ./genome/lactis2/Lactococcus_lactis_gca_004194355.ASM419435v1_.dna.toplevel.fa
+      value: lactis2
+    - name: Lactococcus lactis str. gh1 (GCA_004795205)
+      path: ./genome/lactis3/Lactococcus_lactis_gca_004795205.ASM479520v1_.dna.toplevel.fa
+      value: lactis3
+    - name: Lactococcus lactis str. CH_LC01 (GCA_005146285)
+      path: ./genome/lactis4/Lactococcus_lactis_gca_005146285.ASM514628v1_.dna.toplevel.fa
+      value: lactis4
+    - name: Ganoderma sinense ZZ0214-1
+      path: ./genome/sinense/Ganoderma_sinense_zz0214_1_gca_002760635.GanSi1.6.dna.toplevel.fa
+      value: sinense
+    - name: Komagataeibacter xylinus E25 (GCA_000550765)
+      path: ./genome/xylinus1/Komagataeibacter_xylinus_e25_gca_000550765.ASM55076v1_.dna.toplevel.fa
+      value: xylinus1
+    - name: Komagataeibacter xylinus (GCA_002762195)
+      path: ./genome/xylinus2/Komagataeibacter_xylinus_gca_002762195.ASM276219v1_.dna.toplevel.fa
+      value: xylinus2
+    - name: Komagataeibacter xylinus (GCA_003207915)
+      path: ./genome/xylinus3/Komagataeibacter_xylinus_gca_003207915.ASM320791v1_.dna.toplevel.fa
+      value: xylinus3
+    - name: Komagataeibacter xylinus str. DSM 2325 (GCA_004006375)
+      path: ./genome/xylinus4/Komagataeibacter_xylinus_gca_004006375.ASM400637v1_.dna.toplevel.fa
+      value: xylinus4
+    - name: Komagataeibacter xylinus (GCA_900016225)
+      path: ./genome/xylinus5/Komagataeibacter_xylinus_gca_900016225.ATCC53582.1_.dna.toplevel.fa
+      value: xylinus5
+    - name: Komagataeibacter xylinus NBRC 13693 (GCA_000964505)
+      path: ./genome/xylinus6/Komagataeibacter_xylinus_nbrc_13693_gca_000964505.ASM96450v1_.dna.toplevel.fa
+      value: xylinus6
+    - name: Penicillium chrysogenum str. P2niaD18
+      path: ./genome/chrysogenum/Penicillium_chrysogenum_gca_000710275.ASM71027v1.dna.toplevel.fa
+      value: chrysogenum
+    - name: Chlamydia trachomatis 434/Bu (GCA_000068585)
+      path: ./genome/trachomatis1/Chlamydia_trachomatis_434_bu_gca_000068585.ASM6858v1_.dna.toplevel.fa
+      value: trachomatis1
+    - name: Chlamydia trachomatis A2497 (GCA_000226605)
+      path: ./genome/trachomatis2/Chlamydia_trachomatis_a2497_gca_000226605.ASM22660v1_.dna.toplevel.fa
+      value: trachomatis2
+    - name: Chlamydia trachomatis A/HAR-13 (GCA_000012125)
+      path: ./genome/trachomatis3/Chlamydia_trachomatis_a_har_13_gca_000012125.ASM1212v1_.dna.toplevel.fa
+      value: trachomatis3
+    - name: Chlamydia trachomatis D/UW-3/CX (GCA_000008725)
+      path: ./genome/trachomatis4/Chlamydia_trachomatis_d_uw_3_cx_gca_000008725.ASM872v1.dna.toplevel.fa
+      value: trachomatis4
+    - name: Chlamydia trachomatis (GCA_001213105)
+      path: ./genome/trachomatis5/Chlamydia_trachomatis_gca_001213105.5833_5_5_.dna.toplevel.fa
+      value: trachomatis5
+    - name: Chlamydia trachomatis (GCA_001317725)
+      path: ./genome/trachomatis6/Chlamydia_trachomatis_gca_001317725.7054_3_86_.dna.toplevel.fa
+      value: trachomatis6
+    - name: Chlamydia trachomatis (GCA_001317765)
+      path: ./genome/trachomatis7/Chlamydia_trachomatis_gca_001317765.7396_3_18_.dna.toplevel.fa
+      value: trachomatis7
+    - name: Chlamydia trachomatis (GCA_001398195)
+      path: ./genome/trachomatis8/Chlamydia_trachomatis_gca_001398195.7794_5_16_.dna.toplevel.fa
+      value: trachomatis8
+    - name: Nannochloropsis gaditana CCMP526 (GCA_000240725.1)
+      path: ./genome/gaditana1/Nannochloropsis_gaditana_ccmp526_gca_000240725.ASM24072v1.dna.toplevel.fa
+      value: gaditana1
+    - name: Nannochloropsis gaditana str. B-31 (GCA_000569095.1)
+      path: ./genome/gaditana2/Nannochloropsis_gaditana_gca_000569095.NagaB31_1.0.dna.toplevel.fa
+      value: gaditana2
+    - name: Streptomyces coelicolor str. O-10.2 (GCA_004368945)
+      path: ./genome/coelicolor1/Streptomyces_coelicolor_gca_004368945.ASM436894v1_.dna.toplevel.fa
+      value: coelicolor1
+    - name: Streptomyces coelicolor str. O-10.1 (GCA_004368985)
+      path: ./genome/coelicolor2/Streptomyces_coelicolor_gca_004368985.ASM436898v1_.dna.toplevel.fa
+      value: coelicolor2
+    - name: Entamoeba histolytica
+      path: ./genome/histolytica1/Entamoeba_histolytica.JCVI-ESG2-1.0.dna.toplevel.fa
+      value: histolytica1
+    - name: Entamoeba histolytica HM-1:IMSS-A (GCA_000365475.1)
+      path: ./genome/histolytica2/Entamoeba_histolytica_hm_1_imss_a_gca_000365475.EHA_CA_v1.dna.toplevel.fa
+      value: histolytica2
+    - name: Entamoeba histolytica HM-1:IMSS-B str. HM3:IMSS-B (GCA_000344925.1)
+      path: ./genome/histolytica3/Entamoeba_histolytica_hm_1_imss_b_gca_000344925.EHA_CB_v1.dna.toplevel.fa
+      value: histolytica3
+    - name: Entamoeba histolytica HM-3:IMSS (GCA_000346345.1)
+      path: ./genome/histolytica4/Entamoeba_histolytica_hm_3_imss_gca_000346345.EHA.strHM3_v1.dna.toplevel.fa
+      value: histolytica4
+    - name: Entamoeba histolytica KU27 (GCA_000338855.1)
+      path: ./genome/histolytica5/Entamoeba_histolytica_ku27_gca_000338855.EHA_ku27_v1.dna.toplevel.fa
+      value: histolytica5
+    - name: Entamoeba histolytica str. HM1:IMSS clone 6 (GCA_001662325.1)
+      path: ./genome/histolytica6/Entamoeba_histolytica_gca_001662325.Ehistolytica_2016.dna.toplevel.fa
+      value: histolytica6
+    - name: Saccharomyces eubayanus str. FM1318
+      path: ./genome/eubayanus/Saccharomyces_eubayanus_gca_001298625.SEUB3.0.dna.toplevel.fa
+      value: eubayanus
+    - name: Fonsecaea monophora
+      path: ./genome/monophora/Fonsecaea_monophora_gca_001642475.ASM164247v1.dna.toplevel.fa
+      value: monophora
+    - name: Clostridium cellulovorans 743B (GCA_000145275)
+      path: ./genome/cellulovorans/Clostridium_cellulovorans_743b_gca_000145275.ASM14527v1_.dna.toplevel.fa
+      value: cellulovorans
+    - name: Lactobacillus plantarum WCFS1 (GCA_000203855)
+      path: ./genome/plantarum/Lactobacillus_plantarum_wcfs1_gca_000203855.ASM20385v3.dna.toplevel.fa
+      value: plantarum
+    - name: Rhodococcus opacus B4 (GCA_000010805)
+      path: ./genome/opacus1/Rhodococcus_opacus_b4_gca_000010805.ASM1080v1_.dna.toplevel.fa
+      value: opacus1
+    - name: Rhodococcus opacus str. R7 (GCA_000736435)
+      path: ./genome/opacus2/Rhodococcus_opacus_gca_000736435.ASM73643v1_.dna.toplevel.fa
+      value: opacus2
+    - name: Rhodococcus opacus str. 1CP (GCA_001685605)
+      path: ./genome/opacus3/Rhodococcus_opacus_gca_001685605.ASM168560v1_.dna.toplevel.fa
+      value: opacus3
+    - name: Rhodococcus opacus str. 04-OD7 (GCA_002968035)
+      path: ./genome/opacus4/Rhodococcus_opacus_gca_002968035.ASM296803v1_.dna.toplevel.fa
+      value: opacus4
+    - name: Rhodococcus opacus str. DSM 44186 (GCA_003626495)
+      path: ./genome/opacus5/Rhodococcus_opacus_gca_003626495.ASM362649v1_.dna.toplevel.fa
+      value: opacus5
+    - name: Rhodococcus opacus str. ATCC 51882 (GCA_004365075)
+      path: ./genome/opacus6/Rhodococcus_opacus_gca_004365075.ASM436507v1_.dna.toplevel.fa
+      value: opacus6
+    - name: Rhodococcus opacus M213 (GCA_000264745)
+      path: ./genome/opacus7/Rhodococcus_opacus_m213_gca_000264745.ASM26474v2_.dna.toplevel.fa
+      value: opacus7
+    - name: Rhodococcus opacus PD630 (GCA_000599545)
+      path: ./genome/opacus8/Rhodococcus_opacus_pd630_gca_000599545.ASM59954v1_.dna.toplevel.fa
+      value: opacus8
+    - name: Pseudomonas aeruginosa PAO1 (GCA_000006765)
+      path: ./genome/aeruginosa/Pseudomonas_aeruginosa_pao1_gca_000006765.ASM676v1_.dna.toplevel.fa
+      value: aeruginosa
+    - name: Pseudomonas aeruginosa UCBPP-PA14 (GCA_000014625)
+      path: ./genome/aeruginosa2/Pseudomonas_aeruginosa_ucbpp_pa14_gca_000014625.ASM1462v1_.dna.toplevel.fa
+      value: aeruginosa2
+    - name: Legionella pneumophila subsp. pneumophila str. Philadelphia 1 (GCA_000008485)
+      path: ./genome/pneumophila/Legionella_pneumophila_subsp_pneumophila_str_philadelphia_1_gca_000008485.ASM848v1_.dna.toplevel.fa
+      value: pneumophila
+    - name: Legionella pneumophila (GCA_006364635)
+      path: ./genome/pneumophila2/Legionella_pneumophila_gca_006364635.ASM636463v1_.dna.toplevel.fa
+      value: pneumophila2
+    - name: Legionella pneumophila str. Lens (GCA_000048665)
+      path: ./genome/pneumophila3/Legionella_pneumophila_str_lens_gca_000048665.ASM4866v1_.dna.toplevel.fa
+      value: pneumophila3
+    - name: Legionella pneumophila subsp. pascullei (GCA_001590695)
+      path: ./genome/pneumophila4/Legionella_pneumophila_subsp_pascullei_gca_001590695.ASM159069v1_.dna.toplevel.fa
+      value: pneumophila4
+    - name: Legionella pneumophila subsp. pneumophila (GCA_003605955)
+      path: ./genome/pneumophila5/Legionella_pneumophila_subsp_pneumophila_gca_003605955.L01C.1_n_l_OLDA_.dna.toplevel.fa
+      value: pneumophila5
+    - name: Rhodobacter capsulatus SB 1003 str. SB1003 (GCA_000021865)
+      path: ./genome/capsulatus/Rhodobacter_capsulatus_sb_1003_gca_000021865.ASM2186v1_.dna.toplevel.fa
+      value: capsulatus
+    - name: Rhodobacter sphaeroides 2.4.1 (GCA_000012905)
+      path: ./genome/sphaeroides/Rhodobacter_sphaeroides_2_4_1_gca_000012905.ASM1290v2.dna.toplevel.fa
+      value: sphaeroides
+    - name: Nitrosomonas europaea ATCC 19718 (GCA_000009145)
+      path: ./genome/europaea/Nitrosomonas_europaea_atcc_19718_gca_000009145.ASM914v1_.dna.toplevel.fa
+      value: europaea
+    - name: Acanthamoeba castellanii str. Neff (GCA_000313135.1)
+      path: ./genome/castellanii/Acanthamoeba_castellanii_str_neff_gca_000313135.Acastellanii.strNEFF_v1.dna.toplevel.fa
+      value: castellanii
+    - name: Streptococcus suis (GCA_004922915)
+      path: ./genome/suis1/Streptococcus_suis_gca_004922915.ASM492291v1_.dna.toplevel.fa
+      value: suis1
+    - name: Streptococcus suis str. NSUI060 (GCA_001572685)
+      path: ./genome/suis2/Streptococcus_suis_gca_001572685.ASM157268v1_.dna.toplevel.fa
+      value: suis2
+    - name: Streptococcus suis str. DN13 (GCA_001640765)
+      path: ./genome/suis3/Streptococcus_suis_gca_001640765.ASM164076v1_.dna.toplevel.fa
+      value: suis3
+    - name: Streptococcus suis str. CZ130302 (GCA_002803825)
+      path: ./genome/suis4/Streptococcus_suis_gca_002803825.ASM280382v1_.dna.toplevel.fa
+      value: suis4
+    - name: Streptococcus suis str. AH681 (GCA_002812525)
+      path: ./genome/suis5/Streptococcus_suis_gca_002812525.ASM281252v1_.dna.toplevel.fa
+      value: suis5
+    - name: Streptococcus suis str. HN136 (GCA_002831545)
+      path: ./genome/suis6/Streptococcus_suis_gca_002831545.ASM283154v1_.dna.toplevel.fa
+      value: suis6
+    - name: Streptococcus suis str. NJAU-TF-202 (GCA_002896475)
+      path: ./genome/suis7/Streptococcus_suis_gca_002896475.ASM289647v1_.dna.toplevel.fa
+      value: suis7
+    - name: Streptococcus suis str. HN105 (GCA_003144175)
+      path: ./genome/suis8/Streptococcus_suis_gca_003144175.ASM314417v1_.dna.toplevel.fa
+      value: suis8
+    - name: Streptococcus suis str. 1081 (GCA_003285245)
+      path: ./genome/suis9/Streptococcus_suis_gca_003285245.ASM328524v1_.dna.toplevel.fa
+      value: suis9
+    - name: Streptococcus suis str. HA1003 (GCA_003352205)
+      path: ./genome/suis10/Streptococcus_suis_gca_003352205.ASM335220v1_.dna.toplevel.fa
+      value: suis10
+    - name: Streptococcus suis str. WUSS351 (GCA_004843685)
+      path: ./genome/suis11/Streptococcus_suis_gca_004843685.ASM484368v1_.dna.toplevel.fa
+      value: suis11
+    - name: Streptococcus suis 05ZYH33 (GCA_000014305)
+      path: ./genome/suis12/Streptococcus_suis_05zyh33_gca_000014305.ASM1430v1_.dna.toplevel.fa
+      value: suis12
+    - name: Streptococcus suis 6407 (GCA_000732355)
+      path: ./genome/suis13/Streptococcus_suis_6407_gca_000732355.ASM73235v1_.dna.toplevel.fa
+      value: suis13
+    - name: Streptococcus suis BM407 (GCA_000026745)
+      path: ./genome/suis14/Streptococcus_suis_bm407_gca_000026745.ASM2674v1_.dna.toplevel.fa
+      value: suis14
+    - name: Streptococcus suis D12 (GCA_000231905)
+      path: ./genome/suis15/Streptococcus_suis_d12_gca_000231905.ASM23190v1_.dna.toplevel.fa
+      value: suis15
+    - name: Streptococcus suis GZ1 (GCA_000018185)
+      path: ./genome/suis16/Streptococcus_suis_gz1_gca_000018185.ASM1818v1_.dna.toplevel.fa
+      value: suis16
+    - name: Streptococcus suis T15 (GCA_000494895)
+      path: ./genome/suis17/Streptococcus_suis_t15_gca_000494895.ASM49489v1_.dna.toplevel.fa
+      value: suis17
+    - name: Clostridioides difficile (GCA_002301955)
+      path: ./genome/difficile/Clostridioides_difficile_gca_002301955.ASM230195v1_.dna.toplevel.fa
+      value: difficile
+    - name: Clostridioides difficile 630 (GCA_000009205)
+      path: ./genome/difficile2/Clostridioides_difficile_630_gca_000009205.ASM920v2.dna.toplevel.fa
+      value: difficile2
+    - name: Clostridioides difficile ATCC 9689 = DSM 1296 (GCA_001077535)
+      path: ./genome/difficile3/Clostridioides_difficile_atcc_9689_dsm_1296_gca_001077535.ASM107753v2_.dna.toplevel.fa
+      value: difficile3
+    - name: Clostridioides difficile CD160 (GCA_000449425)
+      path: ./genome/difficile4/Clostridioides_difficile_cd160_gca_000449425.ASM44942v2_.dna.toplevel.fa
+      value: difficile4
+    - name: Clostridioides difficile CD196 (GCA_000085225)
+      path: ./genome/difficile5/Clostridioides_difficile_cd196_gca_000085225.ASM8522v1_.dna.toplevel.fa
+      value: difficile5
+    - name: Clostridioides difficile F501 (GCA_000450805)
+      path: ./genome/difficile6/Clostridioides_difficile_f501_gca_000450805.ASM45080v2_.dna.toplevel.fa
+      value: difficile6
+    - name: Clostridioides difficile str. RA09_70 (GCA_001299495)
+      path: ./genome/difficile7/Clostridioides_difficile_gca_001299495.ASM129949v1_.dna.toplevel.fa
+      value: difficile7
+    - name: Clostridioides difficile str. CD-B18-123 (GCA_005502205)
+      path: ./genome/difficile8/Clostridioides_difficile_gca_005502205.ASM550220v1_.dna.toplevel.fa
+      value: difficile8
+    - name: Clostridioides difficile str. WCH065050 (GCA_005786645)
+      path: ./genome/difficile9/Clostridioides_difficile_gca_005786645.ASM578664v1_.dna.toplevel.fa
+      value: difficile9
+    - name: Clostridioides difficile NAP08 (GCA_000164175)
+      path: ./genome/difficile10/Clostridioides_difficile_nap08_gca_000164175.ASM16417v1_.dna.toplevel.fa
+      value: difficile10
+    - name: Clostridioides difficile P28 (GCA_000450985)
+      path: ./genome/difficile11/Clostridioides_difficile_p28_gca_000450985.ASM45098v2_.dna.toplevel.fa
+      value: difficile11
+    - name: Clostridioides difficile R20291 (GCA_000027105)
+      path: ./genome/difficile12/Clostridioides_difficile_r20291_gca_000027105.ASM2710v1_.dna.toplevel.fa
+      value: difficile12
+    - name: Clostridioides difficile Y384 (GCA_000451045)
+      path: ./genome/difficile13/Clostridioides_difficile_y384_gca_000451045.ASM45104v2_.dna.toplevel.fa
+      value: difficile13
+    - name: Escherichia coli K-12 (GCA_004919995)
+      path: ./genome/colik12/Escherichia_coli_k_12_gca_004919995.ASM491999v1_.dna.toplevel.fa
+      value: colik12
+    - name: Clostridium acetobutylicum ATCC 824 (GCA_000008765)
+      path: ./genome/acetobutylicumatcc/Clostridium_acetobutylicum_atcc_824_gca_000008765.ASM876v1_.dna.toplevel.fa
+      value: acetobutylicumatcc
+    - name: Clostridium acetobutylicum ATCC 824 (GCA_000008765)
+      path: ./genome/acetobutylicumatcc/Clostridium_acetobutylicum_atcc_824_gca_000008765.ASM876v1_.dna.toplevel.fa
+      value: acetobutylicumatcc
+    - name: Escherichia coli K-12 (GCA_004919995)
+      path: ./genome/colik12/Escherichia_coli_k_12_gca_004919995.ASM491999v1_.dna.toplevel.fa
+      value: colik12
+  value: others

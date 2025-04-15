@@ -1,9 +1,14 @@
-FROM node:19-alpine
+FROM node:22-alpine
+ENV PNPM_HOME="/pnpm"
+ENV PATH="$PNPM_HOME:$PATH"
+RUN corepack enable
+
 RUN mkdir /app
 WORKDIR /app
 COPY . .
-RUN npm install
-RUN npm run build
+
+RUN pnpm install
+
 EXPOSE 3000
 
-CMD ["node", "build/index.js"]
+ENTRYPOINT ["/bin/sh", "./start.sh"]

@@ -3,6 +3,10 @@ services:
     build: 
       context: ./frontend
       dockerfile: Dockerfile
+    environment:
+      - PUBLIC_SITE_ROOT=${SITE_ROOT}
+    volumes:
+      - ./config:/app/config/
     restart: unless-stopped
   backend:
     depends_on:
@@ -19,7 +23,7 @@ services:
       - SMTP_HOST=${SMTP_HOST}
       - SMTP_USE_TLS=${SMTP_USE_TLS}
       - SMTP_PORT=${SMTP_PORT}
-      - ALLOWED_ORIGIN=${ALLOWED_ORIGIN}
+      - ALLOWED_ORIGIN=${SITE_ROOT}
     restart: unless-stopped
     deploy:
       resources:
@@ -30,6 +34,7 @@ services:
             capabilities: [gpu]
     volumes:
       - /bce/omics/references/cas-offinder:/app/genome
+      - ./config:/app/config/
   caddy:
     image: caddy:latest
     restart: unless-stopped
