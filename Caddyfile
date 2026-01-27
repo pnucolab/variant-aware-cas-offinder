@@ -1,0 +1,26 @@
+(logging) {
+    log stdoutlogger {
+        output stdout
+    }
+    log filelogger {
+        output file /var/log/caddy/access.log
+    }
+}
+
+:80 {
+    import logging
+    handle /api/v1/* {
+        request_body {
+            max_size 500MB
+        }
+        reverse_proxy http://backend:8000 {
+            flush_interval -1
+            transport http {
+                compression off
+            }
+        }
+    }
+    handle {
+        reverse_proxy http://frontend:3000
+    }
+}

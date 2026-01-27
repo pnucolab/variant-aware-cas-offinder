@@ -1,0 +1,89 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    environment:
+      - PUBLIC_SITE_ROOT=${SITE_ROOT}
+    volumes:
+      - ./config:/app/config/
+    restart: unless-stopped
+  backend:
+    depends_on:
+      - redis
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    shm_size: '8gb'
+    command: bash runserver.sh
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SMTP_EMAIL=${SMTP_EMAIL}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_USE_TLS=${SMTP_USE_TLS}
+      - SMTP_PORT=${SMTP_PORT}
+      - ALLOWED_ORIGIN=${SITE_ROOT}
+    restart: unless-stopped
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 2
+            capabilities: [gpu]
+    volumes:
+      - /bce/omics/references/cas-offinder:/app/genome
+      - ./config:/app/config/
+      - uploads:/app/uploads
+      - result_data:/app/result_data
+      - ./cli:/cli
+  celery-worker:
+    depends_on:
+      - redis
+      - backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    shm_size: '8gb'
+    command: celery -A celery_app worker --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+      - SMTP_EMAIL=${SMTP_EMAIL}
+      - SMTP_PASSWORD=${SMTP_PASSWORD}
+      - SMTP_HOST=${SMTP_HOST}
+      - SMTP_USE_TLS=${SMTP_USE_TLS}
+      - SMTP_PORT=${SMTP_PORT}
+    restart: unless-stopped
+    volumes:
+      - /bce/omics/references/cas-offinder:/app/genome
+      - ./config:/app/config/
+      - ./cli:/cli
+      - uploads:/app/uploads
+      - result_data:/app/result_data
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            count: 2
+            capabilities: [gpu]
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    ports:
+      - "13789:80"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+volumes:
+  caddy_data:
+  caddy_config:
+  uploads:
+  result_data:

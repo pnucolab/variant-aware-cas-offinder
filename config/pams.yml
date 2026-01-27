@@ -1,0 +1,161 @@
+pams:
+  - name: "SpCas9 from streptococcus pyogenes: 5'-NGG-3'"
+    value: spcas9-ngg
+    pam: NGG
+    reversed: false
+  - name: "SpCas9 from Streptococcus pyogenes: 5'-NRG-3' (R = A or G)"
+    value: spcas9-nrg
+    pam: NRG
+    reversed: false
+  - name: "StCas9 from Streptococcus thermophilus: 5'-NNAGAAW-3' (W = A or T)"
+    value: stcas9-nnagaa
+    pam: NNAGAAW
+    reversed: false
+  - name: "NmCas9 from Neisseria meningitidis: 5'-NNNNGMTT-3' (M = A or C)"
+    value: nmcas9-nnngmtt
+    pam: NNNNGMTT
+    reversed: false
+  - name: "SaCas9 from Staphylococcus aureus: 5'-NNGRRT-'3 (R=A or G)"
+    value: sacas9-nngr
+    pam: NNGRRT
+    reversed: false
+  - name: "CjCas9 from Campylobacter jejuni: 5'-NNNVRYAC-3' (V = G or C or A, R = A or G, Y = C or T)"
+    value: cjcas9-vryac
+    pam: NNNVRYAC
+    reversed: false
+  - name: "AsCpf1 from Acidaminococcus or LbCpf1 from Lachnospiraceae: 5'-TTTN-3'"
+    value: cpf1-tttn
+    pam: TTTN
+    reversed: true
+  - name: "AsCpf1 from Acidaminococcus or LbCpf1 from Lachnospiraceae: 5'-TTTV-3' (V = G or C or A)"
+    value: cpf1-tttv
+    pam: TTTV
+    reversed: true
+  - name: "SpCas9 from Streptococcus pasteurianus: 5'-NNGTGA-3'"
+    value: spcas9-nngtga
+    pam: NNGTGA
+    reversed: false
+  - name: "FnCpf1 from Francisella: 5'-TTN-3'"
+    value: fncpf1-ttn
+    pam: TTN
+    reversed: true
+  - name: "SaCas9 from Staphylococcus aureus: 5'-NNNRRT-'3 (R=A or G)"
+    value: sacas9-nnnrrt
+    pam: NNNRRT
+    reversed: false
+  - name: "FnCpf1 from Francisella: 5'-KYTV-3'"
+    value: fncpf1-kytv
+    pam: KYTV
+    reversed: true
+  - name: "VRER SpCas9 from Streptococcus pyogenes: 5'-NGCG-3'"
+    value: spcas9-vrer-ngcg
+    pam: NGCG
+    reversed: false
+  - name: "VQR SpCas9 from Streptococcus pyogenes: 5'-NGA-3'"
+    value: spcas9-vqr-nga
+    pam: NGA
+    reversed: false
+  - name: "XCas9 3.7 (TLIKDIV SpCas9) from Streptococcus pyogenes: 5'-NGT-3'"
+    value: spcas9-xcas9-ngt
+    pam: NGT
+    reversed: false
+  - name: "XCas9 3.7 (TLIKDIV SpCas9) from Streptococcus pyogenes: 5'-NG-3'"
+    value: spcas9-xcas9-ng
+    pam: NG
+    reversed: false
+  - name: "BhCas12b from Bacillus hisashii: 5'-TTN-3'"
+    value: bhcas12b-ttn
+    pam: TTN
+    reversed: true
+  - name: "BhCas12b v4 from Bacillus hisashii: 5'-ATTN-3'"
+    value: bhcas12b-v4-attn
+    pam: ATTN
+    reversed: true
+  - name: "BhCas12b v4 from Bacillus hisashii: 5'-DTTN-3'"
+    value: bhcas12b-v4-dttn
+    pam: DTTN
+    reversed: true
+  - name: "Spy-macCas9 from Streptococcus pyogenes and Streptococcus macacae: 5'-NAAN-3'"
+    value: spymaccas9-naan
+    pam: NAAN
+    reversed: false
+  - name: "Nme2Cas9 from Neisseria meningitidis: 5'-NNNNCC-3'"
+    value: nme2cas9-nnnncc
+    pam: NNNNCC
+    reversed: false
+  - name: "RR AsCpf1 from Acidaminococcus: 5'-TYCV-3'"
+    value: cpf1-rr-tycv
+    pam: TYCV
+    reversed: true
+  - name: "RVR AsCpf1 from Acidaminococcus: 5'-TATV-3'"
+    value: cpf1-rvr-tatv
+    pam: TATV
+    reversed: true
+  - name: "CcCas9 from Clostridium cellulolyticum: 5'-NNNNGNA-3'"
+    value: cccas9-nnnngna
+    pam: NNNNGNA
+    reversed: false
+  - name: "MAD7 nuclease: 5'-YTTV-3'"
+    value: mad7-yttv
+    pam: YTTV
+    reversed: true
+  - name: "Complementary SpCas9 from Streptococcus pyogenes: 5'-NCC-3'"
+    value: spcas9-ncc
+    pam: NCC
+    reversed: false
+  - name: "ThermoCas9 from Geobacillus thermodenitrificans T1: 5'-NNNNCNR-3'"
+    value: thermocas9-nnnncnr
+    pam: NNNNCNR
+    reversed: false
+  - name: "ThermoCas9 from Geobacillus thermodenitrificans T1: 5'-NNNNCNAA-3'"
+    value: thermocas9-nnnncnaa
+    pam: NNNNCNAA
+    reversed: false
+  - name: "SpRY Cas9 from Streptococcus pyogenes: 5'-NNN-3'"
+    value: spcas9-spry-nnn
+    pam: NNN
+    reversed: false
+  - name: "SpRY Cas9 from Streptococcus pyogenes: 5'-NRN-3'"
+    value: spcas9-spry-nrn
+    pam: NRN
+    reversed: false
+  - name: "SpCas9 Variant from Streptococcus pyogenes: 5'-NGC-3'"
+    value: spcas9-ngc
+    pam: NGC
+    reversed: false
+  - name: "Cas12f1 from Acidibacillus sulfuroxidans: 5'-TTTR-3'"
+    value: cas12f1-tttr
+    pam: TTTR
+    reversed: true
+  - name: "Cas12f1 from Acidibacillus sulfuroxidans: 5'-NTTR-3'"
+    value: cas12f1-nttr
+    pam: NTTR
+    reversed: true
+  - name: "DpbCasX (Cas12e) from Deltaproteobacteria: 5'-TTCN-3'"
+    value: dpbcasx-ttcn
+    pam: TTCN
+    reversed: true
+  - name: "SpCas9 Variant (TAT.P5-1) from Streptococcus pyogenes: 5'-NRTH-3' (R=G or A, H=A or C or T)"
+    value: spcas9-p5-nrth
+    pam: NRTH
+    reversed: false
+  - name: "SpCas9 from Staphylococcus Auricularis: 5'-NNGG-3'"
+    value: spcas9-auricularis-nngg
+    pam: NNGG
+    reversed: false
+  - name: "St3Cas9 from Streptococcus Thermophilus: 5'-NGGNG-3'"
+    value: st3cas9-nggng
+    pam: NGGNG
+    reversed: false
+  - name: "Frcas9 from Faecalibaculum rodentium: 5'-NRTA-3' for target (R=A or G)"
+    value: frcas9-nrta
+    pam: NRTA
+    reversed: false
+  - name: "Frcas9 from Faecalibaculum rodentium: 5'-NNNA-3'"
+    value: frcas9-nnna
+    pam: NNNA
+    reversed: false
+  - name: "LtCas12a from Cas12a family: 5'-TTNA-3'"
+    value: ltcas12a-ttna
+    pam: TTNA
+    reversed: true
