@@ -8,3 +8,5 @@ cli/.vscode/
 compose.dev.yml
 backend/uploads/
 genome/human38/
+.vscode
+docs/
