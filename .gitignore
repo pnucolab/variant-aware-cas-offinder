@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 backend/genome/
 backend/result_data/
-cli/.claude/
 cli/.vscode/
 compose.dev.yml
 backend/uploads/
