@@ -157,6 +157,7 @@ async def summary(
     page: int = Query(1, ge=1, description="Page number"),
     limit: int = Query(50, ge=1, le=500, description="Items per page"),
     crRNA: str = Query(None, description="Filter by crRNA sequence"),
+    chromosome: str = Query(None, description="Filter by chromosome"),
     mismatches: str = Query(None, description="Filter by mismatch count"),
     gc: str = Query(None, description="Filter by GC content value")
 ):
@@ -201,6 +202,16 @@ async def summary(
         # Apply filters
         if crRNA:
             df_all = df_all[df_all['crRNA'].str.contains(crRNA, case=False, na=False)]
+        if chromosome:
+            # Extract chromosome for filtering (handle formats like "FORWARD_chr1:1")
+            def extract_chrom_for_filter(chrom_val):
+                if chrom_val is None:
+                    return None
+                chrom_val = str(chrom_val).split(':')[0]
+                if '_' in chrom_val:
+                    chrom_val = chrom_val.split('_')[-1]
+                return chrom_val
+            df_all = df_all[df_all['Chromosome'].apply(extract_chrom_for_filter) == chromosome]
         if mismatches:
             df_all = df_all[df_all['Mismatches'] == mismatches]
         if gc:
@@ -373,6 +384,25 @@ async def result_filter_options(ticket: str):
         names = ["crRNA", "Chromosome", "Position", "DNA", "Direction", "Mismatches"]
         df = pd.DataFrame(data, columns=names)
 
+        # Get unique crRNA values
+        unique_crrna = sorted(df['crRNA'].dropna().unique().tolist())
+
+        # Get unique chromosome values (extract chromosome from format like "FORWARD_chr1:1")
+        def extract_chrom(chrom):
+            if chrom is None:
+                return chrom
+            chrom = str(chrom)
+            # Split by colon to remove allele part
+            chrom = chrom.split(':')[0]
+            # Check if there's an underscore (e.g., FORWARD_chr1, REVERSE_1)
+            if '_' in chrom:
+                chrom = chrom.split('_')[-1]
+            return chrom
+
+        df['ChromExtracted'] = df['Chromosome'].apply(extract_chrom)
+        unique_chromosomes = sorted(df['ChromExtracted'].dropna().unique().tolist(),
+                                    key=lambda x: (0, int(x.replace('chr', ''))) if x.replace('chr', '').isdigit() else (1, 0, x))
+
         # Get unique mismatches values
         unique_mismatches = sorted(df['Mismatches'].dropna().unique().tolist(), key=lambda x: int(x) if x.isdigit() else 999)
 
@@ -388,6 +418,8 @@ async def result_filter_options(ticket: str):
 
         return JSONResponse(content={
             'status': 'completed',
+            'crrna_values': unique_crrna,
+            'chromosome_values': unique_chromosomes,
             'mismatches': unique_mismatches,
             'gc_values': unique_gc_values
         })

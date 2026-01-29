@@ -37,7 +37,7 @@ services:
       - /bce/omics/references/cas-offinder:/app/genome
       - ./config:/app/config/
       - uploads:/app/uploads
-      - result_data:/app/result_data
+      - ./backend/result_data:/app/result_data
       - ./cli:/cli
   celery-worker:
     depends_on:
@@ -62,7 +62,7 @@ services:
       - ./config:/app/config/
       - ./cli:/cli
       - uploads:/app/uploads
-      - result_data:/app/result_data
+      - ./backend/result_data:/app/result_data
     deploy:
       resources:
         reservations:
@@ -70,6 +70,19 @@ services:
           - driver: nvidia
             count: 2
             capabilities: [gpu]
+  celery-beat:
+    depends_on:
+      - redis
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: celery -A celery_app beat --loglevel=info
+    environment:
+      - CELERY_BROKER_URL=redis://redis:6379/0
+      - CELERY_RESULT_BACKEND=redis://redis:6379/0
+    restart: unless-stopped
+    volumes:
+      - ./backend/result_data:/app/result_data
   caddy:
     image: caddy:latest
     restart: unless-stopped
@@ -86,4 +99,3 @@ volumes:
   caddy_data:
   caddy_config:
   uploads:
-  result_data:

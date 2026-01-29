@@ -4,7 +4,6 @@ import subprocess
 import shutil
 import time
 import glob
-import re
 from datetime import datetime
 import duckdb
 import smtplib
@@ -13,6 +12,32 @@ from email.mime.text import MIMEText
 
 
 CLI_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'cli')
+RESULT_DATA_DIR = "result_data"
+RESULT_MAX_AGE_DAYS = 3
+
+
+@celery_task.task
+def cleanup_old_results():
+    """Periodic task to remove result files older than RESULT_MAX_AGE_DAYS."""
+    if not os.path.exists(RESULT_DATA_DIR):
+        return {'removed': 0, 'message': 'Result directory does not exist'}
+
+    cutoff_time = time.time() - (RESULT_MAX_AGE_DAYS * 24 * 60 * 60)
+    removed_count = 0
+
+    for filename in os.listdir(RESULT_DATA_DIR):
+        if filename.endswith('.db'):
+            filepath = os.path.join(RESULT_DATA_DIR, filename)
+            try:
+                if os.path.getmtime(filepath) < cutoff_time:
+                    os.remove(filepath)
+                    removed_count += 1
+                    print(f"Removed old result file: {filename}")
+            except OSError as e:
+                print(f"Failed to remove {filename}: {e}")
+
+    print(f"Cleanup completed: removed {removed_count} files older than {RESULT_MAX_AGE_DAYS} days")
+    return {'removed': removed_count, 'max_age_days': RESULT_MAX_AGE_DAYS}
 
 
 @celery_task.task
@@ -40,11 +65,7 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
     combined_content = ''
 
     base_name = os.path.basename(file_name)
-    uuid_pattern = r'^[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
-    original_name = re.sub(uuid_pattern, '', base_name)
-    if not original_name:
-        original_name = base_name  
-    cli_input_file = os.path.join(CLI_DIR, original_name)
+    cli_input_file = os.path.join(CLI_DIR, base_name)
     shutil.copy2(file_name, cli_input_file)
     query_input = os.path.join(CLI_DIR, output_vcf + '_input.txt')
     with open(query_input, "w", encoding='utf-8') as f:
@@ -59,8 +80,8 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
 
     result = subprocess.run(
         [
-            'python3', 'vcf-cas-offinder.py',
-            '-i', original_name,
+            'python3', 'vcf_cas_offinder_cli.py',
+            '-i', base_name,
             '-r', ref_path,
             '-t', os.path.basename(query_input),
             '-d', 'G'
@@ -70,17 +91,17 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
         text=True, check=False
     )
 
-    print(f"vcf-cas-offinder stdout: {result.stdout}")
+    print(f"vcf_cas_offinder_cli stdout: {result.stdout}")
     if result.stderr:
-        print(f"vcf-cas-offinder stderr: {result.stderr}")
+        print(f"vcf_cas_offinder_cli stderr: {result.stderr}")
 
-    result_pattern = os.path.join(CLI_DIR, f"*{original_name}_off_target_result.txt")
+    result_pattern = os.path.join(CLI_DIR, f"*{base_name}_off_target_result.txt")
     matching_files = glob.glob(result_pattern)
 
     if matching_files:
         matching_files.sort(key=lambda x: os.path.getmtime(x), reverse=True)
     result_file_path = matching_files[0] if matching_files else None
-    result_file_name = f"{ticket}{original_name}_off_target_result.txt"
+    result_file_name = f"{ticket}{base_name}_off_target_result.txt"
 
     if result_file_path and os.path.exists(result_file_path):
         with open(result_file_path, 'r', encoding='utf-8') as f:
@@ -90,15 +111,19 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
         if 'Error:' in result.stdout:
             uploadedfile = result.stdout.split('Error:')[-1].strip().split('\n')[0]
         elif result.returncode != 0:
-            uploadedfile = f"Error: vcf-cas-offinder failed with return code {result.returncode}"
+            uploadedfile = f"Error: vcf_cas_offinder_cli failed with return code {result.returncode}"
 
     file_content = combined_content
 
+    bgzip_name = base_name if base_name.endswith(".gz") else f"{base_name}.gz"
+
     cli_files_to_remove = [
-        os.path.join(CLI_DIR, original_name),  # Input VCF file
-        os.path.join(CLI_DIR, os.path.basename(query_input)),  # Query input file
+        os.path.join(CLI_DIR, base_name),
+        os.path.join(CLI_DIR, os.path.basename(query_input)),
+        os.path.join(CLI_DIR, bgzip_name),
+        os.path.join(CLI_DIR, f"{bgzip_name}.tbi"),
     ]
-    
+
     if result_file_path:
         cli_files_to_remove.append(result_file_path)
 
@@ -110,8 +135,8 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
                 pass
 
     backend_files_to_remove = [
-        file_name,  # Uploaded file with UUID prefix
-        result_file_name,  # Result file copy (content is in DuckDB)
+        file_name,          
+        result_file_name,
     ]
     for f in backend_files_to_remove:
         if os.path.exists(f):
@@ -120,7 +145,6 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
             except OSError:
                 pass
 
-    # Record task completion with all data
     finished_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     con.execute(
         "INSERT INTO task_info (id, created_at, finished_at, input_file, result_content) VALUES (?, ?, ?, ?, ?)",
@@ -128,7 +152,6 @@ def off_target(ticket, file_name, output_vcf, ref_path, pam_line, target_lines, 
     )
     con.close()
 
-    # Email Notification
     smtp_host = os.getenv('SMTP_HOST', 'smtp.gmail.com')
     smtp_port = int(os.getenv('SMTP_PORT', '587'))
     smtp_email = os.getenv('SMTP_EMAIL')

@@ -40,6 +40,12 @@
        try {
            const response = await load(`result_filter_options?ticket=${ticket}`);
            if (response.status === 'completed') {
+               if (response.crrna_values) {
+                   availableCrRNAValues = response.crrna_values;
+               }
+               if (response.chromosome_values) {
+                   availableChromosomeValues = response.chromosome_values;
+               }
                if (response.mismatches) {
                    availableMismatches = response.mismatches.map(String).sort((a, b) => Number(a) - Number(b));
                }
@@ -79,15 +85,20 @@
    const rowsPerPageOptions = [10, 20, 30, 50];
 
    // Filter state variables
-   let filterCrRNA = '';
+   let filterCrRNA = 'All';
+   let filterChromosome = 'All';
    let filterMismatches = 'All';
    let filterGC = 'All';
 
    // Available filter options (populated from data)
+   let availableCrRNAValues = [];
+   let availableChromosomeValues = [];
    let availableMismatches = [];
    let availableGCValues = [];
 
    // Reactive dropdown options with 'All' prepended
+   $: crrnaOptions = ['All', ...availableCrRNAValues];
+   $: chromosomeOptions = ['All', ...availableChromosomeValues];
    $: mismatchOptions = ['All', ...availableMismatches];
    $: gcOptions = ['All', ...availableGCValues];
 
@@ -151,7 +162,8 @@
    }
 
    async function clearFilters() {
-       filterCrRNA = '';
+       filterCrRNA = 'All';
+       filterChromosome = 'All';
        filterMismatches = 'All';
        filterGC = 'All';
        cpage = 1;
@@ -163,8 +175,11 @@
 	let url = `result_detail?ticket=${ticket}&page=${page}&limit=${ippage}`;
 
 	// Add filter parameters to URL
-	if (filterCrRNA.trim()) {
-		url += `&crRNA=${encodeURIComponent(filterCrRNA.trim())}`;
+	if (filterCrRNA && filterCrRNA !== 'All') {
+		url += `&crRNA=${encodeURIComponent(filterCrRNA)}`;
+	}
+	if (filterChromosome && filterChromosome !== 'All') {
+		url += `&chromosome=${encodeURIComponent(filterChromosome)}`;
 	}
 	if (filterMismatches && filterMismatches !== 'All') {
 		url += `&mismatches=${filterMismatches}`;
@@ -370,17 +385,23 @@ async function changepages(newpages){
 	<TableHeadCell>
 		<div class="header-with-filter">
 			<span>crRNA</span>
-			<input
-				type="text"
-				class="header-filter-input"
-				bind:value={filterCrRNA}
-				placeholder="Filter..."
-				disabled={isLoadingPage}
-				on:keydown={(e) => e.key === 'Enter' && applyFilters()}
-			/>
+			<select class="header-filter-select" bind:value={filterCrRNA} disabled={isLoadingPage || crrnaOptions.length <= 1} on:change={applyFilters}>
+				{#each crrnaOptions as option}
+					<option value={option}>{option}</option>
+				{/each}
+			</select>
 		</div>
 	</TableHeadCell>
-	<TableHeadCell>Chromosome</TableHeadCell>
+	<TableHeadCell>
+		<div class="header-with-filter">
+			<span>Chromosome</span>
+			<select class="header-filter-select" bind:value={filterChromosome} disabled={isLoadingPage || chromosomeOptions.length <= 1} on:change={applyFilters}>
+				{#each chromosomeOptions as option}
+					<option value={option}>{option}</option>
+				{/each}
+			</select>
+		</div>
+	</TableHeadCell>
 	<TableHeadCell>Allele</TableHeadCell>
 	<TableHeadCell>Position</TableHeadCell>
 	<TableHeadCell>DNA</TableHeadCell>
@@ -605,25 +626,6 @@ async function changepages(newpages){
 	}
 	.header-with-filter span {
 	  font-weight: 600;
-	}
-	.header-filter-input {
-	  padding: 4px 8px;
-	  border: 1px solid #ced4da;
-	  border-radius: 4px;
-	  font-size: 0.75rem;
-	  font-weight: normal;
-	  text-transform: none;
-	  width: 100%;
-	  box-sizing: border-box;
-	}
-	.header-filter-input:focus {
-	  outline: none;
-	  border-color: #2563eb;
-	  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
-	}
-	.header-filter-input:disabled {
-	  background-color: #e9ecef;
-	  cursor: not-allowed;
 	}
 	.header-filter-select {
 	  padding: 4px 20px 4px 6px;
