@@ -105,8 +105,7 @@
    // Summary data
    let summaryData = [];
    let isLoadingSummary = false;
-   let allele1Label = '1';
-   let allele2Label = '2';
+   let alleleLabels = [];
 
    // Group summary data by crRNA for rowspan
    $: groupedSummary = (() => {
@@ -141,10 +140,8 @@
        const response = await load(`result_summary?ticket=${ticket}`);
        if (response.status === 'completed' && response.summary) {
            summaryData = response.summary;
-           // Get allele labels from first item if available
-           if (response.summary.length > 0) {
-               allele1Label = response.summary[0].allele_1_label || '1';
-               allele2Label = response.summary[0].allele_2_label || '2';
+           if (response.summary.length > 0 && response.summary[0].alleles) {
+               alleleLabels = response.summary[0].alleles.map(a => a.label);
            }
        }
        isLoadingSummary = false;
@@ -332,8 +329,9 @@ async function changepages(newpages){
 				<th>crRNA Sequence</th>
 				<th>Length</th>
 				<th>Chromosome</th>
-				<th>Allele {allele1Label}</th>
-				<th>Allele {allele2Label}</th>
+				{#each alleleLabels as label}
+				<th>Allele {label}</th>
+				{/each}
 			</tr>
 		</thead>
 		<tbody>
@@ -344,8 +342,9 @@ async function changepages(newpages){
 			<td rowspan={item.rowspan} class="merged-cell">{item.length}</td>
 			{/if}
 			<td>{item.chromosome}</td>
-			<td>{item.allele_1_count}</td>
-			<td>{item.allele_2_count}</td>
+			{#each item.alleles as allele}
+			<td>{allele.count}</td>
+			{/each}
 		</tr>
 		{/each}
 		</tbody>

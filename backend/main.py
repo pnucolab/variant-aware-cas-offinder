@@ -330,19 +330,12 @@ async def result_summary(ticket: str):
         for (crrna, chrom), group in df.groupby(['crRNA', 'Chromosome']):
             # Count each unique allele
             allele_counts = group['Allele'].value_counts().to_dict()
-            # Get counts for first two alleles (usually '1' and '2', or '0' and '1')
-            allele_1_val = unique_alleles[0] if len(unique_alleles) > 0 else '1'
-            allele_2_val = unique_alleles[1] if len(unique_alleles) > 1 else '2'
-            allele_1_count = allele_counts.get(allele_1_val, 0)
-            allele_2_count = allele_counts.get(allele_2_val, 0)
+            alleles = [{'label': a, 'count': allele_counts.get(a, 0)} for a in unique_alleles]
             summary_data.append({
                 'crRNA': crrna,
                 'length': len(crrna),
                 'chromosome': chrom,
-                'allele_1_count': allele_1_count,
-                'allele_2_count': allele_2_count,
-                'allele_1_label': allele_1_val,
-                'allele_2_label': allele_2_val
+                'alleles': alleles
             })
 
         # Sort by crRNA first, then by chromosome in natural order

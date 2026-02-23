@@ -674,6 +674,12 @@ organisms:
     - name: Musa acuminata AAA Group (Cavendish_Baxijiao_AAA) - Dessert banana
       path: /app/genome/dessertbanana/GCF_036884655.1_Cavendish_Baxijiao_AAA_genomic.fna
       value: banana
+    - name: Musa acuminata (Macuminata_304_v1) - Wild banana
+      path: /app/genome/wildbanana/Macuminata_304_v1.fa
+      value: macuminata304
+    - name: Musa acuminata (Musa_acuminata_v2) - Banana
+      path: /app/genome/musaacuminata/Musa_acuminata.Musa_acuminata_v2.dna.toplevel.fa
+      value: musaacuminatav2
   - name: Peanut
     value: peanut
     versions:

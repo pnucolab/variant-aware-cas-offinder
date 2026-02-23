@@ -322,6 +322,9 @@ def compress_and_index(file_path, ref_path, query_input, device_id):
                 suffix = n[2:]
                 return suffix.isdigit() or suffix in ('x', 'y', 'm', 'mt', 'w', 'z')
             
+            if n.startswith('nc_'):
+                return True
+
             if n.isdigit():
                 return True
            
