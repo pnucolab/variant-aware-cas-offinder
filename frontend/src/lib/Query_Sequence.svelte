@@ -71,7 +71,7 @@
 		id: 'Target_sequence',
 		name: 'query',
 		label: "Query Sequences without pam from 5' to 3'",
-		rows: 10,
+		rows: 6,
 		placeholder: 'GTGAAATCTAAGTGTAGAG\nTTGTGAAATCTAAGTGTAG\nCTTCACAATTATTCGCCCA\nAGATTCAAGAATTGGTACG\nAACCTTCAGTTAGTCGCTA\nCACCATAGCGACTAACTGA'
 	};
 

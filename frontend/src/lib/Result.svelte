@@ -82,7 +82,7 @@
    let tpages = 0;
    let cpage = 1;
    let ippage = 20;
-   const rowsPerPageOptions = [10, 20, 30, 50];
+   const rowsPerPageOptions = [5, 10, 20, 30, 50];
 
    // Filter state variables
    let filterCrRNA = 'All';
